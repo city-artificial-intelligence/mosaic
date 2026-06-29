@@ -1,6 +1,14 @@
-# Framework Matrix: Hybrid Ontology Alignment Architecture
+# Framework for MOSAIC
 
 This document contains an analysis to create a unified architectural blueprint designed to achieve the maximum possible **Precision, Recall, and F-score** on OAEI benchmarks. This is created directly from top-performing alignment systems sourced from UG students in Computer Science (IN3067) and MSc students (INM713) in Data Science and Software Engineering with Cloud Computing at City St George's, University of London.
+
+# Systems to Analyse
+
+AirAlign, OAS, OmniAlign, Fluffy, MatchCraft, PairMap, CityAligner, AdvancedAlign, MMOAS, MLOA, BlendMap, NTMAlign, Lochys-alignment  
+
+## Key Systems to Utilise
+
+Lochys-alignment, MatchCraft, PairMap, CityAligner, AdvancedAlign, MMOAS, MLOA
 
 ## System Techniques Framework Matrix
 
