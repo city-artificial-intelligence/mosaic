@@ -1,0 +1,24 @@
+Track,Task,Precision,Recall,F1-Score,Time (s),Type
+conference,cmt-conference,0.5,0.4667,0.4828,5.88,Task
+conference,cmt-confOf,0.7143,0.3125,0.4348,0.1,Task
+conference,cmt-edas,0.6154,0.6154,0.6154,0.3,Task
+conference,cmt-ekaw,0.6364,0.6364,0.6364,0.1,Task
+conference,cmt-iasted,0.6667,1.0,0.8,0.25,Task
+conference,cmt-sigkdd,0.75,0.75,0.75,0.07,Task
+conference,conference-confOf,0.625,0.6667,0.6452,0.0,Task
+conference,conference-edas,0.5238,0.6471,0.5789,0.0,Task
+conference,conference-ekaw,0.5455,0.48,0.5106,0.0,Task
+conference,conference-iasted,0.5556,0.3571,0.4348,0.0,Task
+conference,conference-sigkdd,0.6923,0.6,0.6429,0.0,Task
+conference,confOf-edas,0.6,0.6316,0.6154,0.01,Task
+conference,confOf-ekaw,0.7778,0.7,0.7368,0.0,Task
+conference,confOf-iasted,0.5,0.4444,0.4706,0.01,Task
+conference,confOf-sigkdd,0.8,0.5714,0.6667,0.0,Task
+conference,edas-ekaw,0.6667,0.6957,0.6809,0.01,Task
+conference,edas-iasted,0.5,0.4211,0.4571,0.02,Task
+conference,edas-sigkdd,0.7778,0.4667,0.5833,0.02,Task
+conference,ekaw-iasted,0.6667,0.8,0.7273,0.0,Task
+conference,ekaw-sigkdd,0.7273,0.7273,0.7273,0.0,Task
+conference,iasted-sigkdd,0.6316,0.8,0.7059,0.0,Task
+conference,TRACK_AVERAGE,0.6416,0.6091,0.6144,0.32,Average
+ALL_TRACKS,TOTAL_PROGRAM_TIME,,,,12.46,Summary
