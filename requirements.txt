@@ -5,3 +5,4 @@ numpy
 torch
 torchao
 faiss-cpu
+rapidfuzz
