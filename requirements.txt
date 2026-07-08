@@ -5,4 +5,24 @@ numpy
 torch
 torchao
 faiss-cpu
-rapidfuzz
+
+##AMD Linux install
+#/home/linuxbrew/.linuxbrew/bin/python3.12 -m pip uninstall torch torchvision torchaudio -y
+
+## Install Jupyter kernel tools
+#pip install ipykernel
+#python -m ipykernel install --user --name=mosaic-rocm --display-name="Python 3.12 (MOSAIC ROCm)"
+
+# Hardcode the AMD RX 6600 GPU flags into the kernel configuration
+#python -c "
+#import json, os
+#path = os.path.expanduser('~/.local/share/jupyter/kernels/mosaic-rocm/kernel.json')
+#with open(path, 'r') as f: data = json.load(f)
+#data['env'] = {'HSA_OVERRIDE_GFX_VERSION': '10.3.0', 'ROCM_INIT_FLAGS': '1'}
+#with open(path, 'w') as f: json.dump(data, f, indent=2)
+#print('Kernel successfully configured for AMD GPU!')
+#"
+
+# Install your ML packages
+#pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/rocm6.1
+#pip install --no-cache-dir transformers sentence-transformers accelerate datasets rdflib faiss-cpu numpy
