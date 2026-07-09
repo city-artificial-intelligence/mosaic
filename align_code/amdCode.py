@@ -1,623 +1,561 @@
-# interpreter path used for reference: /home/linuxbrew/.linuxbrew/bin/python3.12
 import csv
 import gc
 import os
 import re
 import time
 import warnings
-from pathlib import Path
-from concurrent.futures import ThreadPoolExecutor
-import logging
-
+import psutil
 import numpy as np
 import torch
 import faiss
-from sentence_transformers import SentenceTransformer
+from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor
+from dataclasses import dataclass
+from typing import Iterator, List, Tuple, Set, Dict, Optional
+import logging
 
+from sentence_transformers import SentenceTransformer
 from rdflib import Graph, RDF, RDFS, URIRef
 from rdflib.namespace import OWL, SKOS
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 logging.getLogger("rdflib").setLevel(logging.ERROR)
 
+SCRIPT_DIR = Path(__file__).resolve().parent
+BASE_DIR = SCRIPT_DIR / "../tracks"
+RESULTS_DIR = SCRIPT_DIR / "results"
+CACHE_DIR = SCRIPT_DIR / ".embedding_cache"
+RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
 _CORE_NAMESPACES = (str(RDF), str(RDFS), str(OWL), str(SKOS))
 
 
-class MOSAICGPUOptimized:
-    """
-    GPU-accelerated version for massive ontologies (100K+ entities).
+@dataclass
+class AlignmentCandidate:
+    source: str
+    target: str
+    etype: str
+    semantic_score: float
+    ngram_score: float = 0.0
+    levenshtein_score: float = 0.0
     
-    Key features for massive scale:
-    - GPU embedding with larger batch sizes
-    - GPU-accelerated FAISS (IndexGPU)
-    - Chunked processing to manage GPU memory
-    - Streaming with explicit garbage collection
-    - Progress tracking for long-running jobs
-    """
-    
-    _CAMEL_RE = re.compile(r'([a-z])([A-Z])')
-    _PCT_RE = re.compile(r'%[0-9A-Fa-f]{2}')
-    DEFAULT_MODEL = "sentence-transformers/all-minilm-l12-v2"
+    @property
+    def combined_score(self) -> float:
+        string_score = (self.ngram_score * 0.5) + (self.levenshtein_score * 0.5)
+        return (self.semantic_score * 0.60) + (string_score * 0.40)
 
-    def __init__(self, model_name=None, thresholds=None, max_cache_labels=50_000,
-                 device="cuda" if torch.cuda.is_available() else "cpu",
-                 gpu_batch_size=512, use_gpu_faiss=True):
+
+class EmbeddingDiskCache:
+    def __init__(self, cache_dir: Path, embedding_dim: int):
+        self.cache_dir = cache_dir
+        self.embedding_dim = embedding_dim
+        self.label_to_idx = {}
+        self.embeddings_mmap = None
+        self.current_count = 0
+        self.max_embeddings = 2_000_000
+        self._init_mmap()
+    
+    def _init_mmap(self):
+        mmap_path = self.cache_dir / "embeddings.npy"
+        index_path = self.cache_dir / "labels.txt"
         
-        self.thresholds = thresholds or {
-            OWL.Class: 0.80, SKOS.Concept: 0.80,
-            OWL.ObjectProperty: 0.88, OWL.DatatypeProperty: 0.88,
-            OWL.NamedIndividual: 0.82
-        }
-        self.default_thres = 0.80
-        self.model = None
-        self.model_name = model_name or self.DEFAULT_MODEL
-        self.max_cache_labels = max_cache_labels
-        self.string_emb_cache = {}
-        self.device = device
-        self.gpu_batch_size = gpu_batch_size
-        self.use_gpu_faiss = use_gpu_faiss and device == "cuda"
-        
-        # GPU memory management
-        self.gpu_available_gb = self._get_gpu_memory() if device == "cuda" else 0
-        
-        cores = min(os.cpu_count() or 1, 8)
-        if hasattr(os, 'sched_getaffinity'):
+        if mmap_path.exists() and index_path.exists():
             try:
-                cores = len(os.sched_getaffinity(0))
+                self.embeddings_mmap = np.load(str(mmap_path), mmap_mode='r+')
+                with open(index_path, 'r', encoding='utf-8') as f:
+                    for idx, line in enumerate(f):
+                        label = line.strip()
+                        self.label_to_idx[label] = idx
+                        self.current_count += 1
+                return
             except:
                 pass
-        torch.set_num_threads(max(2, cores))
         
-        print(f" [MOSAIC-GPU] Using device: {device}")
-        if device == "cuda":
-            print(f" [MOSAIC-GPU] GPU memory: {self.gpu_available_gb:.1f} GB available")
-
-    def _get_gpu_memory(self) -> float:
-        """Get available GPU memory in GB."""
-        try:
-            if torch.cuda.is_available():
-                return torch.cuda.get_device_properties(0).total_memory / 1e9
-        except:
-            return 0
-        return 0
-
-    def init_model(self):
-        """Lazy initialization on specified device."""
-        if self.model is not None:
-            return
+        self.embeddings_mmap = np.memmap(
+            str(mmap_path), dtype='float32', mode='w+', shape=(self.max_embeddings, self.embedding_dim)
+        )
+        self.current_count = 0
+        self.label_to_idx = {}
+    
+    def get(self, label: str) -> Optional[np.ndarray]:
+        if label in self.label_to_idx:
+            idx = self.label_to_idx[label]
+            return np.array(self.embeddings_mmap[idx])
+        return None
+    
+    def add_batch(self, labels: List[str], embeddings: np.ndarray):
+        if len(labels) == 0: return
+        start_idx = self.current_count
+        end_idx = start_idx + len(labels)
         
-        print(f" [MOSAIC-GPU] Initializing: {self.model_name}")
-        self.model = SentenceTransformer(self.model_name, device=self.device)
-        try:
-            self.model.max_seq_length = 64
-        except:
-            pass
-
-    def normalise_label(self, text: str) -> str:
-        """Normalize label with minimal allocation."""
-        if not text:
-            return ""
-        text = self._CAMEL_RE.sub(r'\1 \2', str(text))
-        text = text.replace('_', ' ').replace('-', ' ').lower().strip()
-        words = text.split()
-        return " ".join(words[:15])
-
-    def _get_label_streaming(self, uri, graph) -> str:
-        """Stream label extraction."""
-        target_langs = ['en', 'de', 'fr']
+        if end_idx > self.max_embeddings:
+            labels = labels[:self.max_embeddings - start_idx]
+            embeddings = embeddings[:self.max_embeddings - start_idx]
+            end_idx = self.max_embeddings
+            
+        if len(labels) == 0: return
+            
+        self.embeddings_mmap[start_idx:end_idx] = embeddings
+        self.embeddings_mmap.flush()
         
-        for lang in target_langs:
-            for label in graph.objects(uri, SKOS.prefLabel):
-                if hasattr(label, 'language') and label.language == lang:
-                    return self.normalise_label(label)
-            for label in graph.objects(uri, RDFS.label):
-                if hasattr(label, 'language') and label.language == lang:
-                    return self.normalise_label(label)
+        for i, label in enumerate(labels):
+            self.label_to_idx[label] = start_idx + i
+        self.current_count = end_idx
+    
+    def save_index(self):
+        index_path = self.cache_dir / "labels.txt"
+        with open(index_path, 'w', encoding='utf-8') as f:
+            for idx in range(self.current_count):
+                for label, label_idx in self.label_to_idx.items():
+                    if label_idx == idx:
+                        f.write(f"{label}\n")
+                        break
 
-        label = graph.value(uri, RDFS.label) or graph.value(uri, SKOS.prefLabel)
-        if label:
-            return self.normalise_label(label)
 
-        frag = str(uri).split('/')[-1].split('#')[-1]
-        frag = self._PCT_RE.sub(' ', frag)
-        return self.normalise_label(frag)
+class GPUMemoryManager:
+    def __init__(self, target_usage_pct=0.85):
+        self.target_usage_pct = target_usage_pct
+        self.initial_batch_size = 256
+        self.min_batch_size = 32
+        self.current_batch_size = self.initial_batch_size
+    
+    def get_current_memory_usage(self) -> float:
+        if not torch.cuda.is_available(): return 0.0
+        allocated = torch.cuda.memory_allocated()
+        reserved = torch.cuda.memory_reserved()
+        total = torch.cuda.get_device_properties(0).total_memory
+        return (allocated + reserved) / total
+    
+    def adapt_batch_size(self) -> int:
+        usage = self.get_current_memory_usage()
+        if usage > self.target_usage_pct:
+            self.current_batch_size = max(self.min_batch_size, int(self.current_batch_size * 0.75))
+        return self.current_batch_size
 
-    def load_ontology(self, path: Path) -> Graph:
-        """Load ontology with format detection."""
-        g = Graph()
-        formats = ["turtle", "xml"] if path.suffix == ".ttl" else ["xml", "turtle"]
-        
-        for fmt in formats:
-            try:
-                g.parse(str(path), format=fmt)
-                return g
-            except:
-                continue
-        
-        try:
-            g.parse(str(path))
-            return g
-        except Exception as e:
-            print(f" [ERROR] Failed to load {path.name}: {e}")
-            return None
 
-    def extract_entities_streaming(self, graph: Graph, max_entities=None):
-        """Stream entities without full materialization."""
-        if graph is None:
-            return
-        
-        skos_concepts = set(graph.subjects(RDF.type, SKOS.Concept))
-        owl_classes = set(graph.subjects(RDF.type, OWL.Class)) - skos_concepts
-        props = (set(graph.subjects(RDF.type, OWL.ObjectProperty)) |
-                 set(graph.subjects(RDF.type, OWL.DatatypeProperty)))
-        insts = set(graph.subjects()) - skos_concepts - owl_classes - props
+class MOSAIC:
+    _CAMEL_RE = re.compile(r'([a-z])([A-Z])')
+    _PCT_RE = re.compile(r'%[0-9A-Fa-f]{2}')
+    DEFAULT_MODEL = "sentence-transformers/all-MiniLM-L12-v2"
 
-        def is_valid(uri):
-            if not isinstance(uri, URIRef):
-                return False
-            s = str(uri)
-            return ("oboInOwl" not in s and not s.startswith(_CORE_NAMESPACES))
-
-        count = 0
-        for uri in filter(is_valid, owl_classes):
-            if max_entities and count >= max_entities:
-                break
-            lbl = self._get_label_streaming(uri, graph)
-            if lbl:
-                yield uri, lbl, OWL.Class
-                count += 1
-
-        for uri in filter(is_valid, skos_concepts):
-            if max_entities and count >= max_entities:
-                break
-            lbl = self._get_label_streaming(uri, graph)
-            if lbl:
-                yield uri, lbl, SKOS.Concept
-                count += 1
-
-        for uri in filter(is_valid, props):
-            if max_entities and count >= max_entities:
-                break
-            lbl = self._get_label_streaming(uri, graph)
-            if lbl:
-                yield uri, lbl, OWL.ObjectProperty
-                count += 1
-
-        for uri in filter(is_valid, insts):
-            if max_entities and count >= max_entities:
-                break
-            lbl = self._get_label_streaming(uri, graph)
-            if lbl:
-                yield uri, lbl, OWL.NamedIndividual
-                count += 1
-
-    def materialize_entities(self, graph: Graph, max_entities=None) -> dict:
-        """Materialize entities from streaming extraction."""
-        entities = {}
-        for uri, lbl, etype in self.extract_entities_streaming(graph, max_entities):
-            entities[uri] = {"label": lbl, "type": etype}
-        return entities
-
-    def get_embeddings_batch_gpu(self, labels: list, batch_size=None) -> torch.Tensor:
-        """GPU-accelerated batch embedding with larger batches."""
-        if not labels:
-            return torch.tensor([], dtype=torch.float32).to(self.device)
-        
-        if batch_size is None:
-            batch_size = self.gpu_batch_size
+    def __init__(self, model_name=None, thresholds=None, device="cuda", chunk_size=100_000, faiss_nprobe=64):
+        self.thresholds = thresholds or {
+            OWL.Class: 0.78, SKOS.Concept: 0.82, OWL.ObjectProperty: 0.75,
+            OWL.DatatypeProperty: 0.75, OWL.NamedIndividual: 0.72
+        }
+        self.default_thres = 0.75
+        self.model_name = model_name or self.DEFAULT_MODEL
+        self.device = device
+        self.model = None
         
         self.init_model()
-        unique_labels = list(dict.fromkeys(labels))
+        self.embedding_dim = self.model.get_sentence_embedding_dimension()
+        self.chunk_size = chunk_size
+        self.faiss_nprobe = faiss_nprobe
         
-        # Embed missing labels
-        to_embed = [lbl for lbl in unique_labels if lbl not in self.string_emb_cache]
+        self.embedding_cache = EmbeddingDiskCache(CACHE_DIR, embedding_dim=self.embedding_dim)
+        self.gpu_memory_mgr = GPUMemoryManager(target_usage_pct=0.80)
+        self._ngram_cache = {}
+        self._lev_cache = {}
+    
+    def init_model(self):
+        if self.model is not None: return
+        self.model = SentenceTransformer(self.model_name, device=self.device)
+        try: self.model.max_seq_length = 128
+        except: pass
+    
+    def normalise_label(self, text: str) -> str:
+        if not text: return ""
+        text = self._CAMEL_RE.sub(r'\1 \2', str(text))
+        text = text.replace('_', ' ').replace('-', ' ').lower().strip()
+        return " ".join(text.split()[:20])
+    
+    def _get_label_streaming(self, uri, graph) -> str:
+        target_langs = ['en', 'de', 'fr']
+        for lang in target_langs:
+            for pred in [SKOS.prefLabel, RDFS.label, SKOS.altLabel]:
+                for obj in graph.objects(uri, pred):
+                    if hasattr(obj, 'language') and obj.language == lang:
+                        return self.normalise_label(str(obj))
+                        
+        lbl = graph.value(uri, RDFS.label) or graph.value(uri, SKOS.prefLabel)
+        if lbl: return self.normalise_label(str(lbl))
+            
+        frag = str(uri).split('/')[-1].split('#')[-1]
+        return self.normalise_label(self._PCT_RE.sub(' ', frag))
+    
+    def load_ontology(self, path: Path) -> Optional[Graph]:
+        g = Graph()
+        formats = ["turtle", "xml"] if path.suffix == ".ttl" else ["xml", "turtle"]
+        for fmt in formats:
+            try: g.parse(str(path), format=fmt); return g
+            except: continue
+        try: g.parse(str(path)); return g
+        except: return None
+    
+    def extract_entities_streaming(self, graph: Graph) -> Iterator[Tuple[URIRef, str, URIRef]]:
+        if graph is None: return
+        skos_concepts = set(graph.subjects(RDF.type, SKOS.Concept))
+        owl_classes = set(graph.subjects(RDF.type, OWL.Class)) - skos_concepts
+        props = set(graph.subjects(RDF.type, OWL.ObjectProperty)) | set(graph.subjects(RDF.type, OWL.DatatypeProperty))
+        
+        def is_valid(uri):
+            return isinstance(uri, URIRef) and "oboInOwl" not in str(uri) and not str(uri).startswith(_CORE_NAMESPACES)
+        
+        for uri in filter(is_valid, owl_classes):
+            lbl = self._get_label_streaming(uri, graph)
+            if lbl: yield uri, lbl, OWL.Class
+        for uri in filter(is_valid, skos_concepts):
+            lbl = self._get_label_streaming(uri, graph)
+            if lbl: yield uri, lbl, SKOS.Concept
+        for uri in filter(is_valid, props):
+            lbl = self._get_label_streaming(uri, graph)
+            if lbl: yield uri, lbl, OWL.ObjectProperty
+        for uri in filter(is_valid, graph.subjects()):
+            if uri not in owl_classes and uri not in skos_concepts and uri not in props:
+                lbl = self._get_label_streaming(uri, graph)
+                if lbl: yield uri, lbl, OWL.NamedIndividual
+    
+    def get_embeddings_adaptive(self, labels: List[str]) -> np.ndarray:
+        self.init_model()
+        cached, to_embed, to_embed_indices = [], [], []
+        
+        for i, label in enumerate(labels):
+            cached_emb = self.embedding_cache.get(label)
+            if cached_emb is not None: cached.append((i, cached_emb))
+            else: to_embed.append(label); to_embed_indices.append(i)
         
         if to_embed:
-            print(f"  [GPU] Embedding {len(to_embed)} unique labels (batch_size={batch_size})...")
-            
+            batch_size = self.gpu_memory_mgr.adapt_batch_size()
+            new_embs = []
             with torch.inference_mode():
-                # GPU encoding with larger batches
-                embeddings = self.model.encode(
-                    to_embed,
-                    convert_to_tensor=True,
-                    show_progress_bar=True,
-                    batch_size=batch_size,
-                    device=self.device
-                )
-            
-            # Store on GPU if enough VRAM, otherwise CPU
-            for lbl, emb in zip(to_embed, embeddings):
-                if len(self.string_emb_cache) < self.max_cache_labels:
-                    self.string_emb_cache[lbl] = emb.detach()
-            
-            del embeddings
+                for start_idx in range(0, len(to_embed), batch_size):
+                    end_idx = min(start_idx + batch_size, len(to_embed))
+                    embs = self.model.encode(to_embed[start_idx:end_idx], convert_to_tensor=False, show_progress_bar=False, batch_size=batch_size)
+                    new_embs.append(embs)
+            new_embs_array = np.vstack(new_embs) if new_embs else np.array([])
+            if len(new_embs_array) > 0:
+                self.embedding_cache.add_batch(to_embed, new_embs_array)
         
-        # Gather results
-        result = []
-        for lbl in labels:
-            if lbl in self.string_emb_cache:
-                result.append(self.string_emb_cache[lbl])
-            else:
-                # Fallback: compute on-the-fly
-                with torch.inference_mode():
-                    emb = self.model.encode(lbl, convert_to_tensor=True, 
-                                           device=self.device)
-                result.append(emb.detach())
+        result = np.zeros((len(labels), self.embedding_dim), dtype='float32')
+        for i, emb in cached:
+            if len(emb) == self.embedding_dim: result[i] = emb
+        if to_embed:
+            for local_idx, global_idx in enumerate(to_embed_indices):
+                if local_idx < len(new_embs_array): result[global_idx] = new_embs_array[local_idx]
+        return result
+    
+    def ngram_similarity(self, s1: str, s2: str, n: int = 2) -> float:
+        key = (s1, s2, n)
+        if key in self._ngram_cache: return self._ngram_cache[key]
         
-        if result:
-            embeddings = torch.stack(result)
-            if self.device == "cpu":
-                return embeddings
-            return embeddings.to(self.device)
-        
-        return torch.tensor([], dtype=torch.float32).to(self.device)
-
-    def semantic_match_type_gpu(self, src_ents: dict, tgt_ents: dict, etype, k=1):
-        """GPU-accelerated matching with FAISS GPU index."""
-        src_subset = [(uri, meta) for uri, meta in src_ents.items() 
-                      if meta["type"] == etype]
-        tgt_subset = [(uri, meta) for uri, meta in tgt_ents.items() 
-                      if meta["type"] == etype]
-        
-        if not src_subset or not tgt_subset:
-            return []
-
-        threshold = self.thresholds.get(etype, self.default_thres)
-        
-        src_uris, src_labels = zip(*[(u, m["label"]) for u, m in src_subset])
-        tgt_uris, tgt_labels = zip(*[(u, m["label"]) for u, m in tgt_subset])
-
-        # GPU embedding
-        print(f"  [GPU] Embedding {len(src_labels)} source + {len(tgt_labels)} target labels...")
-        with torch.inference_mode():
-            src_emb = self.get_embeddings_batch_gpu(list(src_labels))
-            tgt_emb = self.get_embeddings_batch_gpu(list(tgt_labels))
-
-        if len(src_emb) == 0 or len(tgt_emb) == 0:
-            return []
-
-        # Convert to CPU for FAISS (or use GPU FAISS if available)
-        tgt_matrix = tgt_emb.cpu().contiguous().numpy().astype('float32')
-        dim = tgt_matrix.shape[1]
-        
-        print(f"  [GPU] Building FAISS index for {len(tgt_matrix)} target entities...")
-        
-        # GPU-accelerated FAISS index
-        if self.use_gpu_faiss:
-            try:
-                import faiss.gpu as gpu_faiss
-                res = faiss.StandardGpuResources()
-                index_cpu = faiss.IndexFlatIP(dim)
-                index = gpu_faiss.index_cpu_to_gpu(res, 0, index_cpu)
-                index.add(tgt_matrix)
-                use_gpu = True
-            except Exception as e:
-                print(f"  [GPU] GPU FAISS unavailable ({e}), using CPU index")
-                index = faiss.IndexFlatIP(dim)
-                index.add(tgt_matrix)
-                use_gpu = False
+        s1, s2 = s1.lower(), s2.lower()
+        if s1 == s2: result = 1.0
         else:
-            index = faiss.IndexFlatIP(dim)
-            index.add(tgt_matrix)
-            use_gpu = False
+            ngrams1 = set(s1[i:i+n] for i in range(max(0, len(s1)-n+1)))
+            ngrams2 = set(s2[i:i+n] for i in range(max(0, len(s2)-n+1)))
+            if not ngrams1 or not ngrams2: result = 0.0
+            else:
+                union = len(ngrams1.union(ngrams2))
+                result = len(ngrams1.intersection(ngrams2)) / union if union > 0 else 0.0
+        
+        self._ngram_cache[key] = result
+        return result
 
-        # Search in batches for large src
-        src_matrix = src_emb.cpu().contiguous().numpy().astype('float32')
-        batch_search_size = 10_000
+    def levenshtein_similarity(self, s1: str, s2: str) -> float:
+        key = (s1, s2)
+        if key in self._lev_cache: return self._lev_cache[key]
         
-        candidates = []
-        print(f"  [GPU] Searching {len(src_matrix)} source entities against index...")
-        
-        for start_idx in range(0, len(src_matrix), batch_search_size):
-            end_idx = min(start_idx + batch_search_size, len(src_matrix))
-            batch = src_matrix[start_idx:end_idx]
+        if s1 == s2: result = 1.0
+        elif not s1 or not s2: result = 0.0
+        else:
+            if len(s1) < len(s2): s1, s2 = s2, s1
             
-            scores, indices = index.search(batch, k)
-            
-            for local_i in range(len(batch)):
-                i = start_idx + local_i
-                score = float(scores[local_i][0])
+            previous_row = list(range(len(s2) + 1))
+            for i, c1 in enumerate(s1):
+                current_row = [i + 1]
+                for j, c2 in enumerate(s2):
+                    insertions = previous_row[j + 1] + 1
+                    deletions = current_row[j] + 1
+                    substitutions = previous_row[j] + (c1 != c2)
+                    current_row.append(min(insertions, deletions, substitutions))
+                previous_row = current_row
                 
-                if score < threshold:
+            max_len = max(len(s1), len(s2))
+            result = (max_len - previous_row[-1]) / max_len
+        
+        self._lev_cache[key] = result
+        return result
+    
+    def _is_mutual_match(self, src_score: float, tgt_reverse_score: float, threshold: float) -> bool:
+        return src_score >= threshold and tgt_reverse_score >= (threshold * 0.88)
+    
+    def semantic_match_chunked(self, src_labels: List[str], src_uris: List[str],
+                               tgt_labels: List[str], tgt_uris: List[str],
+                               etype: URIRef, relaxation_factor: float = 1.0) -> Iterator[AlignmentCandidate]:
+        threshold = self.thresholds.get(etype, self.default_thres) * relaxation_factor
+        src_embs = self.get_embeddings_adaptive(src_labels)
+        tgt_embs = self.get_embeddings_adaptive(tgt_labels)
+        
+        dim = src_embs.shape[1]
+        k = min(7, len(tgt_labels))  # Restored to 7 to pull higher potential recall matches
+        
+        # Forward index
+        if len(tgt_labels) < 500:
+            index_fwd = faiss.IndexFlatIP(dim)
+        else:
+            nlist = max(16, min(256, len(tgt_labels) // 39))
+            index_fwd = faiss.IndexIVFFlat(faiss.IndexFlatIP(dim), dim, nlist, faiss.METRIC_INNER_PRODUCT)
+            index_fwd.train(tgt_embs)
+        
+        index_fwd.add(tgt_embs)
+        if hasattr(index_fwd, 'nprobe'):
+            index_fwd.nprobe = min(self.faiss_nprobe, getattr(index_fwd, 'nlist', 1))
+        
+        # Reverse index
+        if len(src_labels) < 500:
+            index_rev = faiss.IndexFlatIP(dim)
+        else:
+            nlist_rev = max(16, min(256, len(src_labels) // 39))
+            index_rev = faiss.IndexIVFFlat(faiss.IndexFlatIP(dim), dim, nlist_rev, faiss.METRIC_INNER_PRODUCT)
+            index_rev.train(src_embs)
+        
+        index_rev.add(src_embs)
+        if hasattr(index_rev, 'nprobe'):
+            index_rev.nprobe = min(self.faiss_nprobe, getattr(index_rev, 'nlist', 1))
+        
+        if k > 0:
+            scores_fwd, indices_fwd = index_fwd.search(src_embs, k=k)
+        else:
+            return
+        
+        # Batch reverse lookup setup
+        tgt_indices_list = list(set(indices_fwd.flatten().tolist()))
+        rev_k = min(7, len(src_labels))
+        rev_scores_full, rev_indices_full = index_rev.search(tgt_embs[tgt_indices_list], k=rev_k)
+        
+        # Corrected Mapping logic using specific (src_idx, tgt_idx) pairs to avoid overwriting 
+        rev_map = {}
+        for batch_idx, tgt_idx in enumerate(tgt_indices_list):
+            for src_rank, src_idx in enumerate(rev_indices_full[batch_idx]):
+                rev_map[(int(src_idx), int(tgt_idx))] = float(rev_scores_full[batch_idx][src_rank])
+        
+        for src_idx in range(len(src_labels)):
+            src_uri = src_uris[src_idx]
+            src_lbl = src_labels[src_idx]
+            
+            for kth in range(k):
+                score_fwd = float(scores_fwd[src_idx][kth])
+                if score_fwd < threshold * 0.90: continue
+                
+                tgt_idx = int(indices_fwd[src_idx][kth])
+                tgt_uri = tgt_uris[tgt_idx]
+                tgt_lbl = tgt_labels[tgt_idx]
+                
+                # Check for the specific pairwise relation score
+                reverse_score = rev_map.get((src_idx, tgt_idx), threshold * 0.85)
+                if not self._is_mutual_match(score_fwd, reverse_score, threshold):
                     continue
                 
-                s_uri = src_uris[i]
-                best_idx = int(indices[local_i][0])
-                t_uri = tgt_uris[best_idx]
-                t_lbl = tgt_labels[best_idx]
-                s_lbl = src_labels[i]
+                ngram_sim = self.ngram_similarity(src_lbl, tgt_lbl)
+                lev_sim = self.levenshtein_similarity(src_lbl, tgt_lbl)
                 
-                # Length heuristic
-                len_diff = abs(len(s_lbl) - len(t_lbl))
-                if len_diff > max(len(s_lbl), len(t_lbl)) * 0.6:
-                    continue
-                
-                candidates.append({
-                    "source": s_uri,
-                    "target": t_uri,
-                    "type": etype,
-                    "combined_score": score
-                })
-            
-            if (end_idx % 50_000) == 0 or end_idx == len(src_matrix):
-                print(f"    Processed {end_idx}/{len(src_matrix)} source entities")
-
-        if use_gpu:
-            del index  # Free GPU memory
-            torch.cuda.empty_cache()
+                yield AlignmentCandidate(
+                    source=str(src_uri), target=str(tgt_uri), etype=str(etype),
+                    semantic_score=score_fwd, ngram_score=ngram_sim, levenshtein_score=lev_sim
+                )
         
-        del src_emb, tgt_emb, index
+        del index_fwd, index_rev
         gc.collect()
+        if torch.cuda.is_available(): torch.cuda.empty_cache()
+    
+    def align_optimized(self, src_entities: Dict, tgt_entities: Dict) -> Set[Tuple[str, str, str]]:
+        final_alignments = set()
+        claimed_src, claimed_tgt = set(), set()
         
-        return candidates
-
-    def align_optimized(self, src_ents: dict, tgt_ents: dict,
-                       preferred_skos_pred="http://www.w3.org/2002/07/owl#sameAs"):
-        """Two-phase GPU-optimized alignment."""
-        final_pool = []
-        claimed_src = set()
-        claimed_tgt = set()
-
-        print(" [Phase 1] Exact string matching...")
-        # Phase 1: Exact matching
-        tgt_lookup = {meta["label"]: uri for uri, meta in tgt_ents.items() 
-                      if meta["label"]}
-        
-        for s_uri, s_meta in src_ents.items():
+        # Exact label match pass
+        tgt_lookup = {}
+        for uri, meta in tgt_entities.items():
+            lbl = meta["label"]
+            if lbl not in tgt_lookup: tgt_lookup[lbl] = []
+            tgt_lookup[lbl].append((uri, meta["type"]))
+            
+        for s_uri, s_meta in src_entities.items():
             s_lbl = s_meta["label"]
             if s_lbl in tgt_lookup:
-                t_uri = tgt_lookup[s_lbl]
-                if s_meta["type"] == tgt_ents[t_uri]["type"]:
-                    claimed_src.add(s_uri)
-                    claimed_tgt.add(t_uri)
-                    final_pool.append({
-                        "source": s_uri,
-                        "target": t_uri,
-                        "type": s_meta["type"],
-                        "combined_score": 1.0
-                    })
-        
-        print(f"  Exact matches: {len(final_pool)} ({100*len(final_pool)/len(src_ents):.1f}% of source)")
-        
+                for t_uri, t_type in tgt_lookup[s_lbl]:
+                    if s_meta["type"] == t_type:
+                        claimed_src.add(s_uri)
+                        claimed_tgt.add(t_uri)
+                        final_alignments.add((str(s_uri), str(t_uri), str(s_meta["type"])))
+                        break
         del tgt_lookup
         gc.collect()
+        
+        distinct_types = [OWL.Class, SKOS.Concept, OWL.ObjectProperty, OWL.DatatypeProperty, OWL.NamedIndividual]
+        
+        final_alignments, claimed_src, claimed_tgt = self._match_stage(
+            src_entities, tgt_entities, distinct_types, claimed_src, claimed_tgt, final_alignments, relaxation_factor=1.0
+        )
+        
+        final_alignments, claimed_src, claimed_tgt = self._match_stage(
+            src_entities, tgt_entities, distinct_types, claimed_src, claimed_tgt, final_alignments, relaxation_factor=0.92
+        )
+        
+        return final_alignments
 
-        # Phase 2: Semantic matching on remainder
-        filtered_src = {k: v for k, v in src_ents.items() if k not in claimed_src}
-        filtered_tgt = {k: v for k, v in tgt_ents.items() if k not in claimed_tgt}
-
-        if filtered_src and filtered_tgt:
-            print(f" [Phase 2] Semantic matching on {len(filtered_src)} src × {len(filtered_tgt)} tgt...")
+    def _match_stage(self, src_entities, tgt_entities, distinct_types, claimed_src, claimed_tgt, alignments, relaxation_factor=1.0):
+        filtered_src = {k: v for k, v in src_entities.items() if k not in claimed_src}
+        filtered_tgt = {k: v for k, v in tgt_entities.items() if k not in claimed_tgt}
+        if not filtered_src or not filtered_tgt: return alignments, claimed_src, claimed_tgt
+        
+        stage_candidates = []
+        for etype in distinct_types:
+            src_subset = [(uri, meta) for uri, meta in filtered_src.items() if meta["type"] == etype]
+            tgt_subset = [(uri, meta) for uri, meta in filtered_tgt.items() if meta["type"] == etype]
+            if not src_subset or not tgt_subset: continue
             
-            candidates = []
-            distinct_types = [OWL.Class, SKOS.Concept, OWL.ObjectProperty,
-                            OWL.DatatypeProperty, OWL.NamedIndividual]
+            src_uris, src_labels = zip(*[(u, m["label"]) for u, m in src_subset])
+            tgt_uris, tgt_labels = zip(*[(u, m["label"]) for u, m in tgt_subset])
             
-            for etype in distinct_types:
-                print(f"  Processing {etype}...")
-                candidates.extend(self.semantic_match_type_gpu(
-                    filtered_src, filtered_tgt, etype, k=1
-                ))
-            
-            candidates.sort(key=lambda x: x["combined_score"], reverse=True)
-            
-            for c in candidates:
-                if c["source"] not in claimed_src and c["target"] not in claimed_tgt:
-                    claimed_src.add(c["source"])
-                    claimed_tgt.add(c["target"])
-                    final_pool.append(c)
-
-        # Generate RDF triples
-        alignments = set()
-        for c in final_pool:
-            s_uri, t_uri, etype = c["source"], c["target"], c["type"]
-            if etype == OWL.Class:
-                alignments.add((str(s_uri), "http://www.w3.org/2002/07/owl#equivalentClass", str(t_uri)))
-            elif etype == SKOS.Concept:
-                alignments.add((str(s_uri), preferred_skos_pred, str(t_uri)))
-            elif etype in [OWL.ObjectProperty, OWL.DatatypeProperty]:
-                alignments.add((str(s_uri), "http://www.w3.org/2002/07/owl#equivalentProperty", str(t_uri)))
-            else:
-                alignments.add((str(s_uri), "http://www.w3.org/2002/07/owl#sameAs", str(t_uri)))
-
-        return alignments
-
-
-class OAEITrackRunnerGPU:
-    """GPU-optimized runner for large-scale evaluations."""
+            for candidate in self.semantic_match_chunked(
+                list(src_labels), list(src_uris), list(tgt_labels), list(tgt_uris), etype, relaxation_factor
+            ):
+                stage_candidates.append(candidate)
+                
+        stage_candidates.sort(key=lambda x: x.combined_score, reverse=True)
+        for c in stage_candidates:
+            if c.source not in claimed_src and c.target not in claimed_tgt:
+                claimed_src.add(c.source)
+                claimed_tgt.add(c.target)
+                alignments.add((c.source, c.target, c.etype))
+        return alignments, claimed_src, claimed_tgt
     
-    def __init__(self, matcher: MOSAICGPUOptimized):
+    def convert_to_rdf_triples(self, alignments: Set[Tuple[str, str, str]]) -> Set[Tuple[str, str, str]]:
+        rdf_triples = set()
+        for src, tgt, etype_str in alignments:
+            if "Class" in etype_str: pred = "http://www.w3.org/2002/07/owl#equivalentClass"
+            elif "Property" in etype_str: pred = "http://www.w3.org/2002/07/owl#equivalentProperty"
+            else: pred = "http://www.w3.org/2002/07/owl#sameAs"
+            rdf_triples.add((src, pred, tgt))
+        return rdf_triples
+
+
+class OAEITrackRunner:
+    def __init__(self, matcher: MOSAIC, results_dir: Path = None):
         self.matcher = matcher
+        self.results_dir = results_dir or RESULTS_DIR
         self.log = []
-
-    def load_reference_alignments(self, path: Path) -> set:
+    
+    def load_reference_alignments(self, path: Path) -> Set[Tuple[str, str, str]]:
         ref_set = set()
-        g = Graph()
         try:
-            g.parse(str(path), format="turtle")
-            valid_preds = {
-                "http://www.w3.org/2002/07/owl#equivalentClass",
-                "http://www.w3.org/2000/01/rdf-schema#subClassOf",
-                "http://www.w3.org/2002/07/owl#equivalentProperty",
-                "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
-                "http://www.w3.org/2002/07/owl#sameAs",
-            }
-            for s, p, o in g:
-                if str(p) in valid_preds:
-                    nodes = sorted([str(s), str(o)])
-                    ref_set.add((nodes[0], str(p), nodes[1]))
-        except Exception as e:
-            print(f" [ERROR] Could not read reference: {e}")
+            with open(path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    line = line.strip()
+                    if not line or line.startswith('#'): continue
+                    match = re.match(r'<([^>]+)>\s+<([^>]+)>\s+<([^>]+)>\s*\.\s*$', line)
+                    if match:
+                        s, p, o = match.groups()
+                        nodes = tuple(sorted([s, o]))
+                        ref_set.add((nodes[0], p, nodes[1]))
+        except Exception as e: print(f" [ERROR] Could not read reference: {e}")
         return ref_set
-
-    def serialize_alignments_to_ttl(self, alignments: set, path: Path):
+    
+    def serialize_alignments_to_ttl(self, alignments: Set[Tuple[str, str, str]], path: Path) -> bool:
         g = Graph()
         for src, pred, tgt in alignments:
-            g.add((URIRef(src), URIRef(pred), URIRef(tgt)))
+            try: g.add((URIRef(src), URIRef(pred), URIRef(tgt)))
+            except: continue
         try:
+            path.parent.mkdir(parents=True, exist_ok=True)
             g.serialize(destination=str(path), format="turtle")
-            print(f"   Output: {path.parent.name}/{path.name}")
-        except Exception as e:
-            print(f"   Serialization error: {e}")
-
-    def calculate_metrics(self, sys_align, ref_align):
-        if not ref_align:
-            return 0.0, 0.0, 0.0
-        
+            return True
+        except: return False
+    
+    def calculate_metrics(self, sys_align, ref_align) -> Tuple[float, float, float, int, int]:
+        if not ref_align: return 0.0, 0.0, 0.0, 0, 0
         sys_canon = set()
         for s, p, o in sys_align:
-            nodes = sorted([str(s), str(o)])
+            nodes = tuple(sorted([str(s), str(o)]))
             sys_canon.add((nodes[0], str(p), nodes[1]))
-
+        
         tp = len(sys_canon.intersection(ref_align))
         p = tp / len(sys_canon) if sys_canon else 0.0
         r = tp / len(ref_align) if ref_align else 0.0
         f1 = (2 * p * r) / (p + r) if (p + r) > 0 else 0.0
-        
-        return round(p, 4), round(r, 4), round(f1, 4)
-
-    def find_ontology_file(self, folder: Path, name: str) -> Path:
+        return round(p, 4), round(r, 4), round(f1, 4), tp, len(ref_align)
+    
+    def find_ontology_file(self, folder: Path, name: str) -> Optional[Path]:
         for ext in [".owl", ".rdf", ".ttl", ".xml"]:
             p = folder / f"{name}{ext}"
-            if p.exists():
-                return p
+            if p.exists(): return p
         return None
-
-    def run_all_tracks(self, base_dir: str, csv_out: str = "report_gpu.csv"):
+    
+    def run_all_tracks(self, base_dir: str, csv_out: str = "report_mega_scale.csv"):
         start_global = time.time()
         base_path = Path(base_dir)
-        res_dir = Path("../results")
-        res_dir.mkdir(parents=True, exist_ok=True)
-
-        if not base_path.exists():
-            print(f"Error: Base directory not found: {base_dir}")
-            return
-
+        if not base_path.exists(): return
+        
         for track in sorted(base_path.iterdir()):
-            if not track.is_dir():
-                continue
-
-            print(f"\n{'='*60}\n TRACK: {track.name.upper()}\n{'='*60}")
-
+            if not track.is_dir(): continue
             tasks = sorted(track.glob("*.ttl"))
-            metrics = []
-
+            
             for tf in tasks:
                 parts = tf.stem.split("-")
                 if len(parts) != 2:
-                    if "human-mouse" in tf.stem:
-                        parts = ["human", "mouse"]
-                    else:
-                        continue
-
+                    if "human-mouse" in tf.stem: parts = ["human", "mouse"]
+                    else: continue
+                
                 ont_folder = track / "ontologies"
                 src_p = self.find_ontology_file(ont_folder, parts[0])
                 tgt_p = self.find_ontology_file(ont_folder, parts[1])
-
-                print(f"\nTask: {parts[0]} → {parts[1]}")
-
-                if not src_p or not tgt_p:
-                    print(" Skipping (missing files).")
-                    continue
-
-                ref_align = self.load_reference_alignments(tf)
+                if not src_p or not tgt_p: continue
                 
-                # Parallel load
-                print(" Loading ontologies...")
+                ref_align = self.load_reference_alignments(tf)
                 with ThreadPoolExecutor(max_workers=2) as executor:
                     src_g = executor.submit(self.matcher.load_ontology, src_p).result()
                     tgt_g = executor.submit(self.matcher.load_ontology, tgt_p).result()
-
-                if not src_g or not tgt_g:
-                    print(" Skipping (load failed).")
-                    continue
-
-                t0 = time.time()
-                src_ents = self.matcher.materialize_entities(src_g)
-                tgt_ents = self.matcher.materialize_entities(tgt_g)
+                if not src_g or not tgt_g: continue
+                
+                src_entities = {u: {"label": l, "type": t} for u, l, t in self.matcher.extract_entities_streaming(src_g)}
+                tgt_entities = {u: {"label": l, "type": t} for u, l, t in self.matcher.extract_entities_streaming(tgt_g)}
                 del src_g, tgt_g
                 gc.collect()
-                extract_time = time.time() - t0
-
-                print(f" Extracted: {len(src_ents)} src / {len(tgt_ents)} tgt entities ({extract_time:.1f}s)")
-
+                
                 t0 = time.time()
-                alignments = self.matcher.align_optimized(src_ents, tgt_ents)
+                alignments = self.matcher.align_optimized(src_entities, tgt_entities)
                 dt = round(time.time() - t0, 2)
-
-                print(f" Matched: {len(alignments)} pairs in {dt}s")
-
-                out_ttl = res_dir / f"mosaic_{track.name}_{tf.name}"
-                self.serialize_alignments_to_ttl(alignments, out_ttl)
-
-                p, r, f1 = self.calculate_metrics(alignments, ref_align)
-                print(f" Metrics → P: {p}, R: {r}, F1: {f1}")
-
-                metrics.append((p, r, f1, dt))
-                self.log.append({
-                    "Track": track.name, "Task": tf.stem,
-                    "Precision": p, "Recall": r, "F1-Score": f1,
-                    "Time (s)": dt, "Type": "Task"
-                })
-
-                del src_ents, tgt_ents, alignments
-                gc.collect()
-
-            if metrics:
-                avg_p = round(sum(m[0] for m in metrics) / len(metrics), 4)
-                avg_r = round(sum(m[1] for m in metrics) / len(metrics), 4)
-                avg_f1 = round(sum(m[2] for m in metrics) / len(metrics), 4)
-                avg_t = round(sum(m[3] for m in metrics) / len(metrics), 2)
-
-                print(f"\nTrack avg → P: {avg_p}, R: {avg_r}, F1: {avg_f1} | Time: {avg_t}s")
+                
+                out_ttl = self.results_dir / f"mosaic_{track.name}_{tf.stem}.ttl"
+                rdf_triples = self.matcher.convert_to_rdf_triples(alignments)
+                self.serialize_alignments_to_ttl(rdf_triples, out_ttl)
+                
+                p, r, f1, tp, total = self.calculate_metrics(rdf_triples, ref_align)
+                print(f"[{track.name} - {tf.stem}] P: {p}, R: {r}, F1: {f1} | Correct: {tp}/{total} in {dt}s")
                 
                 self.log.append({
-                    "Track": track.name, "Task": "AVERAGE",
-                    "Precision": avg_p, "Recall": avg_r, "F1-Score": avg_f1,
-                    "Time (s)": avg_t, "Type": "Average"
+                    "Track": track.name, "Task": tf.stem, "Precision": p, "Recall": r, "F1-Score": f1,
+                    "Time (s)": dt, "Alignments": len(alignments), "Correct": tp, "Reference": total, "Type": "Task"
                 })
-
-            self.matcher.string_emb_cache.clear()
-            if self.matcher.device == "cuda":
-                torch.cuda.empty_cache()
-
-        total_runtime = round(time.time() - start_global, 2)
-        print(f"\n{'='*60}\nTotal time: {total_runtime}s\n{'='*60}")
-
-        self.log.append({
-            "Track": "ALL", "Task": "TOTAL",
-            "Precision": "", "Recall": "", "F1-Score": "",
-            "Time (s)": total_runtime, "Type": "Summary"
-        })
-
+        
         self.results_to_csv(csv_out)
+        self.matcher.embedding_cache.save_index()
 
     def results_to_csv(self, filename: str):
-        fields = ["Track", "Task", "Precision", "Recall", "F1-Score", "Time (s)", "Type"]
-        with open(filename, mode="w", newline="") as f:
+        fields = ["Track", "Task", "Precision", "Recall", "F1-Score", "Time (s)", "Alignments", "Correct", "Reference", "Type"]
+        with open(self.results_dir / filename, mode="w", newline="", encoding='utf-8') as f:
             csv.DictWriter(f, fieldnames=fields).writerows(self.log)
-        print(f"Results: {filename}")
 
 
 if __name__ == "__main__":
-    # Use GPU if available
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    print(f"Using device: {device}")
+    thresholds = {OWL.Class: 0.75, SKOS.Concept: 0.9, OWL.ObjectProperty: 0.73, OWL.DatatypeProperty: 0.73, OWL.NamedIndividual: 0.81}
     
-    thresholds = {
-        OWL.Class: 0.8, SKOS.Concept: 0.92,
-        OWL.ObjectProperty: 0.82, OWL.DatatypeProperty: 0.78,
-        OWL.NamedIndividual: 0.82
-    }
-
-    m = MOSAICGPUOptimized(
-        model_name="sentence-transformers/all-MiniLM-L6-v2",
-        thresholds=thresholds,
-        max_cache_labels=50_000,
-        device=device,
-        gpu_batch_size=512 if device == "cuda" else 128,
-        use_gpu_faiss=False,
+    m = MOSAIC(
+        model_name="sentence-transformers/all-MiniLM-L12-v2",
+        thresholds=thresholds, device=device, chunk_size=100_000, faiss_nprobe=128
     )
-    
-    runner = OAEITrackRunnerGPU(matcher=m)
-    runner.run_all_tracks("../tracks", csv_out="mosaic_evaluation_report_gpu.csv")
+    runner = OAEITrackRunner(matcher=m, results_dir=RESULTS_DIR)
+    runner.run_all_tracks(str(BASE_DIR), csv_out="mosaic_report.csv")
