@@ -5,7 +5,8 @@ numpy
 torch
 torchao
 faiss-cpu
-
+pyoxigraph 
+rapidfuzz
 ##AMD Linux install
 #/home/linuxbrew/.linuxbrew/bin/python3.12 -m pip uninstall torch torchvision torchaudio -y
 
