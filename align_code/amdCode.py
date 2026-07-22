@@ -384,9 +384,9 @@ class MOSAIC:
 
     def _get_threshold_scale(self) -> float:
         """Calculates dynamic scale factor based on domain and ontology scale."""
-        base = 1.05 if self.is_medical_domain else 1.00
+        base = 1.11 if self.is_medical_domain else 1.00
         s = self.ontology_size
-        scale = 1.10 if s < 1000 else 1.2 if s < 12500 else 1.00 if s < 50000 else 0.95 if s < 100000 else 1.15
+        scale = 1.10 if s < 1000 else 1.1 if s < 12500 else 1.15 if s < 50000 else 1.1 if s < 100000 else 0.92
         return scale * base
 
     def semantic_match_chunked(self, src_labels: List[str], src_uris: List[str],
