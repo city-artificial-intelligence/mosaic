@@ -529,7 +529,23 @@ class OAEITrackRunner:
         self.matcher, self.results_dir, self.log = matcher, results_dir or RESULTS_DIR, []
 
     def load_reference_alignments(self, path: Path) -> Set[Tuple[str, str, str]]:
-        """Loads and normalizes baseline reference alignment triples from file."""
+        """Loads and normalizes baseline reference alignment triples from file.
+
+        Supports two formats:
+          1. Legacy plain N-Triples style: '<s> <p> <o> .' lines (one per line).
+          2. OAEI Alignment API RDF/XML format: <Alignment><map><Cell>...</Cell></map></Alignment>,
+             with entity1/entity2 rdf:resource pairs, optionally with <relation> and <measure>.
+
+        The format is auto-detected: the N-Triples parser is tried first (fast, line-based);
+        if it yields no triples, the file is retried as OAEI Alignment XML.
+        """
+        ref_set = self._load_reference_alignments_ntriples(path)
+        if ref_set:
+            return ref_set
+        return self._load_reference_alignments_oaei_xml(path)
+
+    def _load_reference_alignments_ntriples(self, path: Path) -> Set[Tuple[str, str, str]]:
+        """Parses legacy plain N-Triples style reference alignment lines."""
         ref_set = set()
         try:
             with open(path, 'r', encoding='utf-8') as f:
@@ -541,7 +557,59 @@ class OAEITrackRunner:
                             s, p, o = match.groups()
                             nodes = tuple(sorted([s, o]))
                             ref_set.add((nodes[0], p, nodes[1]))
-        except Exception as e: print(f" [ERROR] Could not read reference: {e}")
+        except Exception as e: print(f" [ERROR] Could not read reference (N-Triples): {e}")
+        return ref_set
+
+    def _load_reference_alignments_oaei_xml(self, path: Path) -> Set[Tuple[str, str, str]]:
+        """Parses OAEI Alignment API RDF/XML formatted reference alignments (<Cell> entries)."""
+        ref_set = set()
+        RELATION_TO_PREDICATE = {
+            "=": "http://www.w3.org/2002/07/owl#equivalentClass",
+            "equivalentClass": "http://www.w3.org/2002/07/owl#equivalentClass",
+            "equivalentProperty": "http://www.w3.org/2002/07/owl#equivalentProperty",
+            "sameAs": "http://www.w3.org/2002/07/owl#sameAs",
+        }
+        try:
+            g = Graph()
+            parsed = False
+            for fmt in ("xml", "turtle"):
+                try:
+                    g.parse(str(path), format=fmt)
+                    parsed = True
+                    break
+                except Exception:
+                    continue
+            if not parsed:
+                return ref_set
+
+            # NOTE: the OAEI alignment namespace has no trailing '#' or '/', so RDF/XML
+            # QName expansion concatenates it directly with the local name (e.g. '...alignmentCell').
+            ALIGN_NS = "http://knowledgeweb.semanticweb.org/heterogeneity/alignment"
+            cell_type = URIRef(f"{ALIGN_NS}Cell")
+            entity1_pred = URIRef(f"{ALIGN_NS}entity1")
+            entity2_pred = URIRef(f"{ALIGN_NS}entity2")
+            relation_pred = URIRef(f"{ALIGN_NS}relation")
+
+            cells = set(g.subjects(RDF.type, cell_type))
+            if not cells:
+                # Fallback: some serializations omit an explicit rdf:type on Cell nodes,
+                # so treat any subject exposing both entity1 and entity2 as a Cell.
+                cells = set(g.subjects(entity1_pred, None)) & set(g.subjects(entity2_pred, None))
+
+            for cell in cells:
+                e1 = g.value(cell, entity1_pred)
+                e2 = g.value(cell, entity2_pred)
+                if e1 is None or e2 is None:
+                    continue
+                relation = g.value(cell, relation_pred)
+                relation_str = str(relation).strip() if relation is not None else "="
+                predicate = RELATION_TO_PREDICATE.get(relation_str, RELATION_TO_PREDICATE["="])
+
+                s, o = str(e1), str(e2)
+                nodes = tuple(sorted([s, o]))
+                ref_set.add((nodes[0], predicate, nodes[1]))
+        except Exception as e:
+            print(f" [ERROR] Could not read reference (OAEI XML): {e}")
         return ref_set
 
     def serialize_alignments_to_ttl(self, alignments: Set[Tuple[str, str, str]], path: Path) -> bool:
@@ -557,13 +625,21 @@ class OAEITrackRunner:
         except Exception: return False
 
     def calculate_metrics(self, sys_align, ref_align) -> Tuple[float, float, float, int, int]:
-        """Calculates Precision, Recall, and F1-Score metrics against reference benchmark."""
+        """Calculates Precision, Recall, and F1-Score metrics against reference benchmark.
+
+        Comparison is done on the (source, target) URI pair only, ignoring the predicate.
+        The predicate (owl:sameAs / owl:equivalentClass / owl:equivalentProperty) is just a
+        type-dependent label for "these are equivalent" — the system may emit owl:sameAs for
+        a SKOS Concept pair while a reference file uses owl:equivalentClass (or vice versa) for
+        the same correct alignment, and that shouldn't be scored as a miss.
+        """
         if not ref_align: return 0.0, 0.0, 0.0, 0, 0
-        sys_canon = {(tuple(sorted([str(s), str(o)]))[0], str(p), tuple(sorted([str(s), str(o)]))[1]) for s, p, o in sys_align}
-        tp = len(sys_canon.intersection(ref_align))
-        p = tp / len(sys_canon) if sys_canon else 0.0
-        r = tp / len(ref_align) if ref_align else 0.0
-        return round(p, 4), round(r, 4), round((2 * p * r) / (p + r) if (p + r) > 0 else 0.0, 4), tp, len(ref_align)
+        ref_pairs = {(tuple(sorted([str(s), str(o)]))) for s, p, o in ref_align}
+        sys_pairs = {(tuple(sorted([str(s), str(o)]))) for s, p, o in sys_align}
+        tp = len(sys_pairs.intersection(ref_pairs))
+        p = tp / len(sys_pairs) if sys_pairs else 0.0
+        r = tp / len(ref_pairs) if ref_pairs else 0.0
+        return round(p, 4), round(r, 4), round((2 * p * r) / (p + r) if (p + r) > 0 else 0.0, 4), tp, len(ref_pairs)
 
     def find_ontology_file(self, folder: Path, name: str) -> Optional[Path]:
         """Finds matching ontology file matching targeted extensions."""
@@ -571,13 +647,57 @@ class OAEITrackRunner:
             if (folder / f"{name}{ext}").exists(): return folder / f"{name}{ext}"
         return None
 
+    def _run_single_task(self, track_name: str, task_name: str, src_p: Path, tgt_p: Path, ref_p: Optional[Path]):
+        """Runs domain adaptation, alignment, serialization, and metric logging for a single source/target/reference task."""
+        print(f"\n [TASK] Loading reference alignments: {task_name}")
+        ref_align = self.load_reference_alignments(ref_p) if ref_p else set()
+        t_ext0 = time.time()
+
+        src_entities = {str(u): {"label": l, "type": t, "parents": par} for u, l, t, par in self.matcher.extract_entities_streaming(src_p)}
+        tgt_entities = {str(u): {"label": l, "type": t, "parents": par} for u, l, t, par in self.matcher.extract_entities_streaming(tgt_p)}
+        print(f" [TASK] Extracted {len(src_entities)} source and {len(tgt_entities)} target entities in {round(time.time() - t_ext0, 2)}s")
+
+        is_med, reason = MedicalDomainDetector.evaluate_is_medical(track_name, task_name, src_entities, tgt_entities)
+        print(f" [DOMAIN DETECTOR] Result: {'MEDICAL' if is_med else 'GENERAL'} | Reason: {reason}")
+
+        self.matcher.apply_domain_model(is_medical=is_med)
+        gc.collect()
+
+        t0 = time.time()
+        alignments = self.matcher.align_optimized(src_entities, tgt_entities)
+        dt = round(time.time() - t0, 2)
+
+        out_ttl = self.results_dir / f"mosaic_{track_name}_{task_name}.ttl"
+        rdf_triples = self.matcher.convert_to_rdf_triples(alignments)
+        self.serialize_alignments_to_ttl(rdf_triples, out_ttl)
+
+        p, r, f1, tp, total = self.calculate_metrics(rdf_triples, ref_align)
+        print(f"         Precision: {p:.4f} | Recall: {r:.4f} | F1: {f1:.4f} | Correct: {tp}/{total} | Time: {dt}s")
+
+        self.log.append({
+            "Track": track_name, "Task": task_name, "Precision": p, "Recall": r, "F1-Score": f1,
+            "Time (s)": dt, "Alignments": len(alignments), "Correct": tp, "Reference": total, "Type": "Task"
+        })
+
     def run_all_tracks(self, base_dir: str, csv_out: str = "report_mega_scale.csv"):
-        """Iterates through tracks, runs domain adaptation, calculates alignments, and logs results."""
+        """Iterates through tracks, runs domain adaptation, calculates alignments, and logs results.
+
+        Two track folder layouts are supported per track directory:
+          1. Legacy OAEI layout: track/ontologies/<name>.{owl,rdf,ttl,xml} + track/<src>-<tgt>.ttl reference files.
+          2. Flat layout (e.g. tracks/digital-humanities/): three files sitting directly in the track
+             folder — two ontology files named after themselves (e.g. idai.rdf, pactols.rdf) plus a
+             reference file named "<ontology1>-<ontology2>.{rdf,owl,ttl,xml}" (e.g. idai-pactols.rdf),
+             where the reference filename identifies which two ontology files it pairs. The reference
+             file can be in OAEI Alignment-API XML format or legacy N-Triples format.
+        Both layouts can coexist across different track folders under the same base directory.
+        """
         base_path = Path(base_dir)
         if not base_path.exists(): return
 
         for track in sorted(base_path.iterdir()):
             if not track.is_dir(): continue
+
+            ran_legacy_task = False
             for tf in sorted(track.glob("*.ttl")):
                 parts = tf.stem.split("-")
                 if len(parts) != 2:
@@ -587,35 +707,42 @@ class OAEITrackRunner:
                 src_p, tgt_p = self.find_ontology_file(track / "ontologies", parts[0]), self.find_ontology_file(track / "ontologies", parts[1])
                 if not src_p or not tgt_p: continue
 
-                print(f"\n [TASK] Loading reference alignments: {tf.stem}")
-                ref_align = self.load_reference_alignments(tf)
-                t_ext0 = time.time()
+                ran_legacy_task = True
+                self._run_single_task(track.name, tf.stem, src_p, tgt_p, tf)
 
-                src_entities = {str(u): {"label": l, "type": t, "parents": par} for u, l, t, par in self.matcher.extract_entities_streaming(src_p)}
-                tgt_entities = {str(u): {"label": l, "type": t, "parents": par} for u, l, t, par in self.matcher.extract_entities_streaming(tgt_p)}
-                print(f" [TASK] Extracted {len(src_entities)} source and {len(tgt_entities)} target entities in {round(time.time() - t_ext0, 2)}s")
+            # Flat layout: reference file(s) sit directly in the track folder, named after
+            # the two ontology files they align, e.g. "idai-pactols.rdf" pairs idai.* and pactols.*.
+            # Only attempted if the legacy layout produced nothing, so a track isn't double-processed.
+            if not ran_legacy_task:
+                candidate_exts = (".rdf", ".owl", ".ttl", ".xml")
+                # Any file directly in the track folder that isn't itself a standalone ontology
+                # (i.e. its stem contains a hyphen joining two other file stems present in the folder)
+                # is treated as a reference/alignment file.
+                sibling_stems = {f.stem for f in track.iterdir() if f.is_file() and f.suffix.lower() in candidate_exts}
 
-                is_med, reason = MedicalDomainDetector.evaluate_is_medical(track.name, tf.stem, src_entities, tgt_entities)
-                print(f" [DOMAIN DETECTOR] Result: {'MEDICAL' if is_med else 'GENERAL'} | Reason: {reason}")
+                for rf in sorted(track.iterdir()):
+                    if not rf.is_file() or rf.suffix.lower() not in candidate_exts: continue
+                    parts = rf.stem.split("-", 1)
+                    if len(parts) != 2: continue
+                    name1, name2 = parts
+                    if name1 not in sibling_stems or name2 not in sibling_stems: continue
+                    if name1 == rf.stem or name2 == rf.stem: continue
 
-                self.matcher.apply_domain_model(is_medical=is_med)
-                gc.collect()
+                    src_p, tgt_p = self.find_ontology_file(track, name1), self.find_ontology_file(track, name2)
+                    if not src_p or not tgt_p or src_p == rf or tgt_p == rf: continue
 
-                t0 = time.time()
-                alignments = self.matcher.align_optimized(src_entities, tgt_entities)
-                dt = round(time.time() - t0, 2)
+                    ran_legacy_task = True
+                    self._run_single_task(track.name, rf.stem, src_p, tgt_p, rf)
 
-                out_ttl = self.results_dir / f"mosaic_{track.name}_{tf.stem}.ttl"
-                rdf_triples = self.matcher.convert_to_rdf_triples(alignments)
-                self.serialize_alignments_to_ttl(rdf_triples, out_ttl)
-
-                p, r, f1, tp, total = self.calculate_metrics(rdf_triples, ref_align)
-                print(f"         Precision: {p:.4f} | Recall: {r:.4f} | F1: {f1:.4f} | Correct: {tp}/{total} | Time: {dt}s")
-
-                self.log.append({
-                    "Track": track.name, "Task": tf.stem, "Precision": p, "Recall": r, "F1-Score": f1,
-                    "Time (s)": dt, "Alignments": len(alignments), "Correct": tp, "Reference": total, "Type": "Task"
-                })
+            # Fallback: exactly two ontology files and no matching reference filename found —
+            # run them as a pair anyway, with no reference (metrics will be 0).
+            if not ran_legacy_task:
+                candidate_exts = (".rdf", ".owl", ".ttl", ".xml")
+                onto_files = sorted(f for f in track.iterdir() if f.is_file() and f.suffix.lower() in candidate_exts)
+                if len(onto_files) == 2:
+                    src_p, tgt_p = onto_files
+                    print(f" [WARN] No reference file found for track '{track.name}'; metrics will be 0.")
+                    self._run_single_task(track.name, f"{src_p.stem}-{tgt_p.stem}", src_p, tgt_p, None)
 
         self.results_to_csv(csv_out)
         if self.matcher.embedding_cache: self.matcher.embedding_cache.save_index()
