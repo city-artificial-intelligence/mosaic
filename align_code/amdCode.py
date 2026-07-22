@@ -386,7 +386,7 @@ class MOSAIC:
         """Calculates dynamic scale factor based on domain and ontology scale."""
         base = 1.11 if self.is_medical_domain else 1.00
         s = self.ontology_size
-        scale = 1.10 if s < 1000 else 1.1 if s < 12500 else 1.15 if s < 50000 else 1.1 if s < 100000 else 0.92
+        scale = 1.05 if s < 1000 else 1.1 if s < 12500 else 1.15 if s < 50000 else 1.1 if s < 100000 else 0.92
         return scale * base
 
     def semantic_match_chunked(self, src_labels: List[str], src_uris: List[str],
@@ -459,7 +459,7 @@ class MOSAIC:
     def align_optimized(self, src_entities: Dict, tgt_entities: Dict) -> Set[Tuple[str, str, str]]:
         """Executes exact matching followed by multi-stage semantic vector matching."""
         final_alignments, claimed_src, claimed_tgt = set(), set(), set()
-        self.ontology_size = (len(src_entities) + len(tgt_entities)) / 2
+        self.ontology_size = (len(src_entities) + len(tgt_entities)) / 2 if (len(src_entities) > 100 and len(tgt_entities) > 100) else (len(src_entities) + len(tgt_entities)) / 4
         self.is_mega_scale = (self.ontology_size >= 130000)
 
         print(f" [INFO] {'Mega-scale Optimization Mode ACTIVE' if self.is_mega_scale else 'Standard matching logic active'} (size: {self.ontology_size:.0f} nodes)")
@@ -761,3 +761,9 @@ if __name__ == "__main__":
     m = MOSAIC(model_name="sentence-transformers/all-MiniLM-L12-v2", device=device)
     runner = OAEITrackRunner(matcher=m, results_dir=RESULTS_DIR)
     runner.run_all_tracks(str(BASE_DIR), csv_out="mosaic_report.csv")
+
+# -- instructions --
+# tracks in DH tested in rdf format - tracks with duplicate ontologies like pactols need to be named in the format pactols1 pactols2 etc.
+# rename the source and target rdf files to their exact name: eg source.rdf -> idai.rdf used for the reference.rdf file idai.pactols1.rdf 
+# the reference file should be the exact names of the 2 ontologies combined with a "-" in between: eg the format defc-pactols1.rdf or idai-pactols2.rdf
+# the rdf format was used because the track has different versions of the same ontology per benchmark
