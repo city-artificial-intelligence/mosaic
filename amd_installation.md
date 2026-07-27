@@ -40,6 +40,9 @@ distrobox enter ml-env
 source .venv/bin/activate
 
 ## 3. Run your script on the GPU
+
+### NOTE - version depends on your gpu generation 
+#### (10.3.0 for 6000 series 11.0.0 for 7000 series)
 HSA_OVERRIDE_GFX_VERSION=10.3.0 ROCM_INIT_FLAGS=1 python align_code/amdCode.py
 
 

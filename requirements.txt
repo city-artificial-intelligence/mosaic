@@ -8,6 +8,7 @@ faiss-cpu
 pyoxigraph 
 rapidfuzz
 Levenshtein
+py_horned_owl
 ##AMD Linux install
 #/home/linuxbrew/.linuxbrew/bin/python3.12 -m pip uninstall torch torchvision torchaudio -y
 
