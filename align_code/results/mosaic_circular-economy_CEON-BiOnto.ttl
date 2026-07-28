@@ -1,0 +1,97 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<http://qudt.org/schema/qudt/Quantity> owl:equivalentClass <http://ontorion.com/namespace#Quantity> .
+
+<http://w3id.org/CEON/ontology/actor/Organisation> owl:equivalentClass <http://ontorion.com/namespace#Organization> .
+
+<http://w3id.org/CEON/ontology/actor/Person> owl:equivalentClass <http://ontorion.com/namespace#Person> .
+
+<http://w3id.org/CEON/ontology/actor/UsingResource> owl:equivalentClass <http://ontorion.com/namespace#EnergyResource> .
+
+<http://w3id.org/CEON/ontology/actorODP/Infrastructure> owl:equivalentClass <http://ontorion.com/namespace#Infrastructure> .
+
+<http://w3id.org/CEON/ontology/actorODP/Participation> owl:equivalentClass <http://ontorion.com/namespace#Participation> .
+
+<http://w3id.org/CEON/ontology/energy/Biofuel> owl:equivalentClass <http://ontorion.com/namespace#Biofuel> .
+
+<http://w3id.org/CEON/ontology/energy/Biogas> owl:equivalentClass <http://ontorion.com/namespace#Biogas> .
+
+<http://w3id.org/CEON/ontology/energy/Biomass> owl:equivalentClass <http://ontorion.com/namespace#Biomas> .
+
+<http://w3id.org/CEON/ontology/energy/Coal> owl:equivalentClass <http://ontorion.com/namespace#Coal> .
+
+<http://w3id.org/CEON/ontology/energy/Energy> owl:equivalentClass <http://ontorion.com/namespace#Energy> .
+
+<http://w3id.org/CEON/ontology/energy/EnergySource> owl:equivalentClass <http://ontorion.com/namespace#EnergySource> .
+
+<http://w3id.org/CEON/ontology/energy/FossilFuel> owl:equivalentClass <http://ontorion.com/namespace#FossilFuel> .
+
+<http://w3id.org/CEON/ontology/energy/GeothermalEnergySource> owl:equivalentClass <http://ontorion.com/namespace#ThermalEnergy> .
+
+<http://w3id.org/CEON/ontology/energy/NaturalGas> owl:equivalentClass <http://ontorion.com/namespace#NaturalGas> .
+
+<http://w3id.org/CEON/ontology/energy/Petroleum> owl:equivalentClass <http://ontorion.com/namespace#Petroleum> .
+
+<http://w3id.org/CEON/ontology/energy/RenewableEnergy> owl:equivalentClass <http://ontorion.com/namespace#RenewableEnergy> .
+
+<http://w3id.org/CEON/ontology/energy/SolarEnergySource> owl:equivalentClass <http://ontorion.com/namespace#SolarEnergy> .
+
+<http://w3id.org/CEON/ontology/energy/WindEnergySource> owl:equivalentClass <http://ontorion.com/namespace#WindEnergy> .
+
+<http://w3id.org/CEON/ontology/material/Cellulose> owl:equivalentClass <http://ontorion.com/namespace#Cellulose> .
+
+<http://w3id.org/CEON/ontology/material/ChemicalElement> owl:equivalentClass <http://ontorion.com/namespace#ChemicalElement> .
+
+<http://w3id.org/CEON/ontology/material/ChemicalEntity> owl:equivalentClass <http://ontorion.com/namespace#ChemicalEnergy> .
+
+<http://w3id.org/CEON/ontology/material/ChemicalSubstance> owl:equivalentClass <http://ontorion.com/namespace#ChemicalSubstance> .
+
+<http://w3id.org/CEON/ontology/material/Iron> owl:equivalentClass <http://ontorion.com/namespace#Iron> .
+
+<http://w3id.org/CEON/ontology/material/Material> owl:equivalentClass <http://ontorion.com/namespace#Material> .
+
+<http://w3id.org/CEON/ontology/material/Nickel> owl:equivalentClass <http://ontorion.com/namespace#Nickel> .
+
+<http://w3id.org/CEON/ontology/process/Catalyst> owl:equivalentClass <http://ontorion.com/namespace#Catalyst> .
+
+<http://w3id.org/CEON/ontology/process/ServiceProcess> owl:equivalentClass <http://ontorion.com/namespace#Service> .
+
+<http://w3id.org/CEON/ontology/process/producesCO2> owl:equivalentProperty <http://ontorion.com/namespace#produces> .
+
+<http://w3id.org/CEON/ontology/processODP/Event> owl:equivalentClass <http://ontorion.com/namespace#Event> .
+
+<http://w3id.org/CEON/ontology/processODP/Plan> owl:equivalentClass <http://ontorion.com/namespace#Plan> .
+
+<http://w3id.org/CEON/ontology/processODP/Process> owl:equivalentClass <http://ontorion.com/namespace#Proces> .
+
+<http://w3id.org/CEON/ontology/processODP/TransformationProcess> owl:equivalentClass <http://ontorion.com/namespace#ChemicalTransformation> .
+
+<http://w3id.org/CEON/ontology/processODP/hasPart> owl:equivalentProperty <http://ontorion.com/namespace#hasPart> .
+
+<http://w3id.org/CEON/ontology/product/Product> owl:equivalentClass <http://ontorion.com/namespace#Product> .
+
+<http://w3id.org/CEON/ontology/product/Regulation> owl:equivalentClass <http://ontorion.com/namespace#Regulation> .
+
+<http://w3id.org/CEON/ontology/resourceODP/DigitalObject> owl:equivalentClass <http://ontorion.com/namespace#DigitalCollection> .
+
+<http://w3id.org/CEON/ontology/resourceODP/Information> owl:equivalentClass <http://ontorion.com/namespace#Information> .
+
+<http://w3id.org/CEON/ontology/resourceODP/Matter> owl:equivalentClass <http://ontorion.com/namespace#Matter> .
+
+<http://w3id.org/CEON/ontology/resourceODP/PhysicalObject> owl:equivalentClass <http://ontorion.com/namespace#PhysicalScience> .
+
+<http://w3id.org/CEON/ontology/resourceODP/Resource> owl:equivalentClass <http://ontorion.com/namespace#Resource> .
+
+<http://w3id.org/CEON/ontology/resourceODP/hasPart> owl:equivalentProperty <http://ontorion.com/namespace#hasPartIn> .
+
+<http://w3id.org/CEON/ontology/value/EconomicValue> owl:equivalentClass <http://ontorion.com/namespace#Economics> .
+
+<http://w3id.org/CEON/ontology/value/EnvironmentalValue> owl:equivalentClass <http://ontorion.com/namespace#EnvironmentalIssue> .
+
+<http://w3id.org/CEON/ontology/value/SocialValue> owl:equivalentClass <http://ontorion.com/namespace#SocialIssue> .
+
+<http://w3id.org/CEON/ontology/value/ValueProposition> owl:equivalentClass <http://ontorion.com/namespace#ValueProposition> .
+
+prov:Entity owl:equivalentClass <http://ontorion.com/namespace#Entity> .
+

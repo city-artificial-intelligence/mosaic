@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://confOf#Author> owl:equivalentClass <http://iasted#Author> .
+
+<http://confOf#Banquet> owl:equivalentClass <http://iasted#Dinner_banquet> .
+
+<http://confOf#City> owl:equivalentClass <http://iasted#City> .
+
+<http://confOf#Member> owl:equivalentClass <http://iasted#IASTED_member> .
+
+<http://confOf#Person> owl:equivalentClass <http://iasted#Person> .
+
+<http://confOf#Reception> owl:equivalentClass <http://iasted#Coctail_reception> .
+
+<http://confOf#Student> owl:equivalentClass <http://iasted#Student_lecturer> .
+
+<http://confOf#Trip> owl:equivalentClass <http://iasted#Trip_day> .
+
+<http://confOf#Tutorial> owl:equivalentClass <http://iasted#Tutorial> .
+
+<http://confOf#University> owl:equivalentClass <http://iasted#Presenter_university> .
+
+<http://confOf#writes> owl:equivalentProperty <http://iasted#write> .
+

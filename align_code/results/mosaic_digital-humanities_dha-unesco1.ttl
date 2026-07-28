@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://vocabs.acdh.oeaw.ac.at/dhataxonomy/Concept18> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept464> .
+
+<https://vocabs.acdh.oeaw.ac.at/dhataxonomy/Concept33> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept505> .
+
+<https://vocabs.acdh.oeaw.ac.at/dhataxonomy/Concept34> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept3354> .
+
+<https://vocabs.acdh.oeaw.ac.at/dhataxonomy/Concept37> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept3270> .
+
+<https://vocabs.acdh.oeaw.ac.at/dhataxonomy/Concept46> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept8357> .
+
+<https://vocabs.acdh.oeaw.ac.at/dhataxonomy/Concept53> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept5790> .
+
+<https://vocabs.acdh.oeaw.ac.at/dhataxonomy/Concept60> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept17127> .
+
+<https://vocabs.acdh.oeaw.ac.at/dhataxonomy/Concept61> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept17094> .
+
+<https://vocabs.acdh.oeaw.ac.at/dhataxonomy/Concept63> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept521> .
+
+<https://vocabs.acdh.oeaw.ac.at/dhataxonomy/Concept67> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept516> .
+
+<https://vocabs.acdh.oeaw.ac.at/dhataxonomy/Concept9> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept12437> .
+

@@ -1,0 +1,32 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://ekaw#Conference_Paper> owl:equivalentClass <http://iasted#Conference_state> .
+
+<http://ekaw#Conference_Participant> owl:equivalentClass <http://iasted#Conference_activity> .
+
+<http://ekaw#Conference_Proceedings> owl:equivalentClass <http://iasted#Conference_building> .
+
+<http://ekaw#Conference_Session> owl:equivalentClass <http://iasted#Conference_days> .
+
+<http://ekaw#Conference_Trip> owl:equivalentClass <http://iasted#Conference_Hiker> .
+
+<http://ekaw#Document> owl:equivalentClass <http://iasted#Document> .
+
+<http://ekaw#Individual_Presentation> owl:equivalentClass <http://iasted#Video_presentation> .
+
+<http://ekaw#Person> owl:equivalentClass <http://iasted#Person> .
+
+<http://ekaw#Presenter> owl:equivalentClass <http://iasted#Hotel_presenter> .
+
+<http://ekaw#Review> owl:equivalentClass <http://iasted#Review> .
+
+<http://ekaw#Session> owl:equivalentClass <http://iasted#Session> .
+
+<http://ekaw#Session_Chair> owl:equivalentClass <http://iasted#Session_chair> .
+
+<http://ekaw#Student> owl:equivalentClass <http://iasted#Student_lecturer> .
+
+<http://ekaw#Tutorial> owl:equivalentClass <http://iasted#Tutorial> .
+
+<http://ekaw#University> owl:equivalentClass <http://iasted#Presenter_university> .
+

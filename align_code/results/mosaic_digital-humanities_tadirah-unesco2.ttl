@@ -1,0 +1,28 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://vocabs.dariah.eu/tadirah/archiving> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept2745> .
+
+<https://vocabs.dariah.eu/tadirah/audioRecording> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept9812> .
+
+<https://vocabs.dariah.eu/tadirah/cataloging> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept3799> .
+
+<https://vocabs.dariah.eu/tadirah/editing> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept4200> .
+
+<https://vocabs.dariah.eu/tadirah/encoding> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept5530> .
+
+<https://vocabs.dariah.eu/tadirah/informationRetrieval> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept514> .
+
+<https://vocabs.dariah.eu/tadirah/patternRecognition> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept3054> .
+
+<https://vocabs.dariah.eu/tadirah/publishing> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept3810> .
+
+<https://vocabs.dariah.eu/tadirah/recording> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept505> .
+
+<https://vocabs.dariah.eu/tadirah/searching> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept4479> .
+
+<https://vocabs.dariah.eu/tadirah/videoConference> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept6218> .
+
+<https://vocabs.dariah.eu/tadirah/webDevelopment> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept17140> .
+
+<https://vocabs.dariah.eu/tadirah/writing> owl:sameAs <http://vocabularies.unesco.org/thesaurus/concept5829> .
+

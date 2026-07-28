@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://edas#Author> owl:equivalentClass <http://sigkdd#Author> .
+
+<http://edas#Conference> owl:equivalentClass <http://sigkdd#Conference> .
+
+<http://edas#ConferenceEvent> owl:equivalentClass <http://sigkdd#Conference_hall> .
+
+<http://edas#Document> owl:equivalentClass <http://sigkdd#Document> .
+
+<http://edas#Organization> owl:equivalentClass <http://sigkdd#Organizator> .
+
+<http://edas#Paper> owl:equivalentClass <http://sigkdd#Paper> .
+
+<http://edas#Person> owl:equivalentClass <http://sigkdd#Person> .
+
+<http://edas#Place> owl:equivalentClass <http://sigkdd#Place> .
+
+<http://edas#Review> owl:equivalentClass <http://sigkdd#Review> .
+
+<http://edas#Sponsorship> owl:equivalentClass <http://sigkdd#Sponzor> .
+

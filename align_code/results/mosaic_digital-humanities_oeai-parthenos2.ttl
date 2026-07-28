@@ -1,0 +1,90 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23194> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7215> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23195> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7221> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23196> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7139> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23225> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7094> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23226> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7238> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23243> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7146> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23247> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7222> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23253> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7180> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23256> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7130> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23260> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7239> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23271> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7140> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23272> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7266> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23273> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7247> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23274> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7194> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23276> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7147> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23279> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7183> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23314> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7114> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23315> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7211> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23316> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7236> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23317> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7103> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23318> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7125> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23319> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7155> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23320> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7120> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23495> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7172> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23498> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7171> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23502> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7233> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23503> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7249> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23514> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7200> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23515> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7166> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23516> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7264> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23522> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7224> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23525> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7149> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23528> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7099> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23530> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7219> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23531> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7207> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23532> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7179> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23536> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7271> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23544> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7188> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23545> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7178> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23546> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7184> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23553> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7142> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23557> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7122> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23558> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7118> .
+
+<https://vocabs.acdh.oeaw.ac.at/oeai-cultural-periods/concept23560> owl:sameAs <https://isl.ics.forth.gr/parthenos_vocabularies/Concept/7107> .
+

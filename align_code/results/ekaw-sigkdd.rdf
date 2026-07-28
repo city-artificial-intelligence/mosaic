@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:align="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#">
+<align:Alignment>
+  <align:xml>yes</align:xml>
+  <align:level>0</align:level>
+  <align:type>**</align:type>
+  <align:onto1>source</align:onto1>
+  <align:onto2>target</align:onto2>
+  <align:map>
+    <align:Cell rdf:about="#cell0">
+      <align:entity1 rdf:resource="http://ekaw#Review"/>
+      <align:entity2 rdf:resource="http://sigkdd#Review"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell1">
+      <align:entity1 rdf:resource="http://ekaw#Abstract"/>
+      <align:entity2 rdf:resource="http://sigkdd#Abstract"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell2">
+      <align:entity1 rdf:resource="http://ekaw#Conference"/>
+      <align:entity2 rdf:resource="http://sigkdd#Conference"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell3">
+      <align:entity1 rdf:resource="http://ekaw#Person"/>
+      <align:entity2 rdf:resource="http://sigkdd#Person"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell4">
+      <align:entity1 rdf:resource="http://ekaw#Paper"/>
+      <align:entity2 rdf:resource="http://sigkdd#Paper"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell5">
+      <align:entity1 rdf:resource="http://ekaw#Document"/>
+      <align:entity2 rdf:resource="http://sigkdd#Document"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell6">
+      <align:entity1 rdf:resource="http://ekaw#Paper_Author"/>
+      <align:entity2 rdf:resource="http://sigkdd#Author_of_paper"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8034</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell7">
+      <align:entity1 rdf:resource="http://ekaw#presentationOfPaper"/>
+      <align:entity2 rdf:resource="http://sigkdd#presentation"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8020</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell8">
+      <align:entity1 rdf:resource="http://ekaw#Invited_Speaker"/>
+      <align:entity2 rdf:resource="http://sigkdd#Invited_Speaker"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+</align:Alignment>
+</rdf:RDF>

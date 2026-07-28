@@ -1,0 +1,40 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://confOf#Author> owl:equivalentClass <http://edas#Author> .
+
+<http://confOf#Conference> owl:equivalentClass <http://edas#Conference> .
+
+<http://confOf#Country> owl:equivalentClass <http://edas#Country> .
+
+<http://confOf#Member> owl:equivalentClass <http://edas#TPCMember> .
+
+<http://confOf#Organization> owl:equivalentClass <http://edas#Organization> .
+
+<http://confOf#Paper> owl:equivalentClass <http://edas#Paper> .
+
+<http://confOf#Person> owl:equivalentClass <http://edas#Person> .
+
+<http://confOf#Reception> owl:equivalentClass <http://edas#Reception> .
+
+<http://confOf#Social_event> owl:equivalentClass <http://edas#SocialEvent> .
+
+<http://confOf#Topic> owl:equivalentClass <http://edas#Topic> .
+
+<http://confOf#Workshop> owl:equivalentClass <http://edas#Workshop> .
+
+<http://confOf#hasCountry> owl:equivalentProperty <http://edas#hasCountry> .
+
+<http://confOf#hasEmail> owl:equivalentProperty <http://edas#hasEmail> .
+
+<http://confOf#hasFirstName> owl:equivalentProperty <http://edas#hasFirstName> .
+
+<http://confOf#hasPhone> owl:equivalentProperty <http://edas#hasPhone> .
+
+<http://confOf#hasPostalCode> owl:equivalentProperty <http://edas#hasPostalCode> .
+
+<http://confOf#hasStreet> owl:equivalentProperty <http://edas#hasStreet> .
+
+<http://confOf#hasTopic> owl:equivalentProperty <http://edas#hasTopic> .
+
+<http://confOf#writtenBy> owl:equivalentProperty <http://edas#isWrittenBy> .
+

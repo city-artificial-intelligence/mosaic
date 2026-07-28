@@ -1,0 +1,48 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://edas#AcademicEvent> owl:equivalentClass <http://ekaw#Scientific_Event> .
+
+<http://edas#AcceptedPaper> owl:equivalentClass <http://ekaw#Accepted_Paper> .
+
+<http://edas#Conference> owl:equivalentClass <http://ekaw#Conference> .
+
+<http://edas#ConferenceDinner> owl:equivalentClass <http://ekaw#Conference_Paper> .
+
+<http://edas#ConferenceEvent> owl:equivalentClass <http://ekaw#Conference_Participant> .
+
+<http://edas#ConferenceSession> owl:equivalentClass <http://ekaw#Conference_Session> .
+
+<http://edas#Document> owl:equivalentClass <http://ekaw#Document> .
+
+<http://edas#Organization> owl:equivalentClass <http://ekaw#Organisation> .
+
+<http://edas#Paper> owl:equivalentClass <http://ekaw#Paper> .
+
+<http://edas#Person> owl:equivalentClass <http://ekaw#Person> .
+
+<http://edas#Presenter> owl:equivalentClass <http://ekaw#Presenter> .
+
+<http://edas#Programme> owl:equivalentClass <http://ekaw#Programme_Brochure> .
+
+<http://edas#PublishedPaper> owl:equivalentClass <http://ekaw#Submitted_Paper> .
+
+<http://edas#RejectedPaper> owl:equivalentClass <http://ekaw#Rejected_Paper> .
+
+<http://edas#Review> owl:equivalentClass <http://ekaw#Review> .
+
+<http://edas#SessionChair> owl:equivalentClass <http://ekaw#Session_Chair> .
+
+<http://edas#SocialEvent> owl:equivalentClass <http://ekaw#Social_Event> .
+
+<http://edas#TPCMember> owl:equivalentClass <http://ekaw#PC_Member> .
+
+<http://edas#Workshop> owl:equivalentClass <http://ekaw#Workshop> .
+
+<http://edas#forEvent> owl:equivalentProperty <http://ekaw#hasEvent> .
+
+<http://edas#isLocationOf> owl:equivalentProperty <http://ekaw#locationOf> .
+
+<http://edas#isReviewing> owl:equivalentProperty <http://ekaw#hasReview> .
+
+<http://edas#isWrittenBy> owl:equivalentProperty <http://ekaw#reviewWrittenBy> .
+

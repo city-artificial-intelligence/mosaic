@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://cmt#Author> owl:equivalentClass <http://iasted#Author> .
+
+<http://cmt#ConferenceChair> owl:equivalentClass <http://iasted#Conference_hall> .
+
+<http://cmt#ConferenceMember> owl:equivalentClass <http://iasted#Conference_Hiker> .
+
+<http://cmt#Document> owl:equivalentClass <http://iasted#Document> .
+
+<http://cmt#Person> owl:equivalentClass <http://iasted#Person> .
+
+<http://cmt#Review> owl:equivalentClass <http://iasted#Review> .
+
+<http://cmt#Reviewer> owl:equivalentClass <http://iasted#Reviewer> .
+

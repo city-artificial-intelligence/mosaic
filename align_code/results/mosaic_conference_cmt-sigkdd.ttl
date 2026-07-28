@@ -1,0 +1,28 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://cmt#Author> owl:equivalentClass <http://sigkdd#Author> .
+
+<http://cmt#Conference> owl:equivalentClass <http://sigkdd#Conference> .
+
+<http://cmt#ConferenceChair> owl:equivalentClass <http://sigkdd#Conference_hall> .
+
+<http://cmt#Document> owl:equivalentClass <http://sigkdd#Document> .
+
+<http://cmt#Paper> owl:equivalentClass <http://sigkdd#Paper> .
+
+<http://cmt#PaperAbstract> owl:equivalentClass <http://sigkdd#Abstract> .
+
+<http://cmt#Person> owl:equivalentClass <http://sigkdd#Person> .
+
+<http://cmt#ProgramCommittee> owl:equivalentClass <http://sigkdd#Program_Committee> .
+
+<http://cmt#ProgramCommitteeMember> owl:equivalentClass <http://sigkdd#Program_Committee_member> .
+
+<http://cmt#Review> owl:equivalentClass <http://sigkdd#Review> .
+
+<http://cmt#date> owl:equivalentProperty <http://sigkdd#Date> .
+
+<http://cmt#email> owl:equivalentProperty <http://sigkdd#E-mail> .
+
+<http://cmt#name> owl:equivalentProperty <http://sigkdd#Name> .
+

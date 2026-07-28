@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://vocabs.acdh.oeaw.ac.at/iadthesaurus/scheme/concept309> owl:sameAs <https://ark.frantiq.fr/ark:/26678/pcrtKei7jxhn32> .
+
+<https://vocabs.acdh.oeaw.ac.at/iadthesaurus/scheme/concept336> owl:sameAs <https://ark.frantiq.fr/ark:/26678/pcrthcbe2XySTb> .
+
+<https://vocabs.acdh.oeaw.ac.at/iadthesaurus/scheme/concept338> owl:sameAs <https://ark.frantiq.fr/ark:/26678/pcrtF9P4mbuyGk> .
+
+<https://vocabs.acdh.oeaw.ac.at/iadthesaurus/scheme/concept341> owl:sameAs <https://ark.frantiq.fr/ark:/26678/pcrts62Z2hl4ux> .
+
+<https://vocabs.acdh.oeaw.ac.at/iadthesaurus/scheme/concept369> owl:sameAs <https://ark.frantiq.fr/ark:/26678/pcrtms2OAv82PY> .
+
+<https://vocabs.acdh.oeaw.ac.at/iadthesaurus/scheme/concept387> owl:sameAs <https://ark.frantiq.fr/ark:/26678/pcrtxKnfzXYMxK> .
+

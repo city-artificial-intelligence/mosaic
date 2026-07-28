@@ -1,0 +1,5 @@
+SrcEntity	TgtEntity	Relation	Score
+http://confOf#Paper	http://sigkdd#Paper	=	1.0000
+http://confOf#Person	http://sigkdd#Person	=	1.0000
+http://confOf#Conference	http://sigkdd#Conference	=	1.0000
+http://confOf#Author	http://sigkdd#Author	=	1.0000

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:align="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#">
+<align:Alignment>
+  <align:xml>yes</align:xml>
+  <align:level>0</align:level>
+  <align:type>**</align:type>
+  <align:onto1>source</align:onto1>
+  <align:onto2>target</align:onto2>
+  <align:map>
+    <align:Cell rdf:about="#cell0">
+      <align:entity1 rdf:resource="http://ekaw#Conference_Participant"/>
+      <align:entity2 rdf:resource="http://iasted#Conference_activity"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7451</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell1">
+      <align:entity1 rdf:resource="http://ekaw#Document"/>
+      <align:entity2 rdf:resource="http://iasted#Document"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell2">
+      <align:entity1 rdf:resource="http://ekaw#Conference_Trip"/>
+      <align:entity2 rdf:resource="http://iasted#Conference_Hiker"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7433</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell3">
+      <align:entity1 rdf:resource="http://ekaw#Session"/>
+      <align:entity2 rdf:resource="http://iasted#Session"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell4">
+      <align:entity1 rdf:resource="http://ekaw#Conference_Session"/>
+      <align:entity2 rdf:resource="http://iasted#Conference_days"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7465</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell5">
+      <align:entity1 rdf:resource="http://ekaw#Student"/>
+      <align:entity2 rdf:resource="http://iasted#Student_lecturer"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7252</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell6">
+      <align:entity1 rdf:resource="http://ekaw#Presenter"/>
+      <align:entity2 rdf:resource="http://iasted#Hotel_presenter"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8127</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell7">
+      <align:entity1 rdf:resource="http://ekaw#Tutorial"/>
+      <align:entity2 rdf:resource="http://iasted#Tutorial"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell8">
+      <align:entity1 rdf:resource="http://ekaw#Review"/>
+      <align:entity2 rdf:resource="http://iasted#Review"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell9">
+      <align:entity1 rdf:resource="http://ekaw#Individual_Presentation"/>
+      <align:entity2 rdf:resource="http://iasted#Video_presentation"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7570</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell10">
+      <align:entity1 rdf:resource="http://ekaw#University"/>
+      <align:entity2 rdf:resource="http://iasted#Presenter_university"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7207</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell11">
+      <align:entity1 rdf:resource="http://ekaw#Conference_Paper"/>
+      <align:entity2 rdf:resource="http://iasted#Conference_state"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7159</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell12">
+      <align:entity1 rdf:resource="http://ekaw#Session_Chair"/>
+      <align:entity2 rdf:resource="http://iasted#Session_chair"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell13">
+      <align:entity1 rdf:resource="http://ekaw#Person"/>
+      <align:entity2 rdf:resource="http://iasted#Person"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell14">
+      <align:entity1 rdf:resource="http://ekaw#Conference_Proceedings"/>
+      <align:entity2 rdf:resource="http://iasted#Conference_building"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7293</align:measure>
+    </align:Cell>
+  </align:map>
+</align:Alignment>
+</rdf:RDF>

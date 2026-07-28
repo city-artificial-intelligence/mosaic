@@ -1,0 +1,3629 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://snomed.info/id/102680009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62338> .
+
+<http://snomed.info/id/102681008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67901> .
+
+<http://snomed.info/id/102682001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67900> .
+
+<http://snomed.info/id/102683006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62340> .
+
+<http://snomed.info/id/102743007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma242151> .
+
+<http://snomed.info/id/10296003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326949> .
+
+<http://snomed.info/id/10362008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma16028> .
+
+<http://snomed.info/id/10439005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321659> .
+
+<http://snomed.info/id/10534002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83355> .
+
+<http://snomed.info/id/105580009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma16204> .
+
+<http://snomed.info/id/105583006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67718> .
+
+<http://snomed.info/id/1075005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83551> .
+
+<http://snomed.info/id/109559009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma17528> .
+
+<http://snomed.info/id/110325005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322585> .
+
+<http://snomed.info/id/110326006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322586> .
+
+<http://snomed.info/id/110327002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322587> .
+
+<http://snomed.info/id/110328007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322589> .
+
+<http://snomed.info/id/110329004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322588> .
+
+<http://snomed.info/id/110494001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322600> .
+
+<http://snomed.info/id/110495000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322602> .
+
+<http://snomed.info/id/110496004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322603> .
+
+<http://snomed.info/id/110497008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322604> .
+
+<http://snomed.info/id/110499006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322605> .
+
+<http://snomed.info/id/110500002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322601> .
+
+<http://snomed.info/id/110501003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322606> .
+
+<http://snomed.info/id/110502005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322607> .
+
+<http://snomed.info/id/110521002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322610> .
+
+<http://snomed.info/id/110588006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323815> .
+
+<http://snomed.info/id/110589003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323822> .
+
+<http://snomed.info/id/110590007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323821> .
+
+<http://snomed.info/id/110591006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323820> .
+
+<http://snomed.info/id/110592004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323819> .
+
+<http://snomed.info/id/110593009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323818> .
+
+<http://snomed.info/id/110594003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323817> .
+
+<http://snomed.info/id/110595002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323816> .
+
+<http://snomed.info/id/110596001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327664> .
+
+<http://snomed.info/id/110600006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323814> .
+
+<http://snomed.info/id/110601005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323813> .
+
+<http://snomed.info/id/110607009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323811> .
+
+<http://snomed.info/id/110608004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323810> .
+
+<http://snomed.info/id/110626001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323937> .
+
+<http://snomed.info/id/110687007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma72613> .
+
+<http://snomed.info/id/110695006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma44793> .
+
+<http://snomed.info/id/110697003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67563> .
+
+<http://snomed.info/id/110707001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma48977> .
+
+<http://snomed.info/id/110709003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323406> .
+
+<http://snomed.info/id/11124005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma7233> .
+
+<http://snomed.info/id/11151008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62876> .
+
+<http://snomed.info/id/111993007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82792> .
+
+<http://snomed.info/id/112113009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83353> .
+
+<http://snomed.info/id/112115002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74647> .
+
+<http://snomed.info/id/112118000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83370> .
+
+<http://snomed.info/id/112130006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62869> .
+
+<http://snomed.info/id/112133008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62871> .
+
+<http://snomed.info/id/11267006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma264825> .
+
+<http://snomed.info/id/11281008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323797> .
+
+<http://snomed.info/id/113261001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14274> .
+
+<http://snomed.info/id/113299008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323934> .
+
+<http://snomed.info/id/113334004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326116> .
+
+<http://snomed.info/id/113335003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70574> .
+
+<http://snomed.info/id/113349007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma17272> .
+
+<http://snomed.info/id/113354003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325993> .
+
+<http://snomed.info/id/113355002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325994> .
+
+<http://snomed.info/id/113357005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327006> .
+
+<http://snomed.info/id/113360003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327005> .
+
+<http://snomed.info/id/11554009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma23864> .
+
+<http://snomed.info/id/115549006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63852> .
+
+<http://snomed.info/id/115567004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70977> .
+
+<http://snomed.info/id/115603005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325945> .
+
+<http://snomed.info/id/115604004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325946> .
+
+<http://snomed.info/id/115605003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325947> .
+
+<http://snomed.info/id/115606002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325948> .
+
+<http://snomed.info/id/115607006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325949> .
+
+<http://snomed.info/id/1156991003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma86573> .
+
+<http://snomed.info/id/116194001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63832> .
+
+<http://snomed.info/id/116257004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82741> .
+
+<http://snomed.info/id/116268004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82791> .
+
+<http://snomed.info/id/116353002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma52907> .
+
+<http://snomed.info/id/116354008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53169> .
+
+<http://snomed.info/id/1163574002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55805> .
+
+<http://snomed.info/id/1163576000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55807> .
+
+<http://snomed.info/id/1163577009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55806> .
+
+<http://snomed.info/id/11652002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83373> .
+
+<http://snomed.info/id/116668006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63959> .
+
+<http://snomed.info/id/116826008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326120> .
+
+<http://snomed.info/id/116827004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326121> .
+
+<http://snomed.info/id/116829001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326123> .
+
+<http://snomed.info/id/11698001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325991> .
+
+<http://snomed.info/id/11720006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323408> .
+
+<http://snomed.info/id/117293008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326140> .
+
+<http://snomed.info/id/117431005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326354> .
+
+<http://snomed.info/id/117497006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67161> .
+
+<http://snomed.info/id/117502008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326403> .
+
+<http://snomed.info/id/117503003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326369> .
+
+<http://snomed.info/id/117504009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326370> .
+
+<http://snomed.info/id/117505005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326401> .
+
+<http://snomed.info/id/117506006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326402> .
+
+<http://snomed.info/id/117507002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326404> .
+
+<http://snomed.info/id/117510009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326405> .
+
+<http://snomed.info/id/118252003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67905> .
+
+<http://snomed.info/id/118652008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63621> .
+
+<http://snomed.info/id/1186600003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma46683> .
+
+<http://snomed.info/id/11881003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma75446> .
+
+<http://snomed.info/id/118922002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma50638> .
+
+<http://snomed.info/id/118924001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma9917> .
+
+<http://snomed.info/id/11896004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74531> .
+
+<http://snomed.info/id/1216008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma7499> .
+
+<http://snomed.info/id/12176006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327003> .
+
+<http://snomed.info/id/1222650004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49580> .
+
+<http://snomed.info/id/122447002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14070> .
+
+<http://snomed.info/id/122448007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14068> .
+
+<http://snomed.info/id/122500009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84976> .
+
+<http://snomed.info/id/122504000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma9916> .
+
+<http://snomed.info/id/122772003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma52904> .
+
+<http://snomed.info/id/122861001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323792> .
+
+<http://snomed.info/id/123679006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma3728> .
+
+<http://snomed.info/id/123866000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54674> .
+
+<http://snomed.info/id/12399004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325992> .
+
+<http://snomed.info/id/12626005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67415> .
+
+<http://snomed.info/id/12627001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma85432> .
+
+<http://snomed.info/id/127854005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325968> .
+
+<http://snomed.info/id/127861009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma57070> .
+
+<http://snomed.info/id/127869006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma17398> .
+
+<http://snomed.info/id/127870007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma17402> .
+
+<http://snomed.info/id/127871006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma17399> .
+
+<http://snomed.info/id/127872004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma17403> .
+
+<http://snomed.info/id/127873009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323544> .
+
+<http://snomed.info/id/127874003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323545> .
+
+<http://snomed.info/id/127877005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323546> .
+
+<http://snomed.info/id/127878000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323547> .
+
+<http://snomed.info/id/127881005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327071> .
+
+<http://snomed.info/id/127883008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323549> .
+
+<http://snomed.info/id/127884002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323550> .
+
+<http://snomed.info/id/127885001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327815> .
+
+<http://snomed.info/id/127886000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323551> .
+
+<http://snomed.info/id/127887009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323552> .
+
+<http://snomed.info/id/127888004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323553> .
+
+<http://snomed.info/id/127889007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323554> .
+
+<http://snomed.info/id/127890003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323555> .
+
+<http://snomed.info/id/127891004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323556> .
+
+<http://snomed.info/id/127892006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323557> .
+
+<http://snomed.info/id/127893001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323558> .
+
+<http://snomed.info/id/127894007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323559> .
+
+<http://snomed.info/id/127895008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323560> .
+
+<http://snomed.info/id/127896009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323561> .
+
+<http://snomed.info/id/127897000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323562> .
+
+<http://snomed.info/id/127915008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83525> .
+
+<http://snomed.info/id/127923005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma5951> .
+
+<http://snomed.info/id/127924004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323411> .
+
+<http://snomed.info/id/127925003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma276903> .
+
+<http://snomed.info/id/127926002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma276928> .
+
+<http://snomed.info/id/127942009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326395> .
+
+<http://snomed.info/id/127950000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma24945> .
+
+<http://snomed.info/id/127958007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma85545> .
+
+<http://snomed.info/id/1284826008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma276377> .
+
+<http://snomed.info/id/128510008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma46930> .
+
+<http://snomed.info/id/12858002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323416> .
+
+<http://snomed.info/id/128979005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49928> .
+
+<http://snomed.info/id/128980008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49929> .
+
+<http://snomed.info/id/1290292000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma259809> .
+
+<http://snomed.info/id/1290293005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma259811> .
+
+<http://snomed.info/id/129246009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323779> .
+
+<http://snomed.info/id/12945004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83607> .
+
+<http://snomed.info/id/1311000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70718> .
+
+<http://snomed.info/id/131190003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma23463> .
+
+<http://snomed.info/id/13202006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14355> .
+
+<http://snomed.info/id/13515001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma15845> .
+
+<http://snomed.info/id/13526007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325990> .
+
+<http://snomed.info/id/1356814005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma43782> .
+
+<http://snomed.info/id/13604002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma293444> .
+
+<http://snomed.info/id/1370913007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325972> .
+
+<http://snomed.info/id/13732004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma60992> .
+
+<http://snomed.info/id/13803006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70022> .
+
+<http://snomed.info/id/1381725004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma61792> .
+
+<http://snomed.info/id/14017007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327002> .
+
+<http://snomed.info/id/14125007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82764> .
+
+<http://snomed.info/id/14153007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67259> .
+
+<http://snomed.info/id/14502000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma32434> .
+
+<http://snomed.info/id/14609003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326765> .
+
+<http://snomed.info/id/1471007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67303> .
+
+<http://snomed.info/id/14793004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62861> .
+
+<http://snomed.info/id/14811009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70995> .
+
+<http://snomed.info/id/14873000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74402> .
+
+<http://snomed.info/id/14922009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326999> .
+
+<http://snomed.info/id/14971004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82756> .
+
+<http://snomed.info/id/1516009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323417> .
+
+<http://snomed.info/id/15409002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma86553> .
+
+<http://snomed.info/id/15433008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83030> .
+
+<http://snomed.info/id/15472007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82744> .
+
+<http://snomed.info/id/15622002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83524> .
+
+<http://snomed.info/id/15754000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma264828> .
+
+<http://snomed.info/id/15931004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma52586> .
+
+<http://snomed.info/id/15982001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66848> .
+
+<http://snomed.info/id/16312006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326001> .
+
+<http://snomed.info/id/16378004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62851> .
+
+<http://snomed.info/id/16628008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83357> .
+
+<http://snomed.info/id/16657007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma20172> .
+
+<http://snomed.info/id/16675008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55074> .
+
+<http://snomed.info/id/16779009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83506> .
+
+<http://snomed.info/id/16811007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma59785> .
+
+<http://snomed.info/id/16868009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84172> .
+
+<http://snomed.info/id/16980002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83586> .
+
+<http://snomed.info/id/17295002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83543> .
+
+<http://snomed.info/id/172994001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323418> .
+
+<http://snomed.info/id/17512002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66783> .
+
+<http://snomed.info/id/1780008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326992> .
+
+<http://snomed.info/id/17846008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14612> .
+
+<http://snomed.info/id/17863007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma18650> .
+
+<http://snomed.info/id/17897000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325989> .
+
+<http://snomed.info/id/180844001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326167> .
+
+<http://snomed.info/id/18128003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63024> .
+
+<http://snomed.info/id/181347005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323778> .
+
+<http://snomed.info/id/181349008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323777> .
+
+<http://snomed.info/id/181381004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma50848> .
+
+<http://snomed.info/id/181506008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322366> .
+
+<http://snomed.info/id/181570003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322338> .
+
+<http://snomed.info/id/18166000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma77861> .
+
+<http://snomed.info/id/181780001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma42430> .
+
+<http://snomed.info/id/181782009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma45001> .
+
+<http://snomed.info/id/181788008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma45166> .
+
+<http://snomed.info/id/181895009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma23981> .
+
+<http://snomed.info/id/181902000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma24056> .
+
+<http://snomed.info/id/181904004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma24059> .
+
+<http://snomed.info/id/18208007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326990> .
+
+<http://snomed.info/id/182085001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma43655> .
+
+<http://snomed.info/id/182086000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma43656> .
+
+<http://snomed.info/id/182091004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma35508> .
+
+<http://snomed.info/id/182226006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma44357> .
+
+<http://snomed.info/id/182228007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma44358> .
+
+<http://snomed.info/id/182229004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma44360> .
+
+<http://snomed.info/id/182230009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma44361> .
+
+<http://snomed.info/id/182231008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma44362> .
+
+<http://snomed.info/id/182266005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323767> .
+
+<http://snomed.info/id/182269003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323766> .
+
+<http://snomed.info/id/182272005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323765> .
+
+<http://snomed.info/id/182275007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323764> .
+
+<http://snomed.info/id/182277004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323763> .
+
+<http://snomed.info/id/182321004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323761> .
+
+<http://snomed.info/id/182329002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma57777> .
+
+<http://snomed.info/id/182330007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma57778> .
+
+<http://snomed.info/id/182402006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323754> .
+
+<http://snomed.info/id/182403001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323753> .
+
+<http://snomed.info/id/182404007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323752> .
+
+<http://snomed.info/id/182407000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323751> .
+
+<http://snomed.info/id/182412004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323748> .
+
+<http://snomed.info/id/182413009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323747> .
+
+<http://snomed.info/id/182447007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma44624> .
+
+<http://snomed.info/id/182448002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma44625> .
+
+<http://snomed.info/id/182450005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma44638> .
+
+<http://snomed.info/id/182451009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma44639> .
+
+<http://snomed.info/id/18288009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma81101> .
+
+<http://snomed.info/id/18470003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84116> .
+
+<http://snomed.info/id/18716004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83731> .
+
+<http://snomed.info/id/18847002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83123> .
+
+<http://snomed.info/id/19160003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82804> .
+
+<http://snomed.info/id/19205004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83372> .
+
+<http://snomed.info/id/19238008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82780> .
+
+<http://snomed.info/id/19275003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326109> .
+
+<http://snomed.info/id/19394005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326443> .
+
+<http://snomed.info/id/19992001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326444> .
+
+<http://snomed.info/id/20221000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67123> .
+
+<http://snomed.info/id/20672004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82775> .
+
+<http://snomed.info/id/20684002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma24961> .
+
+<http://snomed.info/id/21476003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma69225> .
+
+<http://snomed.info/id/22015001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323743> .
+
+<http://snomed.info/id/22056003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70716> .
+
+<http://snomed.info/id/22244007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63170> .
+
+<http://snomed.info/id/22273005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323742> .
+
+<http://snomed.info/id/22374001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326984> .
+
+<http://snomed.info/id/2255006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma45636> .
+
+<http://snomed.info/id/22970000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326983> .
+
+<http://snomed.info/id/23038005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67840> .
+
+<http://snomed.info/id/23230007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma15072> .
+
+<http://snomed.info/id/2331003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82737> .
+
+<http://snomed.info/id/2334006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma284558> .
+
+<http://snomed.info/id/23592000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83555> .
+
+<http://snomed.info/id/23821005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66779> .
+
+<http://snomed.info/id/24020000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74527> .
+
+<http://snomed.info/id/24031008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84170> .
+
+<http://snomed.info/id/24065009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327062> .
+
+<http://snomed.info/id/24151005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84377> .
+
+<http://snomed.info/id/24259000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70972> .
+
+<http://snomed.info/id/2436009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14353> .
+
+<http://snomed.info/id/243951005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327099> .
+
+<http://snomed.info/id/243963000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma9687> .
+
+<http://snomed.info/id/243964006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma16918> .
+
+<http://snomed.info/id/243974009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14712> .
+
+<http://snomed.info/id/244012006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321667> .
+
+<http://snomed.info/id/244017000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327995> .
+
+<http://snomed.info/id/244018005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327996> .
+
+<http://snomed.info/id/244023005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma295656> .
+
+<http://snomed.info/id/244025003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327886> .
+
+<http://snomed.info/id/244026002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323738> .
+
+<http://snomed.info/id/244027006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323737> .
+
+<http://snomed.info/id/244028001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323736> .
+
+<http://snomed.info/id/244072003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322335> .
+
+<http://snomed.info/id/244099001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322360> .
+
+<http://snomed.info/id/244116006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326056> .
+
+<http://snomed.info/id/244117002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322351> .
+
+<http://snomed.info/id/244127008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322350> .
+
+<http://snomed.info/id/244128003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322363> .
+
+<http://snomed.info/id/244159001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma281371> .
+
+<http://snomed.info/id/244192007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327059> .
+
+<http://snomed.info/id/24422004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74547> .
+
+<http://snomed.info/id/244221000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49688> .
+
+<http://snomed.info/id/244229003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323488> .
+
+<http://snomed.info/id/244230008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323489> .
+
+<http://snomed.info/id/244248004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66328> .
+
+<http://snomed.info/id/244257005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66327> .
+
+<http://snomed.info/id/244291009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma69797> .
+
+<http://snomed.info/id/244313009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma23179> .
+
+<http://snomed.info/id/244314003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323487> .
+
+<http://snomed.info/id/244340009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma69722> .
+
+<http://snomed.info/id/244400002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323486> .
+
+<http://snomed.info/id/244401003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323485> .
+
+<http://snomed.info/id/244415001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323735> .
+
+<http://snomed.info/id/244439006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322072> .
+
+<http://snomed.info/id/244451008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53471> .
+
+<http://snomed.info/id/244557009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma44349> .
+
+<http://snomed.info/id/244558004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma35213> .
+
+<http://snomed.info/id/244561003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma35220> .
+
+<http://snomed.info/id/244562005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma35221> .
+
+<http://snomed.info/id/244563000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma73267> .
+
+<http://snomed.info/id/244616005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma38406> .
+
+<http://snomed.info/id/244649001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma44080> .
+
+<http://snomed.info/id/244686000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53171> .
+
+<http://snomed.info/id/244694007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323463> .
+
+<http://snomed.info/id/244695008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323464> .
+
+<http://snomed.info/id/244724009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71440> .
+
+<http://snomed.info/id/244801005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma46684> .
+
+<http://snomed.info/id/244939001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323462> .
+
+<http://snomed.info/id/244940004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma13332> .
+
+<http://snomed.info/id/244941000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma13334> .
+
+<http://snomed.info/id/244942007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma13333> .
+
+<http://snomed.info/id/245051005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54008> .
+
+<http://snomed.info/id/245052003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54053> .
+
+<http://snomed.info/id/245054002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54068> .
+
+<http://snomed.info/id/245055001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54038> .
+
+<http://snomed.info/id/245056000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma47545> .
+
+<http://snomed.info/id/245062005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma48025> .
+
+<http://snomed.info/id/245063000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma48040> .
+
+<http://snomed.info/id/245065007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323722> .
+
+<http://snomed.info/id/245066008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma48085> .
+
+<http://snomed.info/id/245068009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma47890> .
+
+<http://snomed.info/id/245069001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma47905> .
+
+<http://snomed.info/id/245070000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma47920> .
+
+<http://snomed.info/id/245072008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323721> .
+
+<http://snomed.info/id/245073003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323720> .
+
+<http://snomed.info/id/245074009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma47995> .
+
+<http://snomed.info/id/245075005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma45816> .
+
+<http://snomed.info/id/245076006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma47860> .
+
+<http://snomed.info/id/245077002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma47875> .
+
+<http://snomed.info/id/245080001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323719> .
+
+<http://snomed.info/id/245082009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma48354> .
+
+<http://snomed.info/id/245083004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma48339> .
+
+<http://snomed.info/id/245084005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma48324> .
+
+<http://snomed.info/id/245085006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma48399> .
+
+<http://snomed.info/id/245086007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma48384> .
+
+<http://snomed.info/id/245087003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma48369> .
+
+<http://snomed.info/id/245088008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma48444> .
+
+<http://snomed.info/id/245089000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma48429> .
+
+<http://snomed.info/id/245090009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma48489> .
+
+<http://snomed.info/id/245091008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma48459> .
+
+<http://snomed.info/id/245092001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323717> .
+
+<http://snomed.info/id/245093006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323716> .
+
+<http://snomed.info/id/245094000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49310> .
+
+<http://snomed.info/id/245095004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma48144> .
+
+<http://snomed.info/id/245096003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma48159> .
+
+<http://snomed.info/id/245097007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323715> .
+
+<http://snomed.info/id/245102005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma38153> .
+
+<http://snomed.info/id/245103000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63224> .
+
+<http://snomed.info/id/245104006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma38436> .
+
+<http://snomed.info/id/245124005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma40704> .
+
+<http://snomed.info/id/245125006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma40719> .
+
+<http://snomed.info/id/245171004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323713> .
+
+<http://snomed.info/id/245172006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma22300> .
+
+<http://snomed.info/id/245173001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma48234> .
+
+<http://snomed.info/id/245176009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma301241> .
+
+<http://snomed.info/id/245180004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma46885> .
+
+<http://snomed.info/id/245182007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma46960> .
+
+<http://snomed.info/id/245183002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma46990> .
+
+<http://snomed.info/id/245198000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma47140> .
+
+<http://snomed.info/id/245199008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma47155> .
+
+<http://snomed.info/id/245202003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma47185> .
+
+<http://snomed.info/id/245211003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma51156> .
+
+<http://snomed.info/id/245213000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma47215> .
+
+<http://snomed.info/id/245215007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323701> .
+
+<http://snomed.info/id/245221006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma47275> .
+
+<http://snomed.info/id/245222004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma47290> .
+
+<http://snomed.info/id/245244009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323700> .
+
+<http://snomed.info/id/245246006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323699> .
+
+<http://snomed.info/id/245247002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323698> .
+
+<http://snomed.info/id/245248007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323697> .
+
+<http://snomed.info/id/245249004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323696> .
+
+<http://snomed.info/id/245253002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323419> .
+
+<http://snomed.info/id/245256005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70776> .
+
+<http://snomed.info/id/245270005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71749> .
+
+<http://snomed.info/id/245275000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma233430> .
+
+<http://snomed.info/id/245276004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma276755> .
+
+<http://snomed.info/id/245277008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma233426> .
+
+<http://snomed.info/id/245278003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma233422> .
+
+<http://snomed.info/id/245283006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71766> .
+
+<http://snomed.info/id/245286003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71787> .
+
+<http://snomed.info/id/245290001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71801> .
+
+<http://snomed.info/id/245291002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71813> .
+
+<http://snomed.info/id/245292009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71841> .
+
+<http://snomed.info/id/245293004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323954> .
+
+<http://snomed.info/id/245295006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71819> .
+
+<http://snomed.info/id/245297003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71822> .
+
+<http://snomed.info/id/245298008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71820> .
+
+<http://snomed.info/id/245299000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71831> .
+
+<http://snomed.info/id/245300008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71825> .
+
+<http://snomed.info/id/245302000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71826> .
+
+<http://snomed.info/id/245303005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71828> .
+
+<http://snomed.info/id/245304004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71823> .
+
+<http://snomed.info/id/245305003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71833> .
+
+<http://snomed.info/id/245308001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323956> .
+
+<http://snomed.info/id/245310004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71830> .
+
+<http://snomed.info/id/245312007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71844> .
+
+<http://snomed.info/id/245313002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71845> .
+
+<http://snomed.info/id/245314008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71846> .
+
+<http://snomed.info/id/245315009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71847> .
+
+<http://snomed.info/id/245316005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71849> .
+
+<http://snomed.info/id/245317001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71850> .
+
+<http://snomed.info/id/245321008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323420> .
+
+<http://snomed.info/id/245322001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323422> .
+
+<http://snomed.info/id/245323006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323421> .
+
+<http://snomed.info/id/245324000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323424> .
+
+<http://snomed.info/id/245341003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma5950> .
+
+<http://snomed.info/id/245375002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma15834> .
+
+<http://snomed.info/id/245376001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma15833> .
+
+<http://snomed.info/id/245378000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma13361> .
+
+<http://snomed.info/id/245381005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14517> .
+
+<http://snomed.info/id/245387009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323426> .
+
+<http://snomed.info/id/245388004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323427> .
+
+<http://snomed.info/id/245393001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma79878> .
+
+<http://snomed.info/id/245409005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma45583> .
+
+<http://snomed.info/id/245437003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66304> .
+
+<http://snomed.info/id/245460006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323690> .
+
+<http://snomed.info/id/245462003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323689> .
+
+<http://snomed.info/id/245463008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323688> .
+
+<http://snomed.info/id/245464002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323687> .
+
+<http://snomed.info/id/245483009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma23182> .
+
+<http://snomed.info/id/245486001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma224876> .
+
+<http://snomed.info/id/245487005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma224878> .
+
+<http://snomed.info/id/245526002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67722> .
+
+<http://snomed.info/id/245531000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323433> .
+
+<http://snomed.info/id/245540001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55558> .
+
+<http://snomed.info/id/245542009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55559> .
+
+<http://snomed.info/id/245543004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma75150> .
+
+<http://snomed.info/id/245545006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326728> .
+
+<http://snomed.info/id/245699009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323437> .
+
+<http://snomed.info/id/245700005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma56758> .
+
+<http://snomed.info/id/245701009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma56660> .
+
+<http://snomed.info/id/245702002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327187> .
+
+<http://snomed.info/id/245704001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma75113> .
+
+<http://snomed.info/id/245739001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327195> .
+
+<http://snomed.info/id/245742007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327196> .
+
+<http://snomed.info/id/245774000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323686> .
+
+<http://snomed.info/id/245781007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323685> .
+
+<http://snomed.info/id/245783005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323684> .
+
+<http://snomed.info/id/245822007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323460> .
+
+<http://snomed.info/id/245832000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma281288> .
+
+<http://snomed.info/id/245838001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323680> .
+
+<http://snomed.info/id/245839009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323679> .
+
+<http://snomed.info/id/245841005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma59783> .
+
+<http://snomed.info/id/245842003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma59784> .
+
+<http://snomed.info/id/245928007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma44684> .
+
+<http://snomed.info/id/245942004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323671> .
+
+<http://snomed.info/id/245943009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323670> .
+
+<http://snomed.info/id/246011001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma22847> .
+
+<http://snomed.info/id/246018007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327090> .
+
+<http://snomed.info/id/246020005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327091> .
+
+<http://snomed.info/id/246278005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma9657> .
+
+<http://snomed.info/id/24696004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327153> .
+
+<http://snomed.info/id/24735009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63879> .
+
+<http://snomed.info/id/24826007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63880> .
+
+<http://snomed.info/id/24851008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74412> .
+
+<http://snomed.info/id/24884008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84373> .
+
+<http://snomed.info/id/25270003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19617> .
+
+<http://snomed.info/id/25475005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326980> .
+
+<http://snomed.info/id/25494000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82798> .
+
+<http://snomed.info/id/255337007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84044> .
+
+<http://snomed.info/id/255536004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma23862> .
+
+<http://snomed.info/id/255554000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74535> .
+
+<http://snomed.info/id/255765007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma281395> .
+
+<http://snomed.info/id/25610001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325988> .
+
+<http://snomed.info/id/256662005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma20276> .
+
+<http://snomed.info/id/256860004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma312981> .
+
+<http://snomed.info/id/256885008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55670> .
+
+<http://snomed.info/id/256925006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma59652> .
+
+<http://snomed.info/id/25761002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82752> .
+
+<http://snomed.info/id/2579009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84371> .
+
+<http://snomed.info/id/25841003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326446> .
+
+<http://snomed.info/id/259100002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84786> .
+
+<http://snomed.info/id/25930004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma59799> .
+
+<http://snomed.info/id/259442006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63023> .
+
+<http://snomed.info/id/259446009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82787> .
+
+<http://snomed.info/id/25949000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma72437> .
+
+<http://snomed.info/id/259655000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82803> .
+
+<http://snomed.info/id/259713004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326979> .
+
+<http://snomed.info/id/260515002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14368> .
+
+<http://snomed.info/id/260521003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74549> .
+
+<http://snomed.info/id/260528009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74528> .
+
+<http://snomed.info/id/260750007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma3729> .
+
+<http://snomed.info/id/260872001> owl:equivalentClass dcterms:Agent .
+
+<http://snomed.info/id/261063000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327157> .
+
+<http://snomed.info/id/261074009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74548> .
+
+<http://snomed.info/id/261082009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327159> .
+
+<http://snomed.info/id/26193009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma72592> .
+
+<http://snomed.info/id/263276005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma9653> .
+
+<http://snomed.info/id/263277001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326005> .
+
+<http://snomed.info/id/263285005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326006> .
+
+<http://snomed.info/id/263298001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326007> .
+
+<http://snomed.info/id/263304005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326008> .
+
+<http://snomed.info/id/263329004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10139> .
+
+<http://snomed.info/id/263330009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10141> .
+
+<http://snomed.info/id/263331008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10177> .
+
+<http://snomed.info/id/263332001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10198> .
+
+<http://snomed.info/id/263333006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10219> .
+
+<http://snomed.info/id/263335004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10240> .
+
+<http://snomed.info/id/263336003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10261> .
+
+<http://snomed.info/id/263337007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10282> .
+
+<http://snomed.info/id/263338002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10303> .
+
+<http://snomed.info/id/263339005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10324> .
+
+<http://snomed.info/id/263356002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma20074> .
+
+<http://snomed.info/id/263365009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327181> .
+
+<http://snomed.info/id/263369003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327182> .
+
+<http://snomed.info/id/263370002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327183> .
+
+<http://snomed.info/id/263371003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327184> .
+
+<http://snomed.info/id/263372005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327185> .
+
+<http://snomed.info/id/263379001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327186> .
+
+<http://snomed.info/id/2639009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326082> .
+
+<http://snomed.info/id/263979008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma27980> .
+
+<http://snomed.info/id/263980006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327199> .
+
+<http://snomed.info/id/264014000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma17046> .
+
+<http://snomed.info/id/264016003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma276990> .
+
+<http://snomed.info/id/264054003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327209> .
+
+<http://snomed.info/id/264100003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327215> .
+
+<http://snomed.info/id/264163004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327222> .
+
+<http://snomed.info/id/264187002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327223> .
+
+<http://snomed.info/id/264190008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma65001> .
+
+<http://snomed.info/id/264198001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma5883> .
+
+<http://snomed.info/id/264200007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327226> .
+
+<http://snomed.info/id/264235009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327231> .
+
+<http://snomed.info/id/264497002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321691> .
+
+<http://snomed.info/id/26761006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66867> .
+
+<http://snomed.info/id/268005002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327142> .
+
+<http://snomed.info/id/26859008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83689> .
+
+<http://snomed.info/id/27112006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67935> .
+
+<http://snomed.info/id/27197004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma20113> .
+
+<http://snomed.info/id/27237009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma46573> .
+
+<http://snomed.info/id/272620000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327994> .
+
+<http://snomed.info/id/272689002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323911> .
+
+<http://snomed.info/id/272692003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327238> .
+
+<http://snomed.info/id/272693008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321693> .
+
+<http://snomed.info/id/272694002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327239> .
+
+<http://snomed.info/id/272708001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma23975> .
+
+<http://snomed.info/id/272713002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma43653> .
+
+<http://snomed.info/id/27378009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82768> .
+
+<http://snomed.info/id/27604002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84190> .
+
+<http://snomed.info/id/276909000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323913> .
+
+<http://snomed.info/id/276920000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14630> .
+
+<http://snomed.info/id/276943009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14637> .
+
+<http://snomed.info/id/276961000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327241> .
+
+<http://snomed.info/id/2771005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma15896> .
+
+<http://snomed.info/id/277150000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327204> .
+
+<http://snomed.info/id/277151001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327205> .
+
+<http://snomed.info/id/27770000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66781> .
+
+<http://snomed.info/id/277712000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321651> .
+
+<http://snomed.info/id/277717006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327244> .
+
+<http://snomed.info/id/277721004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0329292> .
+
+<http://snomed.info/id/277724007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327245> .
+
+<http://snomed.info/id/277925004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma7169> .
+
+<http://snomed.info/id/277926003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma7168> .
+
+<http://snomed.info/id/278101009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma79467> .
+
+<http://snomed.info/id/278145009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326975> .
+
+<http://snomed.info/id/278325008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma6005> .
+
+<http://snomed.info/id/278326009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma6006> .
+
+<http://snomed.info/id/278327000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma6007> .
+
+<http://snomed.info/id/278328005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma6008> .
+
+<http://snomed.info/id/27834005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326264> .
+
+<http://snomed.info/id/278362005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326266> .
+
+<http://snomed.info/id/278475009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327246> .
+
+<http://snomed.info/id/278476005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327247> .
+
+<http://snomed.info/id/27852005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84235> .
+
+<http://snomed.info/id/278748001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62420> .
+
+<http://snomed.info/id/278789003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma16428> .
+
+<http://snomed.info/id/278827006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma75024> .
+
+<http://snomed.info/id/278828001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma75023> .
+
+<http://snomed.info/id/278842009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327248> .
+
+<http://snomed.info/id/27888000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67095> .
+
+<http://snomed.info/id/278885000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma65244> .
+
+<http://snomed.info/id/278888003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma65243> .
+
+<http://snomed.info/id/279005008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62112> .
+
+<http://snomed.info/id/279006009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327252> .
+
+<http://snomed.info/id/279013009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma20251> .
+
+<http://snomed.info/id/279129004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327255> .
+
+<http://snomed.info/id/279133006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma9585> .
+
+<http://snomed.info/id/279134000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327259> .
+
+<http://snomed.info/id/279135004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327260> .
+
+<http://snomed.info/id/279137007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma12765> .
+
+<http://snomed.info/id/279138002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma5842> .
+
+<http://snomed.info/id/279141006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma61217> .
+
+<http://snomed.info/id/279142004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma61218> .
+
+<http://snomed.info/id/279143009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma61215> .
+
+<http://snomed.info/id/279194002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62419> .
+
+<http://snomed.info/id/279195001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62418> .
+
+<http://snomed.info/id/279196000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma256196> .
+
+<http://snomed.info/id/279197009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma80184> .
+
+<http://snomed.info/id/279198004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma242193> .
+
+<http://snomed.info/id/279215006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma72719> .
+
+<http://snomed.info/id/279220006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321695> .
+
+<http://snomed.info/id/279239001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49450> .
+
+<http://snomed.info/id/279240004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327265> .
+
+<http://snomed.info/id/279241000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326068> .
+
+<http://snomed.info/id/279243002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14608> .
+
+<http://snomed.info/id/279254007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma78478> .
+
+<http://snomed.info/id/279258005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma242178> .
+
+<http://snomed.info/id/279268000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma50773> .
+
+<http://snomed.info/id/279276003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma77589> .
+
+<http://snomed.info/id/279300007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma61959> .
+
+<http://snomed.info/id/279303009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327267> .
+
+<http://snomed.info/id/279308000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma77693> .
+
+<http://snomed.info/id/27933003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326976> .
+
+<http://snomed.info/id/279343004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83757> .
+
+<http://snomed.info/id/279349000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83743> .
+
+<http://snomed.info/id/279351001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83773> .
+
+<http://snomed.info/id/279355005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83749> .
+
+<http://snomed.info/id/279392005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327270> .
+
+<http://snomed.info/id/279396008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma18668> .
+
+<http://snomed.info/id/279397004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma15888> .
+
+<http://snomed.info/id/279415009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67992> .
+
+<http://snomed.info/id/279416005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63193> .
+
+<http://snomed.info/id/279418006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327275> .
+
+<http://snomed.info/id/279424000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0329212> .
+
+<http://snomed.info/id/279461009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326670> .
+
+<http://snomed.info/id/279465000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19710> .
+
+<http://snomed.info/id/279466004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19711> .
+
+<http://snomed.info/id/279470007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma85270> .
+
+<http://snomed.info/id/279471006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma85271> .
+
+<http://snomed.info/id/279473009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326671> .
+
+<http://snomed.info/id/279478000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326665> .
+
+<http://snomed.info/id/279487009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326083> .
+
+<http://snomed.info/id/279488004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326085> .
+
+<http://snomed.info/id/279511003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327283> .
+
+<http://snomed.info/id/279512005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327284> .
+
+<http://snomed.info/id/279513000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327285> .
+
+<http://snomed.info/id/279514006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327286> .
+
+<http://snomed.info/id/279515007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327287> .
+
+<http://snomed.info/id/279522004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55282> .
+
+<http://snomed.info/id/279523009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55283> .
+
+<http://snomed.info/id/279527005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327288> .
+
+<http://snomed.info/id/279528000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327289> .
+
+<http://snomed.info/id/279529008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327290> .
+
+<http://snomed.info/id/279530003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327291> .
+
+<http://snomed.info/id/279535008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma76674> .
+
+<http://snomed.info/id/279536009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55339> .
+
+<http://snomed.info/id/279537000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma76673> .
+
+<http://snomed.info/id/279541001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55401> .
+
+<http://snomed.info/id/279544009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55402> .
+
+<http://snomed.info/id/279545005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55403> .
+
+<http://snomed.info/id/279555009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55139> .
+
+<http://snomed.info/id/279560008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55238> .
+
+<http://snomed.info/id/279574001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327293> .
+
+<http://snomed.info/id/279575000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327294> .
+
+<http://snomed.info/id/279577008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327295> .
+
+<http://snomed.info/id/279578003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327297> .
+
+<http://snomed.info/id/279580009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327299> .
+
+<http://snomed.info/id/279581008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327300> .
+
+<http://snomed.info/id/279593004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327301> .
+
+<http://snomed.info/id/279595006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19891> .
+
+<http://snomed.info/id/279601003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19846> .
+
+<http://snomed.info/id/279603000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327302> .
+
+<http://snomed.info/id/279628008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327304> .
+
+<http://snomed.info/id/279645003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323917> .
+
+<http://snomed.info/id/279648001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327307> .
+
+<http://snomed.info/id/279649009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327308> .
+
+<http://snomed.info/id/279650009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327309> .
+
+<http://snomed.info/id/279666006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19380> .
+
+<http://snomed.info/id/279667002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327312> .
+
+<http://snomed.info/id/279668007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327313> .
+
+<http://snomed.info/id/279669004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327314> .
+
+<http://snomed.info/id/279670003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19439> .
+
+<http://snomed.info/id/279671004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19421> .
+
+<http://snomed.info/id/279672006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19422> .
+
+<http://snomed.info/id/279674007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19393> .
+
+<http://snomed.info/id/279676009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19506> .
+
+<http://snomed.info/id/279677000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19513> .
+
+<http://snomed.info/id/279684008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327315> .
+
+<http://snomed.info/id/279686005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74196> .
+
+<http://snomed.info/id/279688006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326084> .
+
+<http://snomed.info/id/279694003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19590> .
+
+<http://snomed.info/id/279699008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327316> .
+
+<http://snomed.info/id/279700009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327317> .
+
+<http://snomed.info/id/279701008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327318> .
+
+<http://snomed.info/id/279704000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327319> .
+
+<http://snomed.info/id/279706003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19587> .
+
+<http://snomed.info/id/279714009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327320> .
+
+<http://snomed.info/id/279731002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma77741> .
+
+<http://snomed.info/id/279736007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma56451> .
+
+<http://snomed.info/id/279759001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322161> .
+
+<http://snomed.info/id/279765001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma60216> .
+
+<http://snomed.info/id/279766000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma60210> .
+
+<http://snomed.info/id/279767009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma60204> .
+
+<http://snomed.info/id/279768004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma56958> .
+
+<http://snomed.info/id/279798006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71835> .
+
+<http://snomed.info/id/279800004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71785> .
+
+<http://snomed.info/id/279801000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321478> .
+
+<http://snomed.info/id/279804008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71851> .
+
+<http://snomed.info/id/279807001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323958> .
+
+<http://snomed.info/id/279808006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326627> .
+
+<http://snomed.info/id/279813005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma276770> .
+
+<http://snomed.info/id/279814004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma233091> .
+
+<http://snomed.info/id/279816002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71769> .
+
+<http://snomed.info/id/279837005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma56454> .
+
+<http://snomed.info/id/279856000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma77823> .
+
+<http://snomed.info/id/279862005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327327> .
+
+<http://snomed.info/id/279887003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322145> .
+
+<http://snomed.info/id/279888008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19113> .
+
+<http://snomed.info/id/279905005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma18591> .
+
+<http://snomed.info/id/279908007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322142> .
+
+<http://snomed.info/id/279923002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321845> .
+
+<http://snomed.info/id/279958000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14474> .
+
+<http://snomed.info/id/279962006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma17529> .
+
+<http://snomed.info/id/279963001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322141> .
+
+<http://snomed.info/id/279964007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327328> .
+
+<http://snomed.info/id/279978008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327329> .
+
+<http://snomed.info/id/279984006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14521> .
+
+<http://snomed.info/id/279985007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322140> .
+
+<http://snomed.info/id/280004006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327338> .
+
+<http://snomed.info/id/280005007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327339> .
+
+<http://snomed.info/id/280007004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327340> .
+
+<http://snomed.info/id/280009001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327342> .
+
+<http://snomed.info/id/280010006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327343> .
+
+<http://snomed.info/id/280033007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322138> .
+
+<http://snomed.info/id/280042000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322137> .
+
+<http://snomed.info/id/280043005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322136> .
+
+<http://snomed.info/id/280044004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321971> .
+
+<http://snomed.info/id/280045003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321972> .
+
+<http://snomed.info/id/280046002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321561> .
+
+<http://snomed.info/id/280047006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322133> .
+
+<http://snomed.info/id/280048001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322134> .
+
+<http://snomed.info/id/280049009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322135> .
+
+<http://snomed.info/id/280050009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327345> .
+
+<http://snomed.info/id/280054000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327346> .
+
+<http://snomed.info/id/280055004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma58334> .
+
+<http://snomed.info/id/280056003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma58335> .
+
+<http://snomed.info/id/280059005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327348> .
+
+<http://snomed.info/id/280064009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326657> .
+
+<http://snomed.info/id/280065005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327349> .
+
+<http://snomed.info/id/280081000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327350> .
+
+<http://snomed.info/id/280082007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma37325> .
+
+<http://snomed.info/id/280112001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma21166> .
+
+<http://snomed.info/id/280120004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322379> .
+
+<http://snomed.info/id/280166009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54572> .
+
+<http://snomed.info/id/280175006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54608> .
+
+<http://snomed.info/id/280185007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma52610> .
+
+<http://snomed.info/id/280186008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53418> .
+
+<http://snomed.info/id/280191009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53419> .
+
+<http://snomed.info/id/280217002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma52624> .
+
+<http://snomed.info/id/280221009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma52641> .
+
+<http://snomed.info/id/280222002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma52671> .
+
+<http://snomed.info/id/280228003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma52691> .
+
+<http://snomed.info/id/280231002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma52727> .
+
+<http://snomed.info/id/280235006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma52930> .
+
+<http://snomed.info/id/280242006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma52970> .
+
+<http://snomed.info/id/280245008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53060> .
+
+<http://snomed.info/id/280247000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53061> .
+
+<http://snomed.info/id/280248005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma52999> .
+
+<http://snomed.info/id/280257004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53112> .
+
+<http://snomed.info/id/280258009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53113> .
+
+<http://snomed.info/id/280262003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53195> .
+
+<http://snomed.info/id/280263008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53246> .
+
+<http://snomed.info/id/280264002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53212> .
+
+<http://snomed.info/id/280265001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53206> .
+
+<http://snomed.info/id/280266000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327363> .
+
+<http://snomed.info/id/280269007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53247> .
+
+<http://snomed.info/id/280270008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53438> .
+
+<http://snomed.info/id/280282004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53310> .
+
+<http://snomed.info/id/280284003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53396> .
+
+<http://snomed.info/id/280287005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53470> .
+
+<http://snomed.info/id/280291000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53486> .
+
+<http://snomed.info/id/280292007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53489> .
+
+<http://snomed.info/id/280293002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53490> .
+
+<http://snomed.info/id/280294008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53487> .
+
+<http://snomed.info/id/280295009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma6231> .
+
+<http://snomed.info/id/280299003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14468> .
+
+<http://snomed.info/id/280300006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14469> .
+
+<http://snomed.info/id/280307009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma6670> .
+
+<http://snomed.info/id/280308004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma6221> .
+
+<http://snomed.info/id/280310002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54399> .
+
+<http://snomed.info/id/280311003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54400> .
+
+<http://snomed.info/id/280313000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55152> .
+
+<http://snomed.info/id/280315007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54404> .
+
+<http://snomed.info/id/280316008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54405> .
+
+<http://snomed.info/id/280317004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54406> .
+
+<http://snomed.info/id/280318009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54407> .
+
+<http://snomed.info/id/280322004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma12135> .
+
+<http://snomed.info/id/280328000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma65414> .
+
+<http://snomed.info/id/280329008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0329233> .
+
+<http://snomed.info/id/280330003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma78651> .
+
+<http://snomed.info/id/280336009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327369> .
+
+<http://snomed.info/id/280337000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327368> .
+
+<http://snomed.info/id/280339002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321562> .
+
+<http://snomed.info/id/280340000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321563> .
+
+<http://snomed.info/id/280341001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321568> .
+
+<http://snomed.info/id/280346006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma16420> .
+
+<http://snomed.info/id/280348007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma16488> .
+
+<http://snomed.info/id/280349004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma16429> .
+
+<http://snomed.info/id/280351000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma78705> .
+
+<http://snomed.info/id/280352007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma78711> .
+
+<http://snomed.info/id/280353002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma16509> .
+
+<http://snomed.info/id/280385004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326448> .
+
+<http://snomed.info/id/280386003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55265> .
+
+<http://snomed.info/id/280417000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327373> .
+
+<http://snomed.info/id/280419002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326045> .
+
+<http://snomed.info/id/280420008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326044> .
+
+<http://snomed.info/id/280421007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326047> .
+
+<http://snomed.info/id/280533000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma6261> .
+
+<http://snomed.info/id/280534006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma6263> .
+
+<http://snomed.info/id/280541000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84961> .
+
+<http://snomed.info/id/280545009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327408> .
+
+<http://snomed.info/id/280546005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327402> .
+
+<http://snomed.info/id/280551004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53179> .
+
+<http://snomed.info/id/280552006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53178> .
+
+<http://snomed.info/id/280555008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327403> .
+
+<http://snomed.info/id/280557000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327409> .
+
+<http://snomed.info/id/280558005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327410> .
+
+<http://snomed.info/id/280562004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma20277> .
+
+<http://snomed.info/id/280569008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327406> .
+
+<http://snomed.info/id/280571008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327407> .
+
+<http://snomed.info/id/280572001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327411> .
+
+<http://snomed.info/id/280575004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327412> .
+
+<http://snomed.info/id/280577007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma58734> .
+
+<http://snomed.info/id/280579005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327413> .
+
+<http://snomed.info/id/280590000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma58354> .
+
+<http://snomed.info/id/280591001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma11336> .
+
+<http://snomed.info/id/280596006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327415> .
+
+<http://snomed.info/id/280598007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327416> .
+
+<http://snomed.info/id/280599004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326623> .
+
+<http://snomed.info/id/280600001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326940> .
+
+<http://snomed.info/id/280601002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326941> .
+
+<http://snomed.info/id/280602009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326942> .
+
+<http://snomed.info/id/280611009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326931> .
+
+<http://snomed.info/id/280638002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327420> .
+
+<http://snomed.info/id/280641006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327422> .
+
+<http://snomed.info/id/280645002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326621> .
+
+<http://snomed.info/id/280646001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327424> .
+
+<http://snomed.info/id/280647005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327425> .
+
+<http://snomed.info/id/280653005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327426> .
+
+<http://snomed.info/id/280654004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327427> .
+
+<http://snomed.info/id/280657006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma58617> .
+
+<http://snomed.info/id/280665009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322375> .
+
+<http://snomed.info/id/280667001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327429> .
+
+<http://snomed.info/id/280668006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322374> .
+
+<http://snomed.info/id/280680003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327435> .
+
+<http://snomed.info/id/280687000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327439> .
+
+<http://snomed.info/id/280703005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323924> .
+
+<http://snomed.info/id/280716005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327443> .
+
+<http://snomed.info/id/280734009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma13479> .
+
+<http://snomed.info/id/280735005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327445> .
+
+<http://snomed.info/id/280833008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma13480> .
+
+<http://snomed.info/id/280834002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma9143> .
+
+<http://snomed.info/id/280835001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma24826> .
+
+<http://snomed.info/id/280875009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327448> .
+
+<http://snomed.info/id/280876005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327449> .
+
+<http://snomed.info/id/280881001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327450> .
+
+<http://snomed.info/id/280883003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327451> .
+
+<http://snomed.info/id/280884009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327452> .
+
+<http://snomed.info/id/280885005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327453> .
+
+<http://snomed.info/id/280888007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49154> .
+
+<http://snomed.info/id/280903002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321600> .
+
+<http://snomed.info/id/280904008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321601> .
+
+<http://snomed.info/id/280909003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326450> .
+
+<http://snomed.info/id/280917006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326939> .
+
+<http://snomed.info/id/280918001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321810> .
+
+<http://snomed.info/id/280920003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326932> .
+
+<http://snomed.info/id/280921004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326933> .
+
+<http://snomed.info/id/280922006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326934> .
+
+<http://snomed.info/id/280923001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326935> .
+
+<http://snomed.info/id/280924007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326936> .
+
+<http://snomed.info/id/280925008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326937> .
+
+<http://snomed.info/id/280954002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322127> .
+
+<http://snomed.info/id/280957009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327456> .
+
+<http://snomed.info/id/281074004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma15957> .
+
+<http://snomed.info/id/281082004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327457> .
+
+<http://snomed.info/id/281087005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma58411> .
+
+<http://snomed.info/id/281145005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma25735> .
+
+<http://snomed.info/id/281146006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma25736> .
+
+<http://snomed.info/id/281224005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma23991> .
+
+<http://snomed.info/id/281225006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma23992> .
+
+<http://snomed.info/id/281226007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma24294> .
+
+<http://snomed.info/id/281228008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma24293> .
+
+<http://snomed.info/id/28135007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326971> .
+
+<http://snomed.info/id/281391009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma86149> .
+
+<http://snomed.info/id/281392002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322130> .
+
+<http://snomed.info/id/281393007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma86150> .
+
+<http://snomed.info/id/281394001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322131> .
+
+<http://snomed.info/id/281640004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322225> .
+
+<http://snomed.info/id/281870007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma306231> .
+
+<http://snomed.info/id/281871006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma72181> .
+
+<http://snomed.info/id/282047003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321572> .
+
+<http://snomed.info/id/28306005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma52414> .
+
+<http://snomed.info/id/28568005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326911> .
+
+<http://snomed.info/id/287364001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma3731> .
+
+<http://snomed.info/id/288322003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327057> .
+
+<http://snomed.info/id/288481008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma7645> .
+
+<http://snomed.info/id/288482001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma8602> .
+
+<http://snomed.info/id/288483006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma8603> .
+
+<http://snomed.info/id/288484000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma8604> .
+
+<http://snomed.info/id/288485004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma8605> .
+
+<http://snomed.info/id/288486003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma8606> .
+
+<http://snomed.info/id/288487007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma8607> .
+
+<http://snomed.info/id/288488002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma8608> .
+
+<http://snomed.info/id/288489005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma8609> .
+
+<http://snomed.info/id/288490001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma8610> .
+
+<http://snomed.info/id/288491002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma8611> .
+
+<http://snomed.info/id/28904002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63034> .
+
+<http://snomed.info/id/29015002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63833> .
+
+<http://snomed.info/id/29246005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62872> .
+
+<http://snomed.info/id/29288001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma75304> .
+
+<http://snomed.info/id/29416005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323927> .
+
+<http://snomed.info/id/29463007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62099> .
+
+<http://snomed.info/id/29640008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326910> .
+
+<http://snomed.info/id/29708002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83503> .
+
+<http://snomed.info/id/30030008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma264826> .
+
+<http://snomed.info/id/30061004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62862> .
+
+<http://snomed.info/id/30117005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63914> .
+
+<http://snomed.info/id/301844007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82784> .
+
+<http://snomed.info/id/301861005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63169> .
+
+<http://snomed.info/id/3028004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66778> .
+
+<http://snomed.info/id/303054002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma29715> .
+
+<http://snomed.info/id/303065007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma35288> .
+
+<http://snomed.info/id/303299000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327470> .
+
+<http://snomed.info/id/303339004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322015> .
+
+<http://snomed.info/id/303895000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma48474> .
+
+<http://snomed.info/id/304601009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84774> .
+
+<http://snomed.info/id/30484004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326969> .
+
+<http://snomed.info/id/304912006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma32855> .
+
+<http://snomed.info/id/304928001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma21493> .
+
+<http://snomed.info/id/304931000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326794> .
+
+<http://snomed.info/id/304932007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326796> .
+
+<http://snomed.info/id/304933002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321699> .
+
+<http://snomed.info/id/304934008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326797> .
+
+<http://snomed.info/id/304935009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321700> .
+
+<http://snomed.info/id/304936005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326798> .
+
+<http://snomed.info/id/304937001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321701> .
+
+<http://snomed.info/id/304938006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326799> .
+
+<http://snomed.info/id/304939003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321702> .
+
+<http://snomed.info/id/304940001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326795> .
+
+<http://snomed.info/id/304941002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321697> .
+
+<http://snomed.info/id/304943004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma258772> .
+
+<http://snomed.info/id/304944005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326800> .
+
+<http://snomed.info/id/304945006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321710> .
+
+<http://snomed.info/id/304946007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321711> .
+
+<http://snomed.info/id/304947003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326801> .
+
+<http://snomed.info/id/304948008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326802> .
+
+<http://snomed.info/id/304949000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321712> .
+
+<http://snomed.info/id/304950000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321713> .
+
+<http://snomed.info/id/304951001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326803> .
+
+<http://snomed.info/id/304955005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321714> .
+
+<http://snomed.info/id/304956006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326805> .
+
+<http://snomed.info/id/304957002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321703> .
+
+<http://snomed.info/id/304958007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321704> .
+
+<http://snomed.info/id/304959004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326806> .
+
+<http://snomed.info/id/304960009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326807> .
+
+<http://snomed.info/id/304961008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321705> .
+
+<http://snomed.info/id/304962001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321706> .
+
+<http://snomed.info/id/304964000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326804> .
+
+<http://snomed.info/id/304965004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321698> .
+
+<http://snomed.info/id/305048000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma38896> .
+
+<http://snomed.info/id/305050008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma33315> .
+
+<http://snomed.info/id/305051007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma33321> .
+
+<http://snomed.info/id/305062007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma43745> .
+
+<http://snomed.info/id/305098004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma44112> .
+
+<http://snomed.info/id/30516005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326968> .
+
+<http://snomed.info/id/30615003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327479> .
+
+<http://snomed.info/id/306711008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327480> .
+
+<http://snomed.info/id/30730003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74530> .
+
+<http://snomed.info/id/307706000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma38158> .
+
+<http://snomed.info/id/308793001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma222923> .
+
+<http://snomed.info/id/308840009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326785> .
+
+<http://snomed.info/id/309043004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma45561> .
+
+<http://snomed.info/id/309044005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma45562> .
+
+<http://snomed.info/id/309045006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62410> .
+
+<http://snomed.info/id/309311006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma324003> .
+
+<http://snomed.info/id/309312004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma37377> .
+
+<http://snomed.info/id/30965005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma264829> .
+
+<http://snomed.info/id/3100007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55625> .
+
+<http://snomed.info/id/310811004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327056> .
+
+<http://snomed.info/id/310887008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327054> .
+
+<http://snomed.info/id/310888003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327055> .
+
+<http://snomed.info/id/312049005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma38340> .
+
+<http://snomed.info/id/312164008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327481> .
+
+<http://snomed.info/id/312212009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma85125> .
+
+<http://snomed.info/id/312242007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326966> .
+
+<http://snomed.info/id/312256009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84782> .
+
+<http://snomed.info/id/312505001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma324004> .
+
+<http://snomed.info/id/312543003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322377> .
+
+<http://snomed.info/id/312597003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma18899> .
+
+<http://snomed.info/id/313054009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma32825> .
+
+<http://snomed.info/id/31310007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82816> .
+
+<http://snomed.info/id/313345004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma24050> .
+
+<http://snomed.info/id/314145001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327489> .
+
+<http://snomed.info/id/314148004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327490> .
+
+<http://snomed.info/id/314151006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327491> .
+
+<http://snomed.info/id/314168005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327492> .
+
+<http://snomed.info/id/314228003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54816> .
+
+<http://snomed.info/id/314252005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327493> .
+
+<http://snomed.info/id/314263008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327494> .
+
+<http://snomed.info/id/314283009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66316> .
+
+<http://snomed.info/id/314286001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49539> .
+
+<http://snomed.info/id/314287005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49589> .
+
+<http://snomed.info/id/314288000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49627> .
+
+<http://snomed.info/id/314289008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49653> .
+
+<http://snomed.info/id/314290004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49698> .
+
+<http://snomed.info/id/314291000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49933> .
+
+<http://snomed.info/id/314299003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66313> .
+
+<http://snomed.info/id/314300006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49714> .
+
+<http://snomed.info/id/314302003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma50081> .
+
+<http://snomed.info/id/314303008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49872> .
+
+<http://snomed.info/id/314304002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma50031> .
+
+<http://snomed.info/id/314305001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma50586> .
+
+<http://snomed.info/id/314306000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49552> .
+
+<http://snomed.info/id/314307009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49553> .
+
+<http://snomed.info/id/314308004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49554> .
+
+<http://snomed.info/id/314324003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma69796> .
+
+<http://snomed.info/id/314325002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma69798> .
+
+<http://snomed.info/id/314326001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma69803> .
+
+<http://snomed.info/id/314327005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma69804> .
+
+<http://snomed.info/id/314335008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma69458> .
+
+<http://snomed.info/id/314355009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70251> .
+
+<http://snomed.info/id/314357001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327499> .
+
+<http://snomed.info/id/314363005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma69784> .
+
+<http://snomed.info/id/314398008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma324006> .
+
+<http://snomed.info/id/314474002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326210> .
+
+<http://snomed.info/id/314475001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326211> .
+
+<http://snomed.info/id/314476000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326212> .
+
+<http://snomed.info/id/314477009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326213> .
+
+<http://snomed.info/id/314478004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326214> .
+
+<http://snomed.info/id/314500005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327500> .
+
+<http://snomed.info/id/314569008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327501> .
+
+<http://snomed.info/id/314570009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327502> .
+
+<http://snomed.info/id/314620000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma240707> .
+
+<http://snomed.info/id/314621001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322132> .
+
+<http://snomed.info/id/314713002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327503> .
+
+<http://snomed.info/id/314722001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322013> .
+
+<http://snomed.info/id/314723006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55035> .
+
+<http://snomed.info/id/314726003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327504> .
+
+<http://snomed.info/id/314727007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma78442> .
+
+<http://snomed.info/id/314732008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71832> .
+
+<http://snomed.info/id/314734009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326304> .
+
+<http://snomed.info/id/314754005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327505> .
+
+<http://snomed.info/id/314798005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327508> .
+
+<http://snomed.info/id/314819008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84783> .
+
+<http://snomed.info/id/314854001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327510> .
+
+<http://snomed.info/id/314857008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327511> .
+
+<http://snomed.info/id/314858003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327512> .
+
+<http://snomed.info/id/314859006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327513> .
+
+<http://snomed.info/id/314908006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma85537> .
+
+<http://snomed.info/id/31513005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83617> .
+
+<http://snomed.info/id/31627007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma61803> .
+
+<http://snomed.info/id/3194006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma7281> .
+
+<http://snomed.info/id/31979005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82738> .
+
+<http://snomed.info/id/32820005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55626> .
+
+<http://snomed.info/id/32967008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma78540> .
+
+<http://snomed.info/id/33096000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74526> .
+
+<http://snomed.info/id/33238007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326759> .
+
+<http://snomed.info/id/3325005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82785> .
+
+<http://snomed.info/id/33292006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326094> .
+
+<http://snomed.info/id/3332001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327514> .
+
+<http://snomed.info/id/3336003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma224787> .
+
+<http://snomed.info/id/33635003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67245> .
+
+<http://snomed.info/id/3374006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma72293> .
+
+<http://snomed.info/id/33752008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83368> .
+
+<http://snomed.info/id/33761008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63842> .
+
+<http://snomed.info/id/33803000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67522> .
+
+<http://snomed.info/id/3383001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326144> .
+
+<http://snomed.info/id/33840008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma24041> .
+
+<http://snomed.info/id/3394002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327515> .
+
+<http://snomed.info/id/33956004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83023> .
+
+<http://snomed.info/id/34136006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327516> .
+
+<http://snomed.info/id/34254002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84196> .
+
+<http://snomed.info/id/34386005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma16557> .
+
+<http://snomed.info/id/34433006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63898> .
+
+<http://snomed.info/id/3447009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326146> .
+
+<http://snomed.info/id/34582008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma61791> .
+
+<http://snomed.info/id/34783000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326096> .
+
+<http://snomed.info/id/34922002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma57902> .
+
+<http://snomed.info/id/34995009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326101> .
+
+<http://snomed.info/id/35056004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326103> .
+
+<http://snomed.info/id/35069000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma302832> .
+
+<http://snomed.info/id/35284004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84185> .
+
+<http://snomed.info/id/35286002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327519> .
+
+<http://snomed.info/id/35798006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63868> .
+
+<http://snomed.info/id/3583002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74539> .
+
+<http://snomed.info/id/35900000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19638> .
+
+<http://snomed.info/id/359541001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma295874> .
+
+<http://snomed.info/id/360344003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70471> .
+
+<http://snomed.info/id/360387000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma293143> .
+
+<http://snomed.info/id/360398004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327521> .
+
+<http://snomed.info/id/360408007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327522> .
+
+<http://snomed.info/id/360487004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322898> .
+
+<http://snomed.info/id/360488009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma52631> .
+
+<http://snomed.info/id/360505007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326246> .
+
+<http://snomed.info/id/360506008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma16030> .
+
+<http://snomed.info/id/360518004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70358> .
+
+<http://snomed.info/id/360531009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70345> .
+
+<http://snomed.info/id/360535000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma76259> .
+
+<http://snomed.info/id/360537008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma76269> .
+
+<http://snomed.info/id/360543005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma22693> .
+
+<http://snomed.info/id/360550009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma22738> .
+
+<http://snomed.info/id/360551008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma22799> .
+
+<http://snomed.info/id/360565005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma86594> .
+
+<http://snomed.info/id/360570003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma72644> .
+
+<http://snomed.info/id/360625002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma51244> .
+
+<http://snomed.info/id/360637000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma50883> .
+
+<http://snomed.info/id/360648007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14295> .
+
+<http://snomed.info/id/360663005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma51728> .
+
+<http://snomed.info/id/360701000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321719> .
+
+<http://snomed.info/id/36075002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49502> .
+
+<http://snomed.info/id/360767004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma311256> .
+
+<http://snomed.info/id/360801008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326244> .
+
+<http://snomed.info/id/360813003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327533> .
+
+<http://snomed.info/id/360814009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327534> .
+
+<http://snomed.info/id/360815005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327536> .
+
+<http://snomed.info/id/360816006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327535> .
+
+<http://snomed.info/id/36082003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19595> .
+
+<http://snomed.info/id/360821009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma17759> .
+
+<http://snomed.info/id/360833004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma80357> .
+
+<http://snomed.info/id/360842006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma23794> .
+
+<http://snomed.info/id/360881006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma301855> .
+
+<http://snomed.info/id/360882004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma45881> .
+
+<http://snomed.info/id/360883009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma45950> .
+
+<http://snomed.info/id/360884003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma46012> .
+
+<http://snomed.info/id/360888000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327537> .
+
+<http://snomed.info/id/360891000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma302259> .
+
+<http://snomed.info/id/360894008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma58888> .
+
+<http://snomed.info/id/360897001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326281> .
+
+<http://snomed.info/id/360901007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma302253> .
+
+<http://snomed.info/id/360904004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326295> .
+
+<http://snomed.info/id/360906002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326282> .
+
+<http://snomed.info/id/360909009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma302241> .
+
+<http://snomed.info/id/360914008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326283> .
+
+<http://snomed.info/id/360917001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma302247> .
+
+<http://snomed.info/id/360920009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326284> .
+
+<http://snomed.info/id/360922001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma302235> .
+
+<http://snomed.info/id/360923006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326285> .
+
+<http://snomed.info/id/360924000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma302205> .
+
+<http://snomed.info/id/360925004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326286> .
+
+<http://snomed.info/id/360926003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma302229> .
+
+<http://snomed.info/id/360927007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326287> .
+
+<http://snomed.info/id/360928002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma302199> .
+
+<http://snomed.info/id/360931001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326288> .
+
+<http://snomed.info/id/360933003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326289> .
+
+<http://snomed.info/id/360934009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma302223> .
+
+<http://snomed.info/id/360935005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326293> .
+
+<http://snomed.info/id/360936006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326290> .
+
+<http://snomed.info/id/360937002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma302217> .
+
+<http://snomed.info/id/360938007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326291> .
+
+<http://snomed.info/id/360939004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma302211> .
+
+<http://snomed.info/id/360942005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326292> .
+
+<http://snomed.info/id/360944006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma302193> .
+
+<http://snomed.info/id/360945007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326280> .
+
+<http://snomed.info/id/360946008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66078> .
+
+<http://snomed.info/id/360947004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326067> .
+
+<http://snomed.info/id/360949001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326297> .
+
+<http://snomed.info/id/360952009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326298> .
+
+<http://snomed.info/id/360956007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326299> .
+
+<http://snomed.info/id/360964001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326300> .
+
+<http://snomed.info/id/360967008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326301> .
+
+<http://snomed.info/id/360970007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326302> .
+
+<http://snomed.info/id/360974003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326303> .
+
+<http://snomed.info/id/360981005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14496> .
+
+<http://snomed.info/id/360982003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma72263> .
+
+<http://snomed.info/id/360988004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma21021> .
+
+<http://snomed.info/id/360995008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma42770> .
+
+<http://snomed.info/id/361000003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma312345> .
+
+<http://snomed.info/id/361012004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326149> .
+
+<http://snomed.info/id/361014003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326150> .
+
+<http://snomed.info/id/361402000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327539> .
+
+<http://snomed.info/id/361403005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327540> .
+
+<http://snomed.info/id/361404004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327541> .
+
+<http://snomed.info/id/361405003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma72168> .
+
+<http://snomed.info/id/361406002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327542> .
+
+<http://snomed.info/id/361407006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327543> .
+
+<http://snomed.info/id/361408001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327544> .
+
+<http://snomed.info/id/361413002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327545> .
+
+<http://snomed.info/id/361421008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327547> .
+
+<http://snomed.info/id/361425004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327548> .
+
+<http://snomed.info/id/361426003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327549> .
+
+<http://snomed.info/id/361427007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327550> .
+
+<http://snomed.info/id/361428002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327551> .
+
+<http://snomed.info/id/361429005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327552> .
+
+<http://snomed.info/id/361430000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327553> .
+
+<http://snomed.info/id/361433003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327555> .
+
+<http://snomed.info/id/361434009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327556> .
+
+<http://snomed.info/id/361435005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327557> .
+
+<http://snomed.info/id/361436006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327048> .
+
+<http://snomed.info/id/361437002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327558> .
+
+<http://snomed.info/id/361438007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma293110> .
+
+<http://snomed.info/id/361440002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma296908> .
+
+<http://snomed.info/id/361442005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327560> .
+
+<http://snomed.info/id/361443000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327561> .
+
+<http://snomed.info/id/361445007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70306> .
+
+<http://snomed.info/id/361446008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70307> .
+
+<http://snomed.info/id/361448009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327562> .
+
+<http://snomed.info/id/361449001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327564> .
+
+<http://snomed.info/id/361450001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327565> .
+
+<http://snomed.info/id/361451002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327567> .
+
+<http://snomed.info/id/361452009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327568> .
+
+<http://snomed.info/id/361454005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327569> .
+
+<http://snomed.info/id/361455006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma293131> .
+
+<http://snomed.info/id/361456007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma86557> .
+
+<http://snomed.info/id/361457003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327570> .
+
+<http://snomed.info/id/361458008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327571> .
+
+<http://snomed.info/id/361459000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma293863> .
+
+<http://snomed.info/id/361460005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma295532> .
+
+<http://snomed.info/id/361461009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma295618> .
+
+<http://snomed.info/id/361462002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma86666> .
+
+<http://snomed.info/id/361463007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma295624> .
+
+<http://snomed.info/id/361464001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma293116> .
+
+<http://snomed.info/id/361465000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327572> .
+
+<http://snomed.info/id/361468003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327573> .
+
+<http://snomed.info/id/361474003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma292334> .
+
+<http://snomed.info/id/361475002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma293145> .
+
+<http://snomed.info/id/361476001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma293147> .
+
+<http://snomed.info/id/361477005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma293149> .
+
+<http://snomed.info/id/361478000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327577> .
+
+<http://snomed.info/id/361479008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327578> .
+
+<http://snomed.info/id/361481005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327580> .
+
+<http://snomed.info/id/361482003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327581> .
+
+<http://snomed.info/id/361483008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma61975> .
+
+<http://snomed.info/id/361484002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327582> .
+
+<http://snomed.info/id/361486000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma293101> .
+
+<http://snomed.info/id/361489007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma293857> .
+
+<http://snomed.info/id/361490003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327585> .
+
+<http://snomed.info/id/361491004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327586> .
+
+<http://snomed.info/id/361492006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327587> .
+
+<http://snomed.info/id/361506000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70311> .
+
+<http://snomed.info/id/361507009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70310> .
+
+<http://snomed.info/id/361508004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74512> .
+
+<http://snomed.info/id/361514006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327590> .
+
+<http://snomed.info/id/361515007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327591> .
+
+<http://snomed.info/id/361516008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma312393> .
+
+<http://snomed.info/id/361517004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327592> .
+
+<http://snomed.info/id/361518009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327593> .
+
+<http://snomed.info/id/361519001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327594> .
+
+<http://snomed.info/id/361520007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327595> .
+
+<http://snomed.info/id/361521006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327596> .
+
+<http://snomed.info/id/361523009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326176> .
+
+<http://snomed.info/id/361524003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326179> .
+
+<http://snomed.info/id/361525002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70300> .
+
+<http://snomed.info/id/361527005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71008> .
+
+<http://snomed.info/id/361528000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326180> .
+
+<http://snomed.info/id/361529008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326182> .
+
+<http://snomed.info/id/361530003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326183> .
+
+<http://snomed.info/id/361538005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62372> .
+
+<http://snomed.info/id/361551000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0323812> .
+
+<http://snomed.info/id/361573007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327607> .
+
+<http://snomed.info/id/361586003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma77050> .
+
+<http://snomed.info/id/361598008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62413> .
+
+<http://snomed.info/id/361602005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma76263> .
+
+<http://snomed.info/id/361603000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10652> .
+
+<http://snomed.info/id/361604006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10653> .
+
+<http://snomed.info/id/361605007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10654> .
+
+<http://snomed.info/id/361606008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10655> .
+
+<http://snomed.info/id/361607004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10656> .
+
+<http://snomed.info/id/361608009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10657> .
+
+<http://snomed.info/id/361609001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10649> .
+
+<http://snomed.info/id/361610006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10650> .
+
+<http://snomed.info/id/361611005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10675> .
+
+<http://snomed.info/id/361612003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10676> .
+
+<http://snomed.info/id/361614002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma12286> .
+
+<http://snomed.info/id/361615001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma12287> .
+
+<http://snomed.info/id/361616000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma12288> .
+
+<http://snomed.info/id/361617009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma12289> .
+
+<http://snomed.info/id/361618004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma12290> .
+
+<http://snomed.info/id/361619007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma12291> .
+
+<http://snomed.info/id/361620001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma12292> .
+
+<http://snomed.info/id/361621002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma12293> .
+
+<http://snomed.info/id/361622009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma12294> .
+
+<http://snomed.info/id/361626007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma4742> .
+
+<http://snomed.info/id/361627003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma4741> .
+
+<http://snomed.info/id/361628008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma4740> .
+
+<http://snomed.info/id/361629000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma4733> .
+
+<http://snomed.info/id/361630005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma4734> .
+
+<http://snomed.info/id/361631009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma4735> .
+
+<http://snomed.info/id/361632002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma4739> .
+
+<http://snomed.info/id/361633007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma4736> .
+
+<http://snomed.info/id/361634001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71206> .
+
+<http://snomed.info/id/361635000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma71203> .
+
+<http://snomed.info/id/361636004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma4738> .
+
+<http://snomed.info/id/361637008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma4737> .
+
+<http://snomed.info/id/361638003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma4844> .
+
+<http://snomed.info/id/361639006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma4951> .
+
+<http://snomed.info/id/361640008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma4837> .
+
+<http://snomed.info/id/361641007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma4942> .
+
+<http://snomed.info/id/361664009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma20813> .
+
+<http://snomed.info/id/361666006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma4950> .
+
+<http://snomed.info/id/361667002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma4843> .
+
+<http://snomed.info/id/361688006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10651> .
+
+<http://snomed.info/id/362748007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326157> .
+
+<http://snomed.info/id/362749004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326156> .
+
+<http://snomed.info/id/362887000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma24993> .
+
+<http://snomed.info/id/363130003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma75634> .
+
+<http://snomed.info/id/36445004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67268> .
+
+<http://snomed.info/id/364563006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma23139> .
+
+<http://snomed.info/id/3646006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326105> .
+
+<http://snomed.info/id/36660006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326106> .
+
+<http://snomed.info/id/36828001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67317> .
+
+<http://snomed.info/id/36998008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82747> .
+
+<http://snomed.info/id/370618005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma324033> .
+
+<http://snomed.info/id/37065005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma324034> .
+
+<http://snomed.info/id/370941004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma77663> .
+
+<http://snomed.info/id/371013005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma265353> .
+
+<http://snomed.info/id/37269007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84188> .
+
+<http://snomed.info/id/372877000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82839> .
+
+<http://snomed.info/id/373097002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326209> .
+
+<http://snomed.info/id/37484001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma61811> .
+
+<http://snomed.info/id/37704004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67380> .
+
+<http://snomed.info/id/3771001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67378> .
+
+<http://snomed.info/id/37725004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326107> .
+
+<http://snomed.info/id/3789000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62930> .
+
+<http://snomed.info/id/38182007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82794> .
+
+<http://snomed.info/id/38326003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma72294> .
+
+<http://snomed.info/id/384717008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma68596> .
+
+<http://snomed.info/id/38476002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma86578> .
+
+<http://snomed.info/id/385049006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma85272> .
+
+<http://snomed.info/id/38533002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326851> .
+
+<http://snomed.info/id/385480007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67344> .
+
+<http://snomed.info/id/386121006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326147> .
+
+<http://snomed.info/id/38717003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74546> .
+
+<http://snomed.info/id/38997009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326108> .
+
+<http://snomed.info/id/39175000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326252> .
+
+<http://snomed.info/id/39220001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325986> .
+
+<http://snomed.info/id/39231009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327144> .
+
+<http://snomed.info/id/39298000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma64783> .
+
+<http://snomed.info/id/39319005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326965> .
+
+<http://snomed.info/id/397052000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326141> .
+
+<http://snomed.info/id/397427005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327608> .
+
+<http://snomed.info/id/397435008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327609> .
+
+<http://snomed.info/id/397669002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0328408> .
+
+<http://snomed.info/id/399384005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma45721> .
+
+<http://snomed.info/id/399857002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma77666> .
+
+<http://snomed.info/id/39989006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67372> .
+
+<http://snomed.info/id/40015002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66827> .
+
+<http://snomed.info/id/40022005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14272> .
+
+<http://snomed.info/id/4029003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84199> .
+
+<http://snomed.info/id/404798000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma86713> .
+
+<http://snomed.info/id/4076007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83374> .
+
+<http://snomed.info/id/408099007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma7493> .
+
+<http://snomed.info/id/410000007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma59481> .
+
+<http://snomed.info/id/4104007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82837> .
+
+<http://snomed.info/id/41199001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74644> .
+
+<http://snomed.info/id/41216001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma9600> .
+
+<http://snomed.info/id/412383006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67238> .
+
+<http://snomed.info/id/413196009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma322423> .
+
+<http://snomed.info/id/41346001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326837> .
+
+<http://snomed.info/id/41384007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326962> .
+
+<http://snomed.info/id/41421000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83605> .
+
+<http://snomed.info/id/41508009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma79869> .
+
+<http://snomed.info/id/41621006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84374> .
+
+<http://snomed.info/id/41649004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62343> .
+
+<http://snomed.info/id/416502004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma264785> .
+
+<http://snomed.info/id/416820004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321573> .
+
+<http://snomed.info/id/41717006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma321723> .
+
+<http://snomed.info/id/417522009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326846> .
+
+<http://snomed.info/id/41756000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326847> .
+
+<http://snomed.info/id/417682001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326848> .
+
+<http://snomed.info/id/417904004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326142> .
+
+<http://snomed.info/id/41794000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma58746> .
+
+<http://snomed.info/id/41796003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma3726> .
+
+<http://snomed.info/id/418124002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326143> .
+
+<http://snomed.info/id/41898006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62845> .
+
+<http://snomed.info/id/419333002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma78542> .
+
+<http://snomed.info/id/419423006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326452> .
+
+<http://snomed.info/id/419583006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma86711> .
+
+<http://snomed.info/id/419758009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63368> .
+
+<http://snomed.info/id/419965008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82841> .
+
+<http://snomed.info/id/420190000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326454> .
+
+<http://snomed.info/id/42049001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14354> .
+
+<http://snomed.info/id/420618007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma264833> .
+
+<http://snomed.info/id/4212006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66768> .
+
+<http://snomed.info/id/422253001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma264773> .
+
+<http://snomed.info/id/423914005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327110> .
+
+<http://snomed.info/id/424208002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma23871> .
+
+<http://snomed.info/id/424983004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327011> .
+
+<http://snomed.info/id/425475006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83117> .
+
+<http://snomed.info/id/425982003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma241669> .
+
+<http://snomed.info/id/426072009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma241667> .
+
+<http://snomed.info/id/426215008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14069> .
+
+<http://snomed.info/id/426671001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma241675> .
+
+<http://snomed.info/id/426821001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326479> .
+
+<http://snomed.info/id/427256000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49992> .
+
+<http://snomed.info/id/427667007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma61889> .
+
+<http://snomed.info/id/42938005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67255> .
+
+<http://snomed.info/id/43009003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325983> .
+
+<http://snomed.info/id/430865005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma12276> .
+
+<http://snomed.info/id/43130005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326960> .
+
+<http://snomed.info/id/4328003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54543> .
+
+<http://snomed.info/id/43446009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83530> .
+
+<http://snomed.info/id/43531000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326473> .
+
+<http://snomed.info/id/43674008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74541> .
+
+<http://snomed.info/id/4421005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma68646> .
+
+<http://snomed.info/id/44459007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma264827> .
+
+<http://snomed.info/id/445251003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma296334> .
+
+<http://snomed.info/id/44735001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14664> .
+
+<http://snomed.info/id/44970006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82760> .
+
+<http://snomed.info/id/45001002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66830> .
+
+<http://snomed.info/id/450431008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326599> .
+
+<http://snomed.info/id/45047005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma86582> .
+
+<http://snomed.info/id/45201007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325984> .
+
+<http://snomed.info/id/45202000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325985> .
+
+<http://snomed.info/id/45226003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70990> .
+
+<http://snomed.info/id/45386002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82772> .
+
+<http://snomed.info/id/4546008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82771> .
+
+<http://snomed.info/id/45709008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66772> .
+
+<http://snomed.info/id/4573009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67412> .
+
+<http://snomed.info/id/46015007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74643> .
+
+<http://snomed.info/id/46046006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62874> .
+
+<http://snomed.info/id/46075000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82742> .
+
+<http://snomed.info/id/46225008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83369> .
+
+<http://snomed.info/id/464005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326455> .
+
+<http://snomed.info/id/46427002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49474> .
+
+<http://snomed.info/id/46507000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325987> .
+
+<http://snomed.info/id/465568008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma295652> .
+
+<http://snomed.info/id/46583003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67843> .
+
+<http://snomed.info/id/46886002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma18646> .
+
+<http://snomed.info/id/46926004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma59863> .
+
+<http://snomed.info/id/46940003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70550> .
+
+<http://snomed.info/id/47046000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma17233> .
+
+<http://snomed.info/id/4717004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83540> .
+
+<http://snomed.info/id/47220008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54527> .
+
+<http://snomed.info/id/47325000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma69236> .
+
+<http://snomed.info/id/47361005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54505> .
+
+<http://snomed.info/id/47390004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82753> .
+
+<http://snomed.info/id/47393002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma57875> .
+
+<http://snomed.info/id/47822008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma7646> .
+
+<http://snomed.info/id/47879001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma15892> .
+
+<http://snomed.info/id/47910006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74645> .
+
+<http://snomed.info/id/48100000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14486> .
+
+<http://snomed.info/id/48156001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66780> .
+
+<http://snomed.info/id/48184006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67896> .
+
+<http://snomed.info/id/48438006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326470> .
+
+<http://snomed.info/id/48583005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62875> .
+
+<http://snomed.info/id/48607003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma59823> .
+
+<http://snomed.info/id/48727007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma264831> .
+
+<http://snomed.info/id/48852002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53107> .
+
+<http://snomed.info/id/48990009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma21433> .
+
+<http://snomed.info/id/49004003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326102> .
+
+<http://snomed.info/id/49268005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326456> .
+
+<http://snomed.info/id/49405007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma58749> .
+
+<http://snomed.info/id/49612007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326467> .
+
+<http://snomed.info/id/49690003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67296> .
+
+<http://snomed.info/id/49722008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83349> .
+
+<http://snomed.info/id/49904001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma72292> .
+
+<http://snomed.info/id/50134008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84197> .
+
+<http://snomed.info/id/50193000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma16648> .
+
+<http://snomed.info/id/50284009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84234> .
+
+<http://snomed.info/id/50362007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70969> .
+
+<http://snomed.info/id/5041003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67410> .
+
+<http://snomed.info/id/50421000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326468> .
+
+<http://snomed.info/id/50624003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53488> .
+
+<http://snomed.info/id/50762005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma86583> .
+
+<http://snomed.info/id/5086000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67709> .
+
+<http://snomed.info/id/50961009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325904> .
+
+<http://snomed.info/id/51305002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67128> .
+
+<http://snomed.info/id/51354009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma59331> .
+
+<http://snomed.info/id/51845000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma23132> .
+
+<http://snomed.info/id/51925009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84758> .
+
+<http://snomed.info/id/51962006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326469> .
+
+<http://snomed.info/id/52043008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326925> .
+
+<http://snomed.info/id/5213007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma51102> .
+
+<http://snomed.info/id/52180000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84194> .
+
+<http://snomed.info/id/52282002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67262> .
+
+<http://snomed.info/id/52518006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82739> .
+
+<http://snomed.info/id/52541003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82761> .
+
+<http://snomed.info/id/52547004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63877> .
+
+<http://snomed.info/id/52554005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma44297> .
+
+<http://snomed.info/id/52625008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82763> .
+
+<http://snomed.info/id/52736009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82765> .
+
+<http://snomed.info/id/52802009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66785> .
+
+<http://snomed.info/id/52884007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54592> .
+
+<http://snomed.info/id/52971004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63836> .
+
+<http://snomed.info/id/53102003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84048> .
+
+<http://snomed.info/id/5330007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67119> .
+
+<http://snomed.info/id/53301001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326828> .
+
+<http://snomed.info/id/53742001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma17555> .
+
+<http://snomed.info/id/53838007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326148> .
+
+<http://snomed.info/id/53875002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62101> .
+
+<http://snomed.info/id/53945006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83553> .
+
+<http://snomed.info/id/54235008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma61806> .
+
+<http://snomed.info/id/54821000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82767> .
+
+<http://snomed.info/id/54969003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84195> .
+
+<http://snomed.info/id/54991005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83601> .
+
+<http://snomed.info/id/55109005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326457> .
+
+<http://snomed.info/id/55143001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma58273> .
+
+<http://snomed.info/id/55169007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327151> .
+
+<http://snomed.info/id/55401003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325981> .
+
+<http://snomed.info/id/55460000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63920> .
+
+<http://snomed.info/id/55603005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma20110> .
+
+<http://snomed.info/id/55918008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62864> .
+
+<http://snomed.info/id/55997002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327617> .
+
+<http://snomed.info/id/56069004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma69234> .
+
+<http://snomed.info/id/56196004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84138> .
+
+<http://snomed.info/id/56213003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma38304> .
+
+<http://snomed.info/id/56308004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326922> .
+
+<http://snomed.info/id/56332006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325982> .
+
+<http://snomed.info/id/56685008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83037> .
+
+<http://snomed.info/id/56790003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326458> .
+
+<http://snomed.info/id/56972008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62863> .
+
+<http://snomed.info/id/57184004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62870> .
+
+<http://snomed.info/id/57195005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74542> .
+
+<http://snomed.info/id/57300004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma17232> .
+
+<http://snomed.info/id/57308006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma61789> .
+
+<http://snomed.info/id/57487002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma32692> .
+
+<http://snomed.info/id/57649002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67790> .
+
+<http://snomed.info/id/57789003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67695> .
+
+<http://snomed.info/id/57987007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma20116> .
+
+<http://snomed.info/id/5802004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84171> .
+
+<http://snomed.info/id/58348001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84718> .
+
+<http://snomed.info/id/58613001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma264832> .
+
+<http://snomed.info/id/5868002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma15932> .
+
+<http://snomed.info/id/58753009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82749> .
+
+<http://snomed.info/id/5882002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326906> .
+
+<http://snomed.info/id/58966000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66773> .
+
+<http://snomed.info/id/58986001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63261> .
+
+<http://snomed.info/id/59059009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54660> .
+
+<http://snomed.info/id/59094002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62295> .
+
+<http://snomed.info/id/59268003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67116> .
+
+<http://snomed.info/id/5932006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82751> .
+
+<http://snomed.info/id/59804006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62925> .
+
+<http://snomed.info/id/598151000005105> owl:equivalentClass <http://purl.org/sig/ont/fma/fma293325> .
+
+<http://snomed.info/id/60074003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma23863> .
+
+<http://snomed.info/id/60085001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67526> .
+
+<http://snomed.info/id/60227002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma16644> .
+
+<http://snomed.info/id/6023000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326901> .
+
+<http://snomed.info/id/60260004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82755> .
+
+<http://snomed.info/id/60302007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326900> .
+
+<http://snomed.info/id/60793009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19656> .
+
+<http://snomed.info/id/6104005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma65280> .
+
+<http://snomed.info/id/61237002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327041> .
+
+<http://snomed.info/id/61299002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83367> .
+
+<http://snomed.info/id/61344008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54644> .
+
+<http://snomed.info/id/61472002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63891> .
+
+<http://snomed.info/id/61987002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma16027> .
+
+<http://snomed.info/id/62183001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63173> .
+
+<http://snomed.info/id/62670003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326894> .
+
+<http://snomed.info/id/62824007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74545> .
+
+<http://snomed.info/id/62854002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83366> .
+
+<http://snomed.info/id/63004003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82754> .
+
+<http://snomed.info/id/63089006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82801> .
+
+<http://snomed.info/id/63315002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63837> .
+
+<http://snomed.info/id/6335009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327618> .
+
+<http://snomed.info/id/63369000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84198> .
+
+<http://snomed.info/id/63370004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62844> .
+
+<http://snomed.info/id/63406008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma9728> .
+
+<http://snomed.info/id/63426007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma78473> .
+
+<http://snomed.info/id/63472006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326891> .
+
+<http://snomed.info/id/63667008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327146> .
+
+<http://snomed.info/id/63730009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83348> .
+
+<http://snomed.info/id/64038003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma5932> .
+
+<http://snomed.info/id/6411000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma86579> .
+
+<http://snomed.info/id/64164007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma22806> .
+
+<http://snomed.info/id/64331004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66762> .
+
+<http://snomed.info/id/6445007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66784> .
+
+<http://snomed.info/id/64482002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma12234> .
+
+<http://snomed.info/id/64760005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326890> .
+
+<http://snomed.info/id/64904008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma18651> .
+
+<http://snomed.info/id/65000005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma75428> .
+
+<http://snomed.info/id/65048006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55567> .
+
+<http://snomed.info/id/65237009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55533> .
+
+<http://snomed.info/id/65251009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63843> .
+
+<http://snomed.info/id/65287002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326889> .
+
+<http://snomed.info/id/66012001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19575> .
+
+<http://snomed.info/id/66036002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma17231> .
+
+<http://snomed.info/id/66068005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326887> .
+
+<http://snomed.info/id/66084006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326885> .
+
+<http://snomed.info/id/66254009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54540> .
+
+<http://snomed.info/id/66603002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83350> .
+
+<http://snomed.info/id/667009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma69067> .
+
+<http://snomed.info/id/66897009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326880> .
+
+<http://snomed.info/id/66933007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325978> .
+
+<http://snomed.info/id/67079006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82743> .
+
+<http://snomed.info/id/67124000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326461> .
+
+<http://snomed.info/id/67126003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327143> .
+
+<http://snomed.info/id/67146008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma261269> .
+
+<http://snomed.info/id/67170007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14163> .
+
+<http://snomed.info/id/67734004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma259209> .
+
+<http://snomed.info/id/67866001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83365> .
+
+<http://snomed.info/id/68031002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma12825> .
+
+<http://snomed.info/id/68233007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83809> .
+
+<http://snomed.info/id/6850006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326878> .
+
+<http://snomed.info/id/68794004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82778> .
+
+<http://snomed.info/id/68895008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326877> .
+
+<http://snomed.info/id/68936005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84375> .
+
+<http://snomed.info/id/68945006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84051> .
+
+<http://snomed.info/id/68989006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63872> .
+
+<http://snomed.info/id/68992005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82748> .
+
+<http://snomed.info/id/69307006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84717> .
+
+<http://snomed.info/id/69313002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67311> .
+
+<http://snomed.info/id/69315009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67181> .
+
+<http://snomed.info/id/69332008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327037> .
+
+<http://snomed.info/id/69465001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma16562> .
+
+<http://snomed.info/id/69662009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67880> .
+
+<http://snomed.info/id/697980008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326729> .
+
+<http://snomed.info/id/697981007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326730> .
+
+<http://snomed.info/id/698778007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326735> .
+
+<http://snomed.info/id/698965000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67112> .
+
+<http://snomed.info/id/698967008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67165> .
+
+<http://snomed.info/id/699960000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63220> .
+
+<http://snomed.info/id/70106000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67264> .
+
+<http://snomed.info/id/70145005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326876> .
+
+<http://snomed.info/id/70180009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma16556> .
+
+<http://snomed.info/id/70187007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84689> .
+
+<http://snomed.info/id/70203000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82774> .
+
+<http://snomed.info/id/70237008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82797> .
+
+<http://snomed.info/id/70288006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82759> .
+
+<http://snomed.info/id/70454002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83358> .
+
+<http://snomed.info/id/70488008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325977> .
+
+<http://snomed.info/id/707612009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma264824> .
+
+<http://snomed.info/id/707613004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma264821> .
+
+<http://snomed.info/id/70812007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma51329> .
+
+<http://snomed.info/id/70828002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84079> .
+
+<http://snomed.info/id/710863003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14155> .
+
+<http://snomed.info/id/711101009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma9658> .
+
+<http://snomed.info/id/711192008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma34634> .
+
+<http://snomed.info/id/711206007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma34214> .
+
+<http://snomed.info/id/711211009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma32792> .
+
+<http://snomed.info/id/711212002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma34074> .
+
+<http://snomed.info/id/711213007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma33262> .
+
+<http://snomed.info/id/711214001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma33934> .
+
+<http://snomed.info/id/711215000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma34354> .
+
+<http://snomed.info/id/71170001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84208> .
+
+<http://snomed.info/id/71211001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82740> .
+
+<http://snomed.info/id/71343003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67799> .
+
+<http://snomed.info/id/713492005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74637> .
+
+<http://snomed.info/id/71432007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma23866> .
+
+<http://snomed.info/id/71467007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326826> .
+
+<http://snomed.info/id/71481009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62976> .
+
+<http://snomed.info/id/71544008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82746> .
+
+<http://snomed.info/id/71549003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma61848> .
+
+<http://snomed.info/id/71678009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325979> .
+
+<http://snomed.info/id/717001004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma258868> .
+
+<http://snomed.info/id/717025007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74238> .
+
+<http://snomed.info/id/71971001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83354> .
+
+<http://snomed.info/id/72060002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67749> .
+
+<http://snomed.info/id/72069001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82776> .
+
+<http://snomed.info/id/72134001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67277> .
+
+<http://snomed.info/id/72149009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326871> .
+
+<http://snomed.info/id/72257001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325905> .
+
+<http://snomed.info/id/72318006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma15931> .
+
+<http://snomed.info/id/72535009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma9913> .
+
+<http://snomed.info/id/72725001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327035> .
+
+<http://snomed.info/id/72840006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82766> .
+
+<http://snomed.info/id/73153001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67343> .
+
+<http://snomed.info/id/7321000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82773> .
+
+<http://snomed.info/id/73275007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326866> .
+
+<http://snomed.info/id/733930001> owl:equivalentProperty <http://purl.org/sig/ont/fma/regional_part_of> .
+
+<http://snomed.info/id/733931002> owl:equivalentProperty <http://purl.org/sig/ont/fma/constitutional_part_of> .
+
+<http://snomed.info/id/734136001> owl:equivalentProperty <http://purl.org/sig/ont/fma/contained_in> .
+
+<http://snomed.info/id/734137005> owl:equivalentProperty <http://purl.org/sig/ont/fma/tributary_of> .
+
+<http://snomed.info/id/736678006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma85813> .
+
+<http://snomed.info/id/74071000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma76872> .
+
+<http://snomed.info/id/74714009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67888> .
+
+<http://snomed.info/id/74889000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62873> .
+
+<http://snomed.info/id/75056005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63835> .
+
+<http://snomed.info/id/75505008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma75430> .
+
+<http://snomed.info/id/75640001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84937> .
+
+<http://snomed.info/id/75777003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84050> .
+
+<http://snomed.info/id/75799006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82758> .
+
+<http://snomed.info/id/75801009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326858> .
+
+<http://snomed.info/id/75925000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67330> .
+
+<http://snomed.info/id/76015000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14769> .
+
+<http://snomed.info/id/76044003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83688> .
+
+<http://snomed.info/id/76134003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83371> .
+
+<http://snomed.info/id/76322003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63072> .
+
+<http://snomed.info/id/764801008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma60367> .
+
+<http://snomed.info/id/76704003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma44301> .
+
+<http://snomed.info/id/768009002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83352> .
+
+<http://snomed.info/id/770100001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67225> .
+
+<http://snomed.info/id/77012006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma305905> .
+
+<http://snomed.info/id/77082002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma18713> .
+
+<http://snomed.info/id/77826001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325974> .
+
+<http://snomed.info/id/77844009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma75093> .
+
+<http://snomed.info/id/78022003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma323933> .
+
+<http://snomed.info/id/781000124109> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74557> .
+
+<http://snomed.info/id/782808006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma35118> .
+
+<http://snomed.info/id/782809003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma11356> .
+
+<http://snomed.info/id/78399007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma54537> .
+
+<http://snomed.info/id/78440006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma51101> .
+
+<http://snomed.info/id/78447009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82779> .
+
+<http://snomed.info/id/78500002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326855> .
+
+<http://snomed.info/id/78527003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82790> .
+
+<http://snomed.info/id/78713005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82769> .
+
+<http://snomed.info/id/7880006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326854> .
+
+<http://snomed.info/id/788302008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53100> .
+
+<http://snomed.info/id/788303003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma53075> .
+
+<http://snomed.info/id/78901007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325973> .
+
+<http://snomed.info/id/789210002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84964> .
+
+<http://snomed.info/id/79037006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma76835> .
+
+<http://snomed.info/id/79229009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325975> .
+
+<http://snomed.info/id/79375003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63015> .
+
+<http://snomed.info/id/79612000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62977> .
+
+<http://snomed.info/id/79988006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325976> .
+
+<http://snomed.info/id/80036001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326462> .
+
+<http://snomed.info/id/80097007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326896> .
+
+<http://snomed.info/id/80554009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326463> .
+
+<http://snomed.info/id/80578004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326850> .
+
+<http://snomed.info/id/80944003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma49500> .
+
+<http://snomed.info/id/81123006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma264830> .
+
+<http://snomed.info/id/81272008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66782> .
+
+<http://snomed.info/id/81367002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84183> .
+
+<http://snomed.info/id/81654009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma74529> .
+
+<http://snomed.info/id/81689006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma66884> .
+
+<http://snomed.info/id/81881007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326849> .
+
+<http://snomed.info/id/818983003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma9577> .
+
+<http://snomed.info/id/818984009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma61680> .
+
+<http://snomed.info/id/818987002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma12267> .
+
+<http://snomed.info/id/818994004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19841> .
+
+<http://snomed.info/id/818998001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma86232> .
+
+<http://snomed.info/id/81971007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326769> .
+
+<http://snomed.info/id/81997001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327140> .
+
+<http://snomed.info/id/8225009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma9485> .
+
+<http://snomed.info/id/82384006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma10143> .
+
+<http://snomed.info/id/82406005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84184> .
+
+<http://snomed.info/id/82851002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84111> .
+
+<http://snomed.info/id/82983007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84716> .
+
+<http://snomed.info/id/83314009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84719> .
+
+<http://snomed.info/id/83321009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83541> .
+
+<http://snomed.info/id/83475004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67337> .
+
+<http://snomed.info/id/83797003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82757> .
+
+<http://snomed.info/id/84060007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67168> .
+
+<http://snomed.info/id/8412003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma75316> .
+
+<http://snomed.info/id/8415001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma15637> .
+
+<http://snomed.info/id/84227004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83504> .
+
+<http://snomed.info/id/84300001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14273> .
+
+<http://snomed.info/id/84578005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma50797> .
+
+<http://snomed.info/id/84907006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62897> .
+
+<http://snomed.info/id/85036004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327138> .
+
+<http://snomed.info/id/85139009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma77273> .
+
+<http://snomed.info/id/85181003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma85438> .
+
+<http://snomed.info/id/85205004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67258> .
+
+<http://snomed.info/id/85214009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82762> .
+
+<http://snomed.info/id/85266000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83736> .
+
+<http://snomed.info/id/85383006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14904> .
+
+<http://snomed.info/id/8556000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62962> .
+
+<http://snomed.info/id/85616004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma50715> .
+
+<http://snomed.info/id/85835001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14660> .
+
+<http://snomed.info/id/85852002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma51236> .
+
+<http://snomed.info/id/86082002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma18644> .
+
+<http://snomed.info/id/86441007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14067> .
+
+<http://snomed.info/id/86447006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma85433> .
+
+<http://snomed.info/id/8668003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325971> .
+
+<http://snomed.info/id/86690003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma65443> .
+
+<http://snomed.info/id/86793008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70717> .
+
+<http://snomed.info/id/87044003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82745> .
+
+<http://snomed.info/id/87063002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326768> .
+
+<http://snomed.info/id/87928009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma57867> .
+
+<http://snomed.info/id/8814006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma16908> .
+
+<http://snomed.info/id/88241000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma32433> .
+
+<http://snomed.info/id/88303009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326766> .
+
+<http://snomed.info/id/88384001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma15929> .
+
+<http://snomed.info/id/88397004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326465> .
+
+<http://snomed.info/id/88545005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma5914> .
+
+<http://snomed.info/id/88878007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67257> .
+
+<http://snomed.info/id/88921000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma62913> .
+
+<http://snomed.info/id/88978008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326466> .
+
+<http://snomed.info/id/89094007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63260> .
+
+<http://snomed.info/id/89510009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70118> .
+
+<http://snomed.info/id/89530008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327135> .
+
+<http://snomed.info/id/89959003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325980> .
+
+<http://snomed.info/id/89991002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67525> .
+
+<http://snomed.info/id/90152004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0325995> .
+
+<http://snomed.info/id/90475001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326754> .
+
+<http://snomed.info/id/90604005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67314> .
+
+<http://snomed.info/id/90905009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326756> .
+
+<http://snomed.info/id/90928005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma224852> .
+
+<http://snomed.info/id/90961003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83542> .
+
+<http://snomed.info/id/90984005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326757> .
+
+<http://snomed.info/id/91189005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma55145> .
+
+<http://snomed.info/id/91197003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327127> .
+
+<http://snomed.info/id/91233007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84193> .
+
+<http://snomed.info/id/91341005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327126> .
+
+<http://snomed.info/id/91389001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326758> .
+
+<http://snomed.info/id/91414004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma61754> .
+
+<http://snomed.info/id/91587000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326985> .
+
+<http://snomed.info/id/91645009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma82777> .
+
+<http://snomed.info/id/91685003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma64784> .
+
+<http://snomed.info/id/91722005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma61775> .
+
+<http://snomed.info/id/91723000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma305751> .
+
+<http://snomed.info/id/91739007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma9729> .
+
+<http://snomed.info/id/91747007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma312610> .
+
+<http://snomed.info/id/91764005> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14164> .
+
+<http://snomed.info/id/91769000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84631> .
+
+<http://snomed.info/id/91770004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma84632> .
+
+<http://snomed.info/id/91833003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma5898> .
+
+<http://snomed.info/id/91837002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma3724> .
+
+<http://snomed.info/id/9208002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63839> .
+
+<http://snomed.info/id/9270008> owl:equivalentClass <http://purl.org/sig/ont/fma/fma67253> .
+
+<http://snomed.info/id/9284003> owl:equivalentClass <http://purl.org/sig/ont/fma/fma19618> .
+
+<http://snomed.info/id/9422000> owl:equivalentClass <http://purl.org/sig/ont/fma/fma63171> .
+
+<http://snomed.info/id/9502002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327125> .
+
+<http://snomed.info/id/9530002> owl:equivalentClass <http://purl.org/sig/ont/fma/fma83351> .
+
+<http://snomed.info/id/9535007> owl:equivalentClass <http://purl.org/sig/ont/fma/fma75254> .
+
+<http://snomed.info/id/9654004> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327124> .
+
+<http://snomed.info/id/9659009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma14193> .
+
+<http://snomed.info/id/9683001> owl:equivalentClass <http://purl.org/sig/ont/fma/fma70545> .
+
+<http://snomed.info/id/9840009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0327123> .
+
+<http://snomed.info/id/9964006> owl:equivalentClass <http://purl.org/sig/ont/fma/fma23861> .
+
+<http://snomed.info/id/9968009> owl:equivalentClass <http://purl.org/sig/ont/fma/fma0326761> .
+

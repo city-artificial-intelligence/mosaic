@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:align="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#">
+<align:Alignment>
+  <align:xml>yes</align:xml>
+  <align:level>0</align:level>
+  <align:type>**</align:type>
+  <align:onto1>source</align:onto1>
+  <align:onto2>target</align:onto2>
+  <align:map>
+    <align:Cell rdf:about="#cell0">
+      <align:entity1 rdf:resource="http://confOf#Country"/>
+      <align:entity2 rdf:resource="http://edas#Country"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell1">
+      <align:entity1 rdf:resource="http://confOf#Reception"/>
+      <align:entity2 rdf:resource="http://edas#Reception"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell2">
+      <align:entity1 rdf:resource="http://confOf#Conference"/>
+      <align:entity2 rdf:resource="http://edas#Conference"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell3">
+      <align:entity1 rdf:resource="http://confOf#hasEmail"/>
+      <align:entity2 rdf:resource="http://edas#hasEmail"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell4">
+      <align:entity1 rdf:resource="http://confOf#Author"/>
+      <align:entity2 rdf:resource="http://edas#Author"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell5">
+      <align:entity1 rdf:resource="http://confOf#Social_event"/>
+      <align:entity2 rdf:resource="http://edas#SocialEvent"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell6">
+      <align:entity1 rdf:resource="http://confOf#hasPostalCode"/>
+      <align:entity2 rdf:resource="http://edas#hasPostalCode"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell7">
+      <align:entity1 rdf:resource="http://confOf#hasFirstName"/>
+      <align:entity2 rdf:resource="http://edas#hasFirstName"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell8">
+      <align:entity1 rdf:resource="http://confOf#Member"/>
+      <align:entity2 rdf:resource="http://edas#TPCMember"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7615</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell9">
+      <align:entity1 rdf:resource="http://confOf#Workshop"/>
+      <align:entity2 rdf:resource="http://edas#Workshop"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell10">
+      <align:entity1 rdf:resource="http://confOf#Paper"/>
+      <align:entity2 rdf:resource="http://edas#Paper"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell11">
+      <align:entity1 rdf:resource="http://confOf#Organization"/>
+      <align:entity2 rdf:resource="http://edas#Organization"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell12">
+      <align:entity1 rdf:resource="http://confOf#writtenBy"/>
+      <align:entity2 rdf:resource="http://edas#isWrittenBy"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7903</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell13">
+      <align:entity1 rdf:resource="http://confOf#Person"/>
+      <align:entity2 rdf:resource="http://edas#Person"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell14">
+      <align:entity1 rdf:resource="http://confOf#hasCountry"/>
+      <align:entity2 rdf:resource="http://edas#hasCountry"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell15">
+      <align:entity1 rdf:resource="http://confOf#hasTopic"/>
+      <align:entity2 rdf:resource="http://edas#hasTopic"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell16">
+      <align:entity1 rdf:resource="http://confOf#hasStreet"/>
+      <align:entity2 rdf:resource="http://edas#hasStreet"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell17">
+      <align:entity1 rdf:resource="http://confOf#hasPhone"/>
+      <align:entity2 rdf:resource="http://edas#hasPhone"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell18">
+      <align:entity1 rdf:resource="http://confOf#Topic"/>
+      <align:entity2 rdf:resource="http://edas#Topic"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+</align:Alignment>
+</rdf:RDF>

@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://cmt#Author> owl:equivalentClass <http://edas#Author> .
+
+<http://cmt#Conference> owl:equivalentClass <http://edas#Conference> .
+
+<http://cmt#ConferenceChair> owl:equivalentClass <http://edas#ConferenceChair> .
+
+<http://cmt#ConferenceMember> owl:equivalentClass <http://edas#ConferenceDinner> .
+
+<http://cmt#Document> owl:equivalentClass <http://edas#Document> .
+
+<http://cmt#Paper> owl:equivalentClass <http://edas#Paper> .
+
+<http://cmt#Person> owl:equivalentClass <http://edas#Person> .
+
+<http://cmt#Review> owl:equivalentClass <http://edas#Review> .
+
+<http://cmt#Reviewer> owl:equivalentClass <http://edas#Reviewer> .
+
+<http://cmt#writtenBy> owl:equivalentProperty <http://edas#isWrittenBy> .
+

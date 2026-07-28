@@ -1,0 +1,20 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://ekaw#Abstract> owl:equivalentClass <http://sigkdd#Abstract> .
+
+<http://ekaw#Conference> owl:equivalentClass <http://sigkdd#Conference> .
+
+<http://ekaw#Document> owl:equivalentClass <http://sigkdd#Document> .
+
+<http://ekaw#Invited_Speaker> owl:equivalentClass <http://sigkdd#Invited_Speaker> .
+
+<http://ekaw#Paper> owl:equivalentClass <http://sigkdd#Paper> .
+
+<http://ekaw#Paper_Author> owl:equivalentClass <http://sigkdd#Author_of_paper> .
+
+<http://ekaw#Person> owl:equivalentClass <http://sigkdd#Person> .
+
+<http://ekaw#Review> owl:equivalentClass <http://sigkdd#Review> .
+
+<http://ekaw#presentationOfPaper> owl:equivalentProperty <http://sigkdd#presentation> .
+

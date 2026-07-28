@@ -1,0 +1,50 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://conference#Abstract> owl:equivalentClass <http://ekaw#Abstract> .
+
+<http://conference#Co-chair> owl:equivalentClass <http://ekaw#OC_Chair> .
+
+<http://conference#Conference> owl:equivalentClass <http://ekaw#Conference> .
+
+<http://conference#Conference_fees> owl:equivalentClass <http://ekaw#Conference_Session> .
+
+<http://conference#Conference_part> owl:equivalentClass <http://ekaw#Conference_Paper> .
+
+<http://conference#Conference_participant> owl:equivalentClass <http://ekaw#Conference_Participant> .
+
+<http://conference#Conference_proceedings> owl:equivalentClass <http://ekaw#Conference_Proceedings> .
+
+<http://conference#Conference_www> owl:equivalentClass <http://ekaw#Conference_Trip> .
+
+<http://conference#Invited_speaker> owl:equivalentClass <http://ekaw#Invited_Speaker> .
+
+<http://conference#Invited_talk> owl:equivalentClass <http://ekaw#Invited_Talk> .
+
+<http://conference#Organization> owl:equivalentClass <http://ekaw#Organisation> .
+
+<http://conference#Paper> owl:equivalentClass <http://ekaw#Paper> .
+
+<http://conference#Person> owl:equivalentClass <http://ekaw#Person> .
+
+<http://conference#Poster> owl:equivalentClass <http://ekaw#Poster_Paper> .
+
+<http://conference#Presentation> owl:equivalentClass <http://ekaw#Individual_Presentation> .
+
+<http://conference#Review> owl:equivalentClass <http://ekaw#Review> .
+
+<http://conference#Track> owl:equivalentClass <http://ekaw#Track> .
+
+<http://conference#Track-workshop_chair> owl:equivalentClass <http://ekaw#Workshop_Chair> .
+
+<http://conference#Tutorial> owl:equivalentClass <http://ekaw#Tutorial> .
+
+<http://conference#Workshop> owl:equivalentClass <http://ekaw#Workshop> .
+
+<http://conference#has_a_publisher> owl:equivalentProperty <http://ekaw#publisherOf> .
+
+<http://conference#has_a_review> owl:equivalentProperty <http://ekaw#hasReview> .
+
+<http://conference#has_a_review_expertise> owl:equivalentProperty <http://ekaw#hasReviewer> .
+
+<http://conference#has_parts> owl:equivalentProperty <http://ekaw#hasPart> .
+

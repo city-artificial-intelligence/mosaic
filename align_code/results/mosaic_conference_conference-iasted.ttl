@@ -1,0 +1,24 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://conference#Conference_fees> owl:equivalentClass <http://iasted#Conference_hotel> .
+
+<http://conference#Conference_part> owl:equivalentClass <http://iasted#Conference_days> .
+
+<http://conference#Conference_participant> owl:equivalentClass <http://iasted#Conference_activity> .
+
+<http://conference#Conference_proceedings> owl:equivalentClass <http://iasted#Conference_building> .
+
+<http://conference#Conference_www> owl:equivalentClass <http://iasted#Conference_city> .
+
+<http://conference#Person> owl:equivalentClass <http://iasted#Person> .
+
+<http://conference#Presentation> owl:equivalentClass <http://iasted#Presentation> .
+
+<http://conference#Review> owl:equivalentClass <http://iasted#Review> .
+
+<http://conference#Reviewer> owl:equivalentClass <http://iasted#Reviewer> .
+
+<http://conference#Tutorial> owl:equivalentClass <http://iasted#Tutorial> .
+
+<http://conference#is_given_by> owl:equivalentProperty <http://iasted#is_given_by> .
+

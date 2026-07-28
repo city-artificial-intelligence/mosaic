@@ -1,0 +1,28 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://conference#Abstract> owl:equivalentClass <http://sigkdd#Abstract> .
+
+<http://conference#Committee> owl:equivalentClass <http://sigkdd#Committee> .
+
+<http://conference#Committee_member> owl:equivalentClass <http://sigkdd#Program_Committee_member> .
+
+<http://conference#Conference> owl:equivalentClass <http://sigkdd#Conference> .
+
+<http://conference#Conference_part> owl:equivalentClass <http://sigkdd#Conference_hall> .
+
+<http://conference#Invited_speaker> owl:equivalentClass <http://sigkdd#Invited_Speaker> .
+
+<http://conference#Organizer> owl:equivalentClass <http://sigkdd#Organizator> .
+
+<http://conference#Organizing_committee> owl:equivalentClass <http://sigkdd#Organizing_Committee> .
+
+<http://conference#Paper> owl:equivalentClass <http://sigkdd#Paper> .
+
+<http://conference#Person> owl:equivalentClass <http://sigkdd#Person> .
+
+<http://conference#Program_committee> owl:equivalentClass <http://sigkdd#Program_Committee> .
+
+<http://conference#Review> owl:equivalentClass <http://sigkdd#Review> .
+
+<http://conference#gives_presentations> owl:equivalentProperty <http://sigkdd#presentation> .
+

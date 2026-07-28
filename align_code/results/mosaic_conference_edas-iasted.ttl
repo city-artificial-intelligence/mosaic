@@ -1,0 +1,42 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://edas#Author> owl:equivalentClass <http://iasted#Author> .
+
+<http://edas#CoffeeBreak> owl:equivalentClass <http://iasted#Coffee_break> .
+
+<http://edas#ConferenceChair> owl:equivalentClass <http://iasted#Conference_hall> .
+
+<http://edas#ConferenceDinner> owl:equivalentClass <http://iasted#Conference_days> .
+
+<http://edas#ConferenceEvent> owl:equivalentClass <http://iasted#Conference_activity> .
+
+<http://edas#ConferenceSession> owl:equivalentClass <http://iasted#Conference_city> .
+
+<http://edas#ConferenceVenuePlace> owl:equivalentClass <http://iasted#Conference_hotel> .
+
+<http://edas#Document> owl:equivalentClass <http://iasted#Document> .
+
+<http://edas#Mexico> owl:sameAs <http://iasted#Mexico> .
+
+<http://edas#PaperPresentation> owl:equivalentClass <http://iasted#Video_presentation> .
+
+<http://edas#Person> owl:equivalentClass <http://iasted#Person> .
+
+<http://edas#Place> owl:equivalentClass <http://iasted#Place> .
+
+<http://edas#Presenter> owl:equivalentClass <http://iasted#Hotel_presenter> .
+
+<http://edas#Programme> owl:equivalentClass <http://iasted#Social_program> .
+
+<http://edas#Reception> owl:equivalentClass <http://iasted#Coctail_reception> .
+
+<http://edas#Review> owl:equivalentClass <http://iasted#Review> .
+
+<http://edas#Reviewer> owl:equivalentClass <http://iasted#Reviewer> .
+
+<http://edas#SessionChair> owl:equivalentClass <http://iasted#Session_chair> .
+
+<http://edas#Sponsorship> owl:equivalentClass <http://iasted#Sponsor> .
+
+<http://edas#WelcomeTalk> owl:equivalentClass <http://iasted#Welcome_address> .
+

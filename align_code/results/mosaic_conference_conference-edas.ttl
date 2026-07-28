@@ -1,0 +1,42 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://conference#Call_for_paper> owl:equivalentClass <http://edas#CallForPapers> .
+
+<http://conference#Conference> owl:equivalentClass <http://edas#Conference> .
+
+<http://conference#Conference_document> owl:equivalentClass <http://edas#ConferenceEvent> .
+
+<http://conference#Conference_fees> owl:equivalentClass <http://edas#ConferenceSession> .
+
+<http://conference#Conference_part> owl:equivalentClass <http://edas#ConferenceDinner> .
+
+<http://conference#Organization> owl:equivalentClass <http://edas#Organization> .
+
+<http://conference#Paper> owl:equivalentClass <http://edas#Paper> .
+
+<http://conference#Person> owl:equivalentClass <http://edas#Person> .
+
+<http://conference#Presentation> owl:equivalentClass <http://edas#PaperPresentation> .
+
+<http://conference#Review> owl:equivalentClass <http://edas#Review> .
+
+<http://conference#Reviewer> owl:equivalentClass <http://edas#Reviewer> .
+
+<http://conference#Topic> owl:equivalentClass <http://edas#Topic> .
+
+<http://conference#Workshop> owl:equivalentClass <http://edas#Workshop> .
+
+<http://conference#has_a_name> owl:equivalentProperty <http://edas#hasName> .
+
+<http://conference#has_a_program_committee> owl:equivalentProperty <http://edas#hasProgramme> .
+
+<http://conference#has_an_email> owl:equivalentProperty <http://edas#hasEmail> .
+
+<http://conference#has_members> owl:equivalentProperty <http://edas#hasMember> .
+
+<http://conference#has_the_last_name> owl:equivalentProperty <http://edas#hasLastName> .
+
+<http://conference#is_a_starting_date> owl:equivalentProperty <http://edas#startDate> .
+
+<http://conference#was_a_member_of> owl:equivalentProperty <http://edas#isMemberOf> .
+

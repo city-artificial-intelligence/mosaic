@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://cmt#Administrator> owl:equivalentClass <http://confOf#Administrator> .
+
+<http://cmt#Author> owl:equivalentClass <http://confOf#Author> .
+
+<http://cmt#Conference> owl:equivalentClass <http://confOf#Conference> .
+
+<http://cmt#Paper> owl:equivalentClass <http://confOf#Paper> .
+
+<http://cmt#Person> owl:equivalentClass <http://confOf#Person> .
+
+<http://cmt#writtenBy> owl:equivalentProperty <http://confOf#writtenBy> .
+

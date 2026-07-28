@@ -1,4 +1,3 @@
 tracks/
 .venv/
 align_code/.embedding_cache
-align_code/results

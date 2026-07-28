@@ -1,0 +1,10 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://confOf#Author> owl:equivalentClass <http://sigkdd#Author> .
+
+<http://confOf#Conference> owl:equivalentClass <http://sigkdd#Conference> .
+
+<http://confOf#Paper> owl:equivalentClass <http://sigkdd#Paper> .
+
+<http://confOf#Person> owl:equivalentClass <http://sigkdd#Person> .
+

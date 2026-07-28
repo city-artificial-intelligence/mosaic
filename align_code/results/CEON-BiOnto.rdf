@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:align="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#">
+<align:Alignment>
+  <align:xml>yes</align:xml>
+  <align:level>0</align:level>
+  <align:type>**</align:type>
+  <align:onto1>source</align:onto1>
+  <align:onto2>target</align:onto2>
+  <align:map>
+    <align:Cell rdf:about="#cell0">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/process/producesCO2"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#produces"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8057</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell1">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/energy/EnergySource"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#EnergySource"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell2">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/processODP/Process"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Proces"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell3">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/energy/Biofuel"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Biofuel"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell4">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/process/ServiceProcess"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Service"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7663</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell5">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/energy/WindEnergySource"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#WindEnergy"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8327</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell6">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/actor/Organisation"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Organization"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8797</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell7">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/resourceODP/Resource"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Resource"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell8">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/material/Iron"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Iron"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell9">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/processODP/hasPart"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#hasPart"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell10">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/value/EconomicValue"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Economics"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7705</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell11">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/energy/Biomass"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Biomas"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell12">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/resourceODP/hasPart"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#hasPartIn"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8565</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell13">
+      <align:entity1 rdf:resource="http://qudt.org/schema/qudt/Quantity"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Quantity"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell14">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/energy/NaturalGas"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#NaturalGas"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell15">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/material/Cellulose"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Cellulose"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell16">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/product/Regulation"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Regulation"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell17">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/actorODP/Infrastructure"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Infrastructure"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell18">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/energy/Biogas"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Biogas"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9093</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell19">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/actor/UsingResource"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#EnergyResource"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7788</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell20">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/energy/FossilFuel"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#FossilFuel"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell21">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/processODP/Event"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Event"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell22">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/energy/RenewableEnergy"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#RenewableEnergy"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell23">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/energy/GeothermalEnergySource"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#ThermalEnergy"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7854</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell24">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/product/Product"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Product"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell25">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/material/ChemicalSubstance"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#ChemicalSubstance"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell26">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/resourceODP/Information"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Information"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell27">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/process/Catalyst"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Catalyst"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell28">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/value/SocialValue"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#SocialIssue"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7905</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell29">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/energy/Petroleum"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Petroleum"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell30">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/resourceODP/DigitalObject"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#DigitalCollection"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7944</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell31">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/material/ChemicalElement"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#ChemicalElement"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell32">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/actor/Person"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Person"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell33">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/actorODP/Participation"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Participation"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell34">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/material/Material"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Material"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell35">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/energy/SolarEnergySource"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#SolarEnergy"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8463</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell36">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/processODP/TransformationProcess"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#ChemicalTransformation"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8431</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell37">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/processODP/Plan"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Plan"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell38">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/value/EnvironmentalValue"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#EnvironmentalIssue"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8380</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell39">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/material/ChemicalEntity"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#ChemicalEnergy"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8056</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell40">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/material/Nickel"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Nickel"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell41">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/resourceODP/Matter"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Matter"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell42">
+      <align:entity1 rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Entity"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell43">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/energy/Coal"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Coal"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell44">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/value/ValueProposition"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#ValueProposition"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell45">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/resourceODP/PhysicalObject"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#PhysicalScience"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7737</align:measure>
+    </align:Cell>
+  </align:map>
+  <align:map>
+    <align:Cell rdf:about="#cell46">
+      <align:entity1 rdf:resource="http://w3id.org/CEON/ontology/energy/Energy"/>
+      <align:entity2 rdf:resource="http://ontorion.com/namespace#Energy"/>
+      <align:relation>=</align:relation>
+      <align:measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0000</align:measure>
+    </align:Cell>
+  </align:map>
+</align:Alignment>
+</rdf:RDF>

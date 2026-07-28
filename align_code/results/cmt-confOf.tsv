@@ -1,0 +1,7 @@
+SrcEntity	TgtEntity	Relation	Score
+http://cmt#Administrator	http://confOf#Administrator	=	1.0000
+http://cmt#writtenBy	http://confOf#writtenBy	=	1.0000
+http://cmt#Paper	http://confOf#Paper	=	1.0000
+http://cmt#Person	http://confOf#Person	=	1.0000
+http://cmt#Author	http://confOf#Author	=	1.0000
+http://cmt#Conference	http://confOf#Conference	=	1.0000
