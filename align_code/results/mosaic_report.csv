@@ -33,6 +33,7 @@ digital-humanities,ironagedanube-pactols3,0.6667,0.8,0.7273,1.88,2.04,6,4,5,Task
 digital-humanities,oeai-parthenos2,0.6818,0.6383,0.6593,2.1,2.26,44,30,47,Task
 digital-humanities,pactols4-parthenos1,1.0,0.5833,0.7368,1.85,2.01,7,7,12,Task
 digital-humanities,tadirah-unesco2,0.6923,0.6,0.6429,1.67,1.83,13,9,15,Task
+###check the other csv in the folder for the correct ones below
 knowledge-graph,marvelcinematicuniverse-marvel,0.3315,0.5681,0.4187,239.1,285.1,2857,947,1667,Task
 knowledge-graph,memoryalpha-memorybeta,0.4875,0.7755,0.5987,69.93,88.29,14893,7261,9363,Task
 knowledge-graph,memoryalpha-stexpanded,0.3883,0.8398,0.531,50.06,60.52,3848,1494,1779,Task

@@ -1,0 +1,6 @@
+Track,Task,Precision,Recall,F1-Score,Time (s),Total Time (s),Alignments,Correct,Reference,Type
+knowledge-graph,marvelcinematicuniverse-marvel,0.8991,0.5659,0.6946,N/A,N/A,2857,936,1654,Task
+knowledge-graph,memoryalpha-memorybeta,0.9642,0.7772,0.8607,N/A,N/A,14893,7225,9296,Task
+knowledge-graph,memoryalpha-stexpanded,0.9811,0.8446,0.9078,N/A,N/A,3848,1457,1725,Task
+knowledge-graph,starwars-swg,0.9915,0.6378,0.7762,N/A,N/A,2859,699,1096,Task
+knowledge-graph,starwars-swtor,0.9865,0.863,0.9207,N/A,N/A,3445,1172,1358,Task
