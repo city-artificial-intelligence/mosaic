@@ -20,3 +20,6 @@ A system created as a combination of matching strategies developed by BSc and MS
 ### the reference file should be the exact names of the 2 ontologies combined with a "-" in between: eg the format defc-pactols1.rdf or idai-pactols2.rdf
 ### the rdf format was used because the track has different versions of the same ontology per benchmark
 
+## eval knowledge-graph track
+### use kg_eval.py after running amdCode.py to get the correct results saved to kg_eval_report.csv. mosaic_report.csv is the main csv file for the other scores.
+
